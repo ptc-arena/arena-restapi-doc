@@ -1,0 +1,187 @@
+# POST Change Status (Submitting and Admin-Defined)
+
+
+/changes/statuschanges
+
+This endpoint can be used  to change the status of a  object. This article demonstates how to submit a change that has a routing method of admin\-defined. Admin\-Defined routing methods can be configured within the Configuration, Changes view in Workspace settings or in the Routing section of the specific change category in the Changes, Category view in workspace settings.
+
+The Admin\-Defined routing method is unique because it is a two\-setp submission process. A user must first submit the change to a change administrator. This process is called submitted for routing. The change administrator then assigns a routing to the change and submits the change. This process is called submitted for approval.
+
+## Request Header
+
+| Name | Value | Description |
+|  --- |  --- |  --- | 
+| arena_session_id |   | unique ID for session obtained from login |
+| content\-type | application/json |   |
+
+## Response Codes
+
+| Code | Description |
+|  --- |  --- | 
+| 201 | Success |
+| 400 | Failure |
+
+## Response Header
+
+| Name | Value | Description |
+|  --- |  --- |  --- | 
+| Content\-Length | number | number of characters in response |
+| Content\-Type | application/json | content type of response |
+| Date | date | today's date and time |
+| Server | ArenaSolutions |   |
+| X\-Arena\-Next\-Request\-Limit\-Reset  | date | the scheduled time for resetting of the count |
+| X\-Arena\-Requests\-Remaining  | number | how many calls left |
+
+## Sample Requests and Responses
+Submits a change for routing when routing method is set to admin\-defined. In this endpoint, the user submits the change for routing. In the example below, the user doesn't have to define the change administrator since it is defined by the change category.
+
+
+
+POST /changes/statuschanges
+
+
+
+```
+{
+    "change": {
+        "guid": "P7RAT6RI58RUDVBBE2ZP"
+    },
+    "administrators": {
+        {
+           "guid": "J1L4N0LCZ2J2L4N6F6ZL"
+        }
+    },
+    "comment": "Change was built with a category that contains an admin defined routing method. Modifying to a different Change Admin",
+    "status": "SUBMITTED"
+}
+```
+
+
+```
+{
+    "administrators": [
+        {
+        "email": "hwalker@everyroadgps.com"
+        "number": "Heidi Walker"
+        "guid": "WEYH0DYPCFWFYH0JSIPD",
+        },
+    ],    
+    "change": {
+        "guid": "P7RAT6RI58RUDVBBE2ZP",
+        "number": "ECO-000027"
+    },
+    "comment": "Change was built with a category that contains an admin defined routing method.",
+    "status": "SUBMITTED_FOR_ROUTING"
+}
+```
+
+
+POST /changes/statuschanges
+
+Submits a change for routing when routing method is set to admin\-defined. In this endpoint, the user submits the change for routing. In the example below, the user includes a change administrator to modify the assigned change administrator for the change.
+
+
+
+```
+{
+    "administrators": [
+        {
+        "email": "tmakamuri@everyroadgps.com"
+        "number": "Toshiro Makamuri"
+        "guid": "J1L4N0LCZ2J2L4N6F6ZL",
+        },
+    ],    
+    "change": {
+        "guid": "P7RAT6RI58RUDVBBE2ZP",
+        "number": "ECO-000027"
+    },
+    "comment": "Change was built with a category that contains an admin defined routing method. Modifying to a different Change Admin",
+    "status": "SUBMITTED_FOR_ROUTING"
+}
+```
+
+
+```
+{
+    "administrators": [
+        {
+        "email": "tmakamuri@everyroadgps.com"
+        "number": "Toshiro Makamuri"
+        "guid": "J1L4N0LCZ2J2L4N6F6ZL",
+        },
+    ],    
+    "change": {
+        "guid": "P7RAT6RI58RUDVBBE2ZP",
+        "number": "ECO-000027"
+    },
+    "comment": "Change was built with a category that contains an admin defined routing method. Modifying to a different Change Admin",
+    "status": "SUBMITTED_FOR_ROUTING"
+}
+```
+
+
+POST /changes/statuschanges
+
+In this example, a change administrator submits a change that has been submitted for routing. It is implied that the change administrator has assigned a routing through the use of another endpoint. Once the routing is configured and the change administrator submits the change, the change moves to the following status: SUBMITTED_FOR_APPROVAL.
+
+
+
+```
+{
+    "change": {
+        "guid": "P7RAT6RI58RUDVBBE2ZP"
+    },
+    "comment": "Submitting Change for Approval. The user performing this call is the Change Administrator",
+    "status": "SUBMITTED"
+}
+```
+
+
+```
+{
+    "administrators": [
+        {
+        "email": "tmakamuri@everyroadgps.com"
+        "number": "Toshiro Makamuri"
+        "guid": "J1L4N0LCZ2J2L4N6F6ZL",
+        },
+    ],    
+    "change": {
+        "guid": "P7RAT6RI58RUDVBBE2ZP",
+        "number": "ECO-000027"
+    },
+    "comment": "Submitting Change for Approval. The user performing this call is the Change Administrator",
+    "status": "SUBMITTED_FOR_APPROVAL"
+}
+```
+
+
+An error is returned if a user attempts to include a change administrator in the request body for a change with a status of SUBMITTED_FOR_ROUTING. Note that in the earlier example where the user edited the change administrator with this endpoint the change was moving from a status of OPEN_AND_UNLOCKED to SUBMITTED_FOR_ROUTING. In the example below, the change already contains a status of SUBMITTED_FOR_ROUTING.
+
+```
+{
+    "change": {
+        "guid": "P7RAT6RI58RUDVBBE2ZP"
+    },
+    "administrators": {
+        {
+           "guid": "J1L4N0LCZ2J2L4N6F6ZL"
+        }
+    },
+    "comment": "Change was built with a category that contains an admin defined routing method. Change was already submitted for routing.",
+    "status": "SUBMITTED"
+}
+```
+
+
+```
+{
+    "status": 400,
+    "errors": [
+        {
+            "code": 3145,
+            "message": "This specific change lifecycle transition does not support the inclusion of a change administrator."
+        }
+    ]
+}
+```
