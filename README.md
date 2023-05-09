@@ -495,10 +495,23 @@
   - [Requirement](Arena%20REST%20API/Objects/object_requirement.md)
   - [File Assocation](Arena%20REST%20API/Objects/object_file_assoc.md)
 - API Error Codes
+  - [4000 to 4999 - Arena API Unique Error Codes](Arena%20REST%20API/API%20Error%20Codes/error_code_4000_to_4999.md)
+  - [3000 to 3299 - Arena API Unique Error Codes](Arena%20REST%20API/API%20Error%20Codes/error_code_3000_to_3299.md)
+  - [0 to 2999 - Arena API Unique Error Codes](Arena%20REST%20API/API%20Error%20Codes/error_code_0_to_2999.md)
 - Onshape Arena Connection Errors
 - Onshape Arena User Access Errors
+  - [Errors Encountered When Logging In](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Onshape%20Arena%20User%20Access%20Errors/error_post_login.md)
+  - [Errors Encountered When Authorizing an Onshape User](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Onshape%20Arena%20User%20Access%20Errors/error_post_login_authorize.md)
+  - [Errors Encountered When Logging Out in the Onshape-Arena Connection](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Onshape%20Arena%20User%20Access%20Errors/error_post_logout.md)
 - Onshape Arena BOM Management Errors
+  - [Errors When Removing an Item From a BOM](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Onshape%20Arena%20BOM%20Management%20Errors/error_remove_bom_item.md)
+  - [Errors When Adding and Updating a BOM](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Onshape%20Arena%20BOM%20Management%20Errors/error_post_bom_items.md)
+  - [Errors Encountered When Reserving Item Numbers for Onshape](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/error_post_reserve_item_number_onshape.md)
 - Errors When Managing Item-File Associations
+  - [Errors When Removing Files from an Item](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Errors%20When%20Managing%20Item-File%20Associations/error_delete_files_items.md)
+  - [3300 to 3999 - Arena API Unique Error Codes](Arena%20REST%20API/API%20Error%20Codes/error_code_3300_to_3999.md)
+  - [6000 and Beyond - Arena API Unique Error Codes](Arena%20REST%20API/API%20Error%20Codes/error_code_6000_to_Beyond.md)
+  - [5000 to 5999 - Arena API Unique Error Codes](Arena%20REST%20API/API%20Error%20Codes/error_code_5000_to_5999.md)
   - [Successes and Errors](Arena%20REST%20API/api_errors.md)
   - [BOM and Workspace Settings](Arena%20REST%20API/api_bom_settings.md)
 - Export: Notes and References

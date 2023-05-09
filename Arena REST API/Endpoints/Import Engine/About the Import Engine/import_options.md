@@ -4,43 +4,15 @@ The table below lists import options \(for Item Specs and Item BOM imports\) wit
 
 | Import Option | Create | Edit | Overwrite | Replace | Delete |
 |  --- |  --- |  --- |  --- |  --- |  --- | 
-| createDuplicates | 
-              
-             |   |   |   |   |
-| matchDuplicates |   | 
-              
-             | 
-              
-             |   | 
-              
-             |
-| matchDuplicateParents |   |   |   | 
-              
-             |   |
+| createDuplicates |   |   |   |   |   |
+| matchDuplicates |   |   |   |   |   |
+| matchDuplicateParents |   |   |   |   |   |
 | removeValue |   | When editing attributes, an empty value in the source file typically indicates that the value should not change. In order to change the value to be empty, the string represented by the option “removeValue” can be used. When this value appears in the source file, values entered in that attribute will be removed. The default value for “removeValue” is “\[Remove Value\]”. If the attribute is required, then an error shall be returned, and the default value shall not be used. | When editing attributes, an empty value in the source file typically indicates that the value should not change. In order to change the value to be empty, the string represented by the option “removeValue” can be used. When this value appears in the source file, values entered in that attribute will be removed. The default value for “removeValue” is “\[Remove Value\]”. If the attribute is required, then an error shall be returned, and the default value shall not be used. |   |   |
 | multiSelectDelimiter  |  Multiselect lists are submitted with multiple values in a text field. The values are delimited with the value in option “multiSelectDelimiter”. The default value is a semicolon \(\;\) if not specified. | Multiselect lists are submitted with multiple values in a text field. The values are delimited with the value in option “multiSelectDelimiter”. The default value is a semicolon \(\;\) if not specified. | Multiselect lists are submitted with multiple values in a text field. The values are delimited with the value in option “multiSelectDelimiter”. The default value is a semicolon \(\;\) if not specified. | Multiselect lists are submitted with multiple values in a text field. The values are delimited with the value in option “multiSelectDelimiter”. The default value is a semicolon \(\;\) if not specified. |   |
-| checkRefDes | 
-              
-             | 
-              
-             | 
-              
-             | 
-              
-             |   |
+| checkRefDes |   |   |   |   |   |
 | timeZone | DateTime values must be specified using ISO\-8601 which must include time and optionally time zone. If time zone information is not included, the option “timeZone” can be specified for the import to set the time zone accordingly. Since the default is UTC, timeZone should be specified for date attributes that are not within the United Kingdom. | DateTime values must be specified using ISO\-8601 which must include time and optionally time zone. If time zone information is not included, the option “timeZone” can be specified for the import to set the time zone accordingly. Since the default is UTC, timeZone should be specified for date attributes that are not within the United Kingdom | DateTime values must be specified using ISO\-8601 which must include time and optionally time zone. If time zone information is not included, the option “timeZone” can be specified for the import to set the time zone accordingly. Since the default is UTC, timeZone should be specified for date attributes that are not within the United Kingdom | DateTime values must be specified using ISO\-8601 which must include time and optionally time zone. If time zone information is not included, the option “timeZone” can be specified for the import to set the time zone accordingly. Since the default is UTC, timeZone should be specified for date attributes that are not within the United Kingdom |   |
 | addToChange | Adds imported items to a change. Supported values: | Adds imported items to a change. Supported values: | Adds imported items to a change. Supported values: | Adds imported items to a change. Supported values: |   |
-| stripWhiteSpace | 
-              
-             | 
-              
-             | 
-              
-             | 
-              
-             | 
-              
-             |
+| stripWhiteSpace |   |   |   |   |   |
 | numberingFreeTextHeader | A single Free Text field shall be supported for item numbers using a numbering sequence. The free text content shall be taken from a dedicated column in the import source file. The column header shall be named as specified in the option "numberingFreeTextHeader". This shall default to "Numbering Free Text" if not supplied. When an item number is generated using item numbering and the item numbering has a single Free Text field: | A single Free Text field shall be supported for item numbers using a numbering sequence. The free text content shall be taken from a dedicated column in the import source file. The column header shall be named as specified in the option "numberingFreeTextHeader". This shall default to "Numbering Free Text" if not supplied. When an item number is generated using item numbering and the item numbering has a single Free Text field: | A single Free Text field shall be supported for item numbers using a numbering sequence. The free text content shall be taken from a dedicated column in the import source file. The column header shall be named as specified in the option "numberingFreeTextHeader". This shall default to "Numbering Free Text" if not supplied. When an item number is generated using item numbering and the item numbering has a single Free Text field: |   |   |
 
 * ALLOW permits duplicates to be created if permitted by settings. 
