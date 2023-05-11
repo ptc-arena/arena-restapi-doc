@@ -7,35 +7,35 @@ Returns a specific Item's training records across all the  Training Plans it is 
 
 ## Request Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| arena_session_id |   | unique ID for session obtained from login |
-| content\-type | application/json |   |
+| arena_session_id<br> |   | unique ID for session obtained from login<br> |
+| content\-type<br> | application/json<br> |   |
 
 ## Parameters
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| offset | integer | Specifies the position in the list of all changes where results should begin. All changes before the offset in the search results are ignored. The default value is 0. |
-| limit | integer | Specifies the number of results that should be returned. By default the maximum number of objects is 20. Can return up 400. |
+| offset<br> | integer<br> | Specifies the position in the list of all changes where results should begin. All changes before the offset in the search results are ignored. The default value is 0.<br> |
+| limit<br> | integer<br> | Specifies the number of results that should be returned. By default the maximum number of objects is 20. Can return up 400.<br> |
 
 ## Response Codes
 
-| Code | Description |
+| Code<br> | Description<br> |
 |  --- |  --- | 
-| 200 | Success |
-| 400 | Failure |
+| 200<br> | Success<br> |
+| 400<br> | Failure<br> |
 
 ## Response Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length | number | number of characters in response |
-| Content\-Type | application/json | content type of response |
-| Date | date | today's date and time |
-| Server | ArenaSolutions |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset  | date | the scheduled time for resetting of the count |
-| X\-Arena\-Requests\-Remaining  | number | how many calls left |
+| Content\-Length<br> | number<br> | number of characters in response<br> |
+| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Date<br> | date<br> | today's date and time<br> |
+| Server<br> | ArenaSolutions<br> |   |
+| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get the training records of  an Item.

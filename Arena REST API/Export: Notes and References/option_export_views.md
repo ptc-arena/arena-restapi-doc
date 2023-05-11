@@ -4,59 +4,59 @@ Export options determine what Item views and attributes are included in an expor
 Export Views table displays which views of an Item can be included in an export.
 
 
-| exportViews | Description |
+| exportViews<br> | Description<br> |
 |  --- |  --- | 
-| SPECS | Specs data for all Items. |
-| BOM | BOM Lines for all Items |
-| BOM_SUBSTITUTES | BOM Substitutes for all Items |
-| SOURCING | Sourcing relationships for all Items |
-| FILES | File Associations for all Items |
-| FILES_FILE_SUMMARY | File summary for all Files on Item Files |
-| SOURCING_SUPPLIERITEM_SPECS | Supplier Item Specs for all Supplier Items on Item sourcing |
-| SOURCING_SUPPLIERITEM_SUPPLIER_PROFILE | Supplier Profile for all Supplier Items on Item sourcing |
-| SOURCING_SUPPLIERITEM_FILES | Supplier Item File associations for all Supplier Items in Sourcing |
-| SOURCING_SUPPLIERITEM_FILES_FILE_SUMMARY | File summary for all files on Supplier Items on Item Sourcing |
+| SPECS<br> | Specs data for all Items.<br> |
+| BOM<br> | BOM Lines for all Items<br> |
+| BOM_SUBSTITUTES<br> | BOM Substitutes for all Items<br> |
+| SOURCING<br> | Sourcing relationships for all Items<br> |
+| FILES<br> | File Associations for all Items<br> |
+| FILES_FILE_SUMMARY<br> | File summary for all Files on Item Files<br> |
+| SOURCING_SUPPLIERITEM_SPECS<br> | Supplier Item Specs for all Supplier Items on Item sourcing<br> |
+| SOURCING_SUPPLIERITEM_SUPPLIER_PROFILE<br> | Supplier Profile for all Supplier Items on Item sourcing<br> |
+| SOURCING_SUPPLIERITEM_FILES<br> | Supplier Item File associations for all Supplier Items in Sourcing<br> |
+| SOURCING_SUPPLIERITEM_FILES_FILE_SUMMARY<br> | File summary for all files on Supplier Items on Item Sourcing<br> |
 
 File Content determines if the actual Files associated with Items and Supplier Items are included within the export. Assigning a value of PRIMARY to fileContent is not supported for supplierItem.
 
 
-| fileContent | Description |
+| fileContent<br> | Description<br> |
 |  --- |  --- | 
-| NONE | Export does not include any physical files. Can be used for Items and Supplier Items. |
-| PRIMARY | Export includes only the Primary physical Files. Can be used ONLY for Items. |
-| ALL | Export includes all Files. Can be used for Items and Supplier Items. |
+| NONE<br> | Export does not include any physical files. Can be used for Items and Supplier Items.<br> |
+| PRIMARY<br> | Export includes only the Primary physical Files. Can be used ONLY for Items.<br> |
+| ALL<br> | Export includes all Files. Can be used for Items and Supplier Items.<br> |
 
 BOM Levels adds children Items on the BOM of matching Items to the results.
 
 
-| bomLevels | Description |
+| bomLevels<br> | Description<br> |
 |  --- |  --- | 
-| NONE | Does not add child Items to the results |
-| SINGLE | Adds the Items on the single level BOM of matching Items to the results |
-| FULL | Add s the Items on the fully exploded BOM of matching Items to the results |
+| NONE<br> | Does not add child Items to the results<br> |
+| SINGLE<br> | Adds the Items on the single level BOM of matching Items to the results<br> |
+| FULL<br> | Add s the Items on the fully exploded BOM of matching Items to the results<br> |
 
 The Header option determines if custom attributes appear  by their API name or their actual name within the header of the exported CSV files.
 
 
-| header | Description |
+| header<br> | Description<br> |
 |  --- |  --- | 
-| apiName | The apiName is the GUID for the Item, BOM, Supplier and Supplier Item custom attribute. Example: "DVFYHPYYVCTBUDWDIYP0". API name is the default setting if not specified. |
-| name | The name is the name of the custom attribute as it appears in the Workspace Settings of the graphic user interface. Example: "Capacitance". |
+| apiName<br> | The apiName is the GUID for the Item, BOM, Supplier and Supplier Item custom attribute. Example: "DVFYHPYYVCTBUDWDIYP0". API name is the default setting if not specified.<br> |
+| name<br> | The name is the name of the custom attribute as it appears in the Workspace Settings of the graphic user interface. Example: "Capacitance".<br> |
 
 Item Revision Status
 
 
-| revisionStatus | Description |
+| revisionStatus<br> | Description<br> |
 |  --- |  --- | 
-| LATEST | Returns the effective revision of the items matching the criteria if the Item is effective, otherwise returns the working revision of the Items matching the criteria. For BOMs, returns the latest revisions for all levels. |
-| WORKING | Returns the working revisions of the Items matching the criteria, even if the Item is effective. For BOMs, returns the working revision of the parent Item, but returns the latest revision for all other levels. |
-| POTENTIAL | Returns the working revisions of the Items matching the criteria, even if the Item is effective. For BOMs, returns the working revision for all levels, including the parent Item. |
+| LATEST<br> | Returns the effective revision of the items matching the criteria if the Item is effective, otherwise returns the working revision of the Items matching the criteria. For BOMs, returns the latest revisions for all levels.<br> |
+| WORKING<br> | Returns the working revisions of the Items matching the criteria, even if the Item is effective. For BOMs, returns the working revision of the parent Item, but returns the latest revision for all other levels.<br> |
+| POTENTIAL<br> | Returns the working revisions of the Items matching the criteria, even if the Item is effective. For BOMs, returns the working revision for all levels, including the parent Item.<br> |
 
 API Export Format
 
 
-| format | Description |
+| format<br> | Description<br> |
 |  --- |  --- | 
-| json | Returns the export data in JSON file format. If Files are included the JSON file format is included with the Files in a zip file. |
-| csv | Returns the export data in CSV file format. If Files are included the CSV file format is included with the Files in a zip file. |
+| json<br> | Returns the export data in JSON file format. If Files are included the JSON file format is included with the Files in a zip file.<br> |
+| csv<br> | Returns the export data in CSV file format. If Files are included the CSV file format is included with the Files in a zip file.<br> |
 

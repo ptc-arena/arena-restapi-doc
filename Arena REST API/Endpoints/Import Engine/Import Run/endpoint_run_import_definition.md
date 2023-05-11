@@ -16,19 +16,19 @@ NOTES:
 Import runs can have the following six statuses.
 
 
-| Import Status | Description |
+| Import Status<br> | Description<br> |
 |  --- |  --- | 
-| CREATED | The import run has been created and is queued for processing. |
-| RUNNING | The import run is processing. |
-| COMPLETE | The import file is completed and is ready to be downloaded. |
-| ERROR | The import file has errors. |
+| CREATED<br> | The import run has been created and is queued for processing.<br> |
+| RUNNING<br> | The import run is processing.<br> |
+| COMPLETE<br> | The import file is completed and is ready to be downloaded.<br> |
+| ERROR<br> | The import file has errors.<br> |
 
 ## Request Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| arena_session_id |   | unique ID for session obtained from login |
-| content\-type | multipart/form\-data |   |
+| arena_session_id<br> |   | unique ID for session obtained from login<br> |
+| content\-type<br> | multipart/form\-data<br> |   |
 
 ## Sample Request Body
 * Run Import Definition with an Excel worksheet.  Do not commit data to workspace.
@@ -48,21 +48,21 @@ commit: true
 ```
 ## Response Codes
 
-| Code | Description |
+| Code<br> | Description<br> |
 |  --- |  --- | 
-| 201 | Success |
-| 400 | Failure |
+| 201<br> | Success<br> |
+| 400<br> | Failure<br> |
 
 ## Response Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length | number | number of characters in response |
-| Content\-Type | application/json | content type of response |
-| Date | date | today's date and time |
-| Server | ArenaSolutions |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset  | date | the scheduled time for resetting of the count |
-| X\-Arena\-Requests\-Remaining  | number | how many calls left |
+| Content\-Length<br> | number<br> | number of characters in response<br> |
+| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Date<br> | date<br> | today's date and time<br> |
+| Server<br> | ArenaSolutions<br> |   |
+| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Run Import Definition with an Excel worksheet.  Do not commit data to workspace.

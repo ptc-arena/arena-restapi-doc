@@ -15,16 +15,16 @@ NOTES:
 
 ## Criterion Definitions
 
-| Name | Description |
+| Name<br> | Description<br> |
 |  --- |  --- | 
-| Attribute | An Arena attribute |
-| Value | An Arena attribute value associated with an attribute |
-| Operator | A comparison of the attribute to a value |
-| Criterion | An object containing one attribute, one operator, and one value.  |
-| Criterion Logic | Boolean logic combining Criterion such as "OR" and "AND" |
-| Criterion Group | A collection of one or more criterions separted by criterion logic |
-| Criterion Group Logic | Boolean logic combining Criterion Groups |
-| Criteria | A collection of one or more criterion groups separated by criterion group logic |
+| Attribute<br> | An Arena attribute<br> |
+| Value<br> | An Arena attribute value associated with an attribute<br> |
+| Operator<br> | A comparison of the attribute to a value<br> |
+| Criterion<br> | An object containing one attribute, one operator, and one value.<br> |
+| Criterion Logic<br> | Boolean logic combining Criterion such as "OR" and "AND"<br> |
+| Criterion Group<br> | A collection of one or more criterions separted by criterion logic<br> |
+| Criterion Group Logic<br> | Boolean logic combining Criterion Groups<br> |
+| Criteria<br> | A collection of one or more criterion groups separated by criterion group logic<br> |
 
 ## Criteria Examples
 * A Criterion

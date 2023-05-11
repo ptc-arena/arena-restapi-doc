@@ -1,8 +1,8 @@
 # Markup
 
-| Field | Data Type | Description |
+| Field<br> | Data Type<br> | Description<br> |
 |  --- |  --- |  --- | 
-| guid | String | The unique identifier for a file |
-| title | String | The title of a file |
-| name | String | The filename \(with extension\) of a file |
+| guid<br> | String<br> | The unique identifier for a file<br> |
+| title<br> | String<br> | The title of a file<br> |
+| name<br> | String<br> | The filename \(with extension\) of a file<br> |
 

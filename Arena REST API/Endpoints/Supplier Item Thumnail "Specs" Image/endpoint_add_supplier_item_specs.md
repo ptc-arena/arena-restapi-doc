@@ -7,10 +7,10 @@ This endpoint uploads an image to the Supplier Item's Specs view thumbnail.
 
 ## Request Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| arena_session_id |   | unique ID for session obtained from login |
-| content\-type | multipart/form\-data |   |
+| arena_session_id<br> |   | unique ID for session obtained from login<br> |
+| content\-type<br> | multipart/form\-data<br> |   |
 
 ## Sample Request Body
 File attribute:
@@ -20,22 +20,22 @@ content: [physical file]
 ```
 ## Response Codes
 
-| Code | Description |
+| Code<br> | Description<br> |
 |  --- |  --- | 
-| 201 | Success |
-| 400 | Failure |
+| 201<br> | Success<br> |
+| 400<br> | Failure<br> |
 
 ## Response Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length | number | number of characters in response |
-| Content\-Type | determined by file type | content type of file |
-| Date | date | today's date and time |
-| Server | ArenaSolutions |   |
-| X\-Arena\-FileGuid | GUID string | GUID for new file \- only when including content |
-| X\-Arena\-Next\-Request\-Limit\-Reset  | date | the scheduled time for resetting of the count |
-| X\-Arena\-Requests\-Remaining  | number | how many calls left |
+| Content\-Length<br> | number<br> | number of characters in response<br> |
+| Content\-Type<br> | determined by file type<br> | content type of file<br> |
+| Date<br> | date<br> | today's date and time<br> |
+| Server<br> | ArenaSolutions<br> |   |
+| X\-Arena\-FileGuid<br> | GUID string<br> | GUID for new file \- only when including content<br> |
+| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 No JSON response if successful.

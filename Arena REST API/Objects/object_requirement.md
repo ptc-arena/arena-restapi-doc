@@ -2,8 +2,8 @@
 This object is only available through the  Compliance Requirement object.
 
 
-| Field | Data Type | Description |
+| Field<br> | Data Type<br> | Description<br> |
 |  --- |  --- |  --- | 
-| guid | String | the unique identifier of a requirement |
-| name | String | the name of a requirement |
+| guid<br> | String<br> | the unique identifier of a requirement<br> |
+| name<br> | String<br> | the name of a requirement<br> |
 

@@ -7,35 +7,35 @@ Returns a  object with a given GUID, the immediate child of an assembly with a g
 
 ## Request Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| arena_session_id |   | unique ID for session obtained from login |
-| content\-type | application/x\-www\-form\-urlencoded |   |
+| arena_session_id<br> |   | unique ID for session obtained from login<br> |
+| content\-type<br> | application/x\-www\-form\-urlencoded<br> |   |
 
 ## Parameters
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| includeEmptyAdditionalAttributes | true or false | If this is true, the response returns empty additional attributes. The default is false. |
-| includeBomSubstitutes | true or false | if this is true, the response returns BOM Substitutes |
+| includeEmptyAdditionalAttributes<br> | true or false<br> | If this is true, the response returns empty additional attributes. The default is false.<br> |
+| includeBomSubstitutes<br> | true or false<br> | if this is true, the response returns BOM Substitutes<br> |
 
 ## Response Codes
 
-| Code | Description |
+| Code<br> | Description<br> |
 |  --- |  --- | 
-| 200 | Success |
-| 400 | Failure |
+| 200<br> | Success<br> |
+| 400<br> | Failure<br> |
 
 ## Response Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length | number | number of characters in response |
-| Content\-Type | application/json |   |
-| Date | date | today's date and time |
-| Server | ArenaSolutions |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset  | date | the scheduled time for resetting of the count |
-| X\-Arena\-Requests\-Remaining  | number | how many calls left |
+| Content\-Length<br> | number<br> | number of characters in response<br> |
+| Content\-Type<br> | application/json<br> |   |
+| Date<br> | date<br> | today's date and time<br> |
+| Server<br> | ArenaSolutions<br> |   |
+| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get BOM line \(including empty additional attributes\)

@@ -7,45 +7,45 @@ Returns a collection of  objects \(but not the extract run content\) matching th
 
 ## Request Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| arena_session_id |   | unique ID for session obtained from login |
-| content\-type | application/json |   |
+| arena_session_id<br> |   | unique ID for session obtained from login<br> |
+| content\-type<br> | application/json<br> |   |
 
 ## Parameters
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| offset | integer | Specifies the position in the list of all extracts where results should begin. All extracts before the offset in the search results are ignored. The default value is 0. |
-| limit | integer | Specifies the number of results that should be returned. By default the maximum number of extracts is 20. Can return up 400 extracts. |
+| offset<br> | integer<br> | Specifies the position in the list of all extracts where results should begin. All extracts before the offset in the search results are ignored. The default value is 0.<br> |
+| limit<br> | integer<br> | Specifies the number of results that should be returned. By default the maximum number of extracts is 20. Can return up 400 extracts.<br> |
 
 ## Searchable Attributes
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| name | string | Data Extract name |
-| creator.fullName | string | The integration user which is specified in the Setup view for the Extract in the account administration tool in Arena |
-| enabled | true or false | whether or not the Extract is enabled in the workspace |
+| name<br> | string<br> | Data Extract name<br> |
+| creator.fullName<br> | string<br> | The integration user which is specified in the Setup view for the Extract in the account administration tool in Arena<br> |
+| enabled<br> | true or false<br> | whether or not the Extract is enabled in the workspace<br> |
 
 Search behavior in the Arena REST API differs from search behavior in the Arena application. In the API, a trailing asterisk \(wildcard\) is required to return results that start with a string; in the Arena application, a trailing asterisk is always implied.
 
 ## Response Codes
 
-| Code | Description |
+| Code<br> | Description<br> |
 |  --- |  --- | 
-| 200 | Success |
-| 400 | Failure |
+| 200<br> | Success<br> |
+| 400<br> | Failure<br> |
 
 ## Response Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length | number | number of characters in response |
-| Content\-Type | application/json | content type of response |
-| Date | date | today's date and time |
-| Server | ArenaSolutions |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset  | date | the scheduled time for resetting of the count |
-| X\-Arena\-Requests\-Remaining  | number | how many calls left |
+| Content\-Length<br> | number<br> | number of characters in response<br> |
+| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Date<br> | date<br> | today's date and time<br> |
+| Server<br> | ArenaSolutions<br> |   |
+| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all extracts \(note that only 1 extract can be defined per workspace\)

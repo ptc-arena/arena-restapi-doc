@@ -26,10 +26,10 @@ This API request can generate  errors, warnings, and notices. The request will f
 
 ## Request Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| arena_session_id |   | unique ID for session obtained from login |
-| content\-type | application/json |   |
+| arena_session_id<br> |   | unique ID for session obtained from login<br> |
+| content\-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 ```
@@ -47,29 +47,29 @@ This API request can generate  errors, warnings, and notices. The request will f
 ```
 ## Optional Fields
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| proceedOnNotice | true or false | This field, when set to true, forces the operation to continue even if there are errors. |
-| notes | string | This field enters a comment in the item record |
-| revisionNumber | string | This field specifies a target revision number for the transition. If this field is not included, and a revision sequence is defined for the target lifecycle stage \(and if the current revision number appears in that sequence\) the next revision in the sequence will be selected.\) |
+| proceedOnNotice<br> | true or false<br> | This field, when set to true, forces the operation to continue even if there are errors.<br> |
+| notes<br> | string<br> | This field enters a comment in the item record<br> |
+| revisionNumber<br> | string<br> | This field specifies a target revision number for the transition. If this field is not included, and a revision sequence is defined for the target lifecycle stage \(and if the current revision number appears in that sequence\) the next revision in the sequence will be selected.\)<br> |
 
 ## Response Codes
 
-| Code | Description |
+| Code<br> | Description<br> |
 |  --- |  --- | 
-| 201 | Success |
-| 400 | Failure |
+| 201<br> | Success<br> |
+| 400<br> | Failure<br> |
 
 ## Response Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length | number | number of characters in response |
-| Content\-Type | application/json | content type of response |
-| Date | date | today's date and time |
-| Server | ArenaSolutions |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset  | date | the scheduled time for resetting of the count |
-| X\-Arena\-Requests\-Remaining  | number | how many calls left |
+| Content\-Length<br> | number<br> | number of characters in response<br> |
+| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Date<br> | date<br> | today's date and time<br> |
+| Server<br> | ArenaSolutions<br> |   |
+| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 ```

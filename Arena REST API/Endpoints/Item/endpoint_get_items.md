@@ -7,49 +7,41 @@ Returns a collection of  objects matching the given search criteria.
 
 ## Request Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| arena_session_id |   | unique ID for session obtained from login |
-| content\-type | application/json |   |
+| arena_session_id<br> |   | unique ID for session obtained from login<br> |
+| content\-type<br> | application/json<br> |   |
 
 ## Parameters
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| offset | integer | Specifies the position in the list of all items where results should begin. All items before the offset in the search results are ignored. The default value is 0. |
-| limit | integer | Specifies the number of results that should be returned. By default the maximum number of items is 20. Can return up to 400 compact items. |
-| criteria | url encoded string | The criteria search parameter uses the same criteria format used in API Item Exports. Passing this criteria through a query string requires url encoding of the characters. For additional information See .  |
+| offset<br> | integer<br> | Specifies the position in the list of all items where results should begin. All items before the offset in the search results are ignored. The default value is 0.<br> |
+| limit<br> | integer<br> | Specifies the number of results that should be returned. By default the maximum number of items is 20. Can return up to 400 compact items.<br> |
+| criteria<br> | url encoded string<br> | The criteria search parameter uses the same criteria format used in API Item Exports. Passing this criteria through a query string requires url encoding of the characters. For additional information See .<br>GET Items \(Search\) Criteria Parameter<br> |
 
 ## Searchable Attributes
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| \[additional attribute guid value\] | string | This special search permits searching for strings in additional attribute values. For example GET /items?VDXGZ7E0GO5N6P8PR55G=\*100pF where VDXGZ7E0GO5N6P8PR55G is the GUID of a custom attribute and we are searching for all items whose value for this attribute include the string "100pF". The ability to search for more than one value is available for the following attribute field types: DROP_DOWN, FIXED_DROPDOWN, & FIXED_DROPDOWN \(where multi\-select is true\). See note below this table for additional details. |
-| assemblyType | String | Possible values include: TOP_LEVEL_ASSEMBLY; ASSEMBLY; NOT_AN_ASSEMBLY |
-| category.guid | string | category unique ID |
-| creator.fullName | string | the full name \(first and last\) of the creator of the item  |
-| creator.guid | string | creator unique ID |
-| name | string | item name |
-| number | string | item number |
-| revisionNumber | string | revision number |
-| description | string | item description |
-| owner.fullName | string | item owner full name |
-| effectiveDateTimeFrom | Date\-Formatted String | the date and time \(in Zulu format\) the effective revision of an item was made effective |
-| effectiveDateTimeTo | Date\-Formatted String | the date and time \(in Zulu format\) a revision of an item was superseded  |
-| inAssembly | true or false | true indicates an item is included in at least one assembly \(appears on a BOM\) |
-| lifecyclePhase.guid | string | lifecyclePhase unique ID |
-| modifiedBom | true or false | true indicates the BOM of the item includes modifications to the working revision |
-| modifiedFiles | true or false | true indicates the Files view of the item includes modifications to the working revision |
-| modifiedSourcing | true or false | true indicates the Sourcing view of the item includes modifications to the working revision |
-| modifiedSpecs | true or false | true indicates the Specs view of the item includes modifications to the working revision |
-
-Additional attributes, also known as custom attributes, support the date field type. Users can perform searches by additional attributes with a date field type by using the format yyyy\-mm\-dd.
-
-In the following example, the user is using the following to search for a date field type custom attribute with a value of April 1, 2019: 
-
-GET /items?4M6PUJNPNM3L4N25ZZ5F=2019\-04\-01
-
-Top level assemblies are items that contain assemblies but themselves are not included as items in another item's assembly.
+| \[additional attribute guid value\]<br> | string<br> | This special search permits searching for strings in additional attribute values. For example GET /items?VDXGZ7E0GO5N6P8PR55G=\*100pF where VDXGZ7E0GO5N6P8PR55G is the GUID of a custom attribute and we are searching for all items whose value for this attribute include the string "100pF". The ability to search for more than one value is available for the following attribute field types: DROP_DOWN, FIXED_DROPDOWN, & FIXED_DROPDOWN \(where multi\-select is true\). See note below this table for additional details.<br>Additional attributes, also known as custom attributes, support the date field type. Users can perform searches by additional attributes with a date field type by using the format yyyy\-mm\-dd. In the following example, the user is using the following to search for a date field type custom attribute with a value of April 1, 2019:<br>GET /items?4M6PUJNPNM3L4N25ZZ5F=2019\-04\-01<br> |
+| assemblyType<br> | String<br> | Possible values include: TOP_LEVEL_ASSEMBLY; ASSEMBLY; NOT_AN_ASSEMBLY<br>Top level assemblies are items that contain assemblies but themselves are not included as items in another item's assembly.<br> |
+| category.guid<br> | string<br> | category unique ID<br> |
+| creator.fullName<br> | string<br> | the full name \(first and last\) of the creator of the item<br> |
+| creator.guid<br> | string<br> | creator unique ID<br> |
+| name<br> | string<br> | item name<br> |
+| number<br> | string<br> | item number<br> |
+| revisionNumber<br> | string<br> | revision number<br> |
+| description<br> | string<br> | item description<br> |
+| owner.fullName<br> | string<br> | item owner full name<br> |
+| effectiveDateTimeFrom<br> | Date\-Formatted String<br> | the date and time \(in Zulu format\) the effective revision of an item was made effective<br> |
+| effectiveDateTimeTo<br> | Date\-Formatted String<br> | the date and time \(in Zulu format\) a revision of an item was superseded<br> |
+| inAssembly<br> | true or false<br> | true indicates an item is included in at least one assembly \(appears on a BOM\)<br> |
+| lifecyclePhase.guid<br> | string<br> | lifecyclePhase unique ID<br> |
+| modifiedBom<br> | true or false<br> | true indicates the BOM of the item includes modifications to the working revision<br> |
+| modifiedFiles<br> | true or false<br> | true indicates the Files view of the item includes modifications to the working revision<br> |
+| modifiedSourcing<br> | true or false<br> | true indicates the Sourcing view of the item includes modifications to the working revision<br> |
+| modifiedSpecs<br> | true or false<br> | true indicates the Specs view of the item includes modifications to the working revision<br> |
 
 Search behavior in the Arena REST API differs from search behavior in the Arena application. In the API, a trailing asterisk \(wildcard\) is required to return results that start with a string; in the Arena application, a trailing asterisk is always implied.
 
@@ -67,21 +59,21 @@ GET calls that include Object numbers that include a percentage character, %, mu
 
 ## Response Codes
 
-| Code | Description |
+| Code<br> | Description<br> |
 |  --- |  --- | 
-| 200 | Success |
-| 400 | Failure |
+| 200<br> | Success<br> |
+| 400<br> | Failure<br> |
 
 ## Response Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length | number | number of characters in response |
-| Content\-Type | application/json | content type of response |
-| Date | date | today's date and time |
-| Server | ArenaSolutions |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset  | date | the scheduled time for resetting of the count |
-| X\-Arena\-Requests\-Remaining  | number | how many calls left |
+| Content\-Length<br> | number<br> | number of characters in response<br> |
+| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Date<br> | date<br> | today's date and time<br> |
+| Server<br> | ArenaSolutions<br> |   |
+| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all items

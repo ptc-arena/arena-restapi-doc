@@ -7,16 +7,16 @@ Updates the metadata of a  object with a given GUID.
 
 ## Request Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| arena_session_id |   | unique ID for session obtained from login |
-| content\-type | application/json |   |
+| arena_session_id<br> |   | unique ID for session obtained from login<br> |
+| content\-type<br> | application/json<br> |   |
 
 ## Set Null
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| setnull |   | Append the URL with setnull=true to set description, targetCompletionDate, or type to null. Attributes must be included within the request body and set to null. Insert setnull after the query string, represented by a ?, after the GUID. |
+| setnull<br> |   | Append the URL with setnull=true to set description, targetCompletionDate, or type to null. Attributes must be included within the request body and set to null. Insert setnull after the query string, represented by a ?, after the GUID.<br> |
 
 ## Sample Request Body
 PUT /qualityprocesses/&lt;GUID&gt;
@@ -39,21 +39,21 @@ PUT /qualityprocesses/&lt;GUID&gt;?setnull=true
 ```
 ## Response Codes
 
-| Code | Description |
+| Code<br> | Description<br> |
 |  --- |  --- | 
-| 201 | Success |
-| 400 | Failure |
+| 201<br> | Success<br> |
+| 400<br> | Failure<br> |
 
 ## Response Headers
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length | number | number of characters in response |
-| Content\-Type | application/json | content type of response |
-| Date | date | today's date and time |
-| Server | ArenaSolutions |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset  | date | the scheduled time for resetting of the count |
-| X\-Arena\-Requests\-Remaining  | number | how many calls left |
+| Content\-Length<br> | number<br> | number of characters in response<br> |
+| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Date<br> | date<br> | today's date and time<br> |
+| Server<br> | ArenaSolutions<br> |   |
+| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Update the details of a quality process

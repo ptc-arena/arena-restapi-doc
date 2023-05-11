@@ -7,38 +7,36 @@ Returns    available for Requests.
 
 ## Request Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| arena_session_id |   | unique ID for session obtained from login |
-| content\-type | application/json |   |
+| arena_session_id<br> |   | unique ID for session obtained from login<br> |
+| content\-type<br> | application/json<br> |   |
 
 ## Parameters
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| includePossibleValues | true or false | If this is set to true, it returns all the possible values for Drop Down List attributes. The default value is false. |
-| creatableOnly | true or false | If this is set to true, it returns only creatable attributes, which are settable during the addition of an item to a request. |
-| editableOnly | true or false | If this is set to true, it returns only editable attributes, which are settable during the update of a request\-item relationship. The default value is false. |
-| searchableOnly | true or false | If this is set to true, it returns only searchable attributes, which are searchable when getting requests\-item associations. |
-
-If this is set to false, it returns only non\-creatable attributes.
+| includePossibleValues<br> | true or false<br> | If this is set to true, it returns all the possible values for Drop Down List attributes. The default value is false.<br> |
+| creatableOnly<br> | true or false<br> | If this is set to true, it returns only creatable attributes, which are settable during the addition of an item to a request.<br>If this is set to false, it returns only non\-creatable attributes.<br> |
+| editableOnly<br> | true or false<br> | If this is set to true, it returns only editable attributes, which are settable during the update of a request\-item relationship. The default value is false.<br> |
+| searchableOnly<br> | true or false<br> | If this is set to true, it returns only searchable attributes, which are searchable when getting requests\-item associations.<br> |
 
 ## Response Codes
 
-| Code | Description |
+| Code<br> | Description<br> |
 |  --- |  --- | 
-| 200 | Success |
-| 400 | Failure |
+| 200<br> | Success<br> |
+| 400<br> | Failure<br> |
 
 ## Response Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type | application/json | content type of response |
-| Date | date | today's date and time |
-| Server | ArenaSolutions |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset  | date | the scheduled time for resetting of the count |
-| X\-Arena\-Requests\-Remaining  | number | how many calls left |
+| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Date<br> | date<br> | today's date and time<br> |
+| Server<br> | ArenaSolutions<br> |   |
+| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all modified item attributes, showing all possible values

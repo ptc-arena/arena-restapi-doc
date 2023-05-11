@@ -7,41 +7,41 @@ Returns all the events for a specific outbound event integration.
 
 ## Request Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| arena_session_id |   | unique ID for session obtained from login |
-| content\-type | application/json |   |
+| arena_session_id<br> |   | unique ID for session obtained from login<br> |
+| content\-type<br> | application/json<br> |   |
 
 ## Parameters
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| offset | integer | Specifies the position in the list of all items where results should begin. All items before the offset in the search results are ignored. The default value is 0. |
-| limit | integer | Specifies the number of results that should be returned. By default the maximum number of items is 20. Can return up to 400 objects. |
+| offset<br> | integer<br> | Specifies the position in the list of all items where results should begin. All items before the offset in the search results are ignored. The default value is 0.<br> |
+| limit<br> | integer<br> | Specifies the number of results that should be returned. By default the maximum number of items is 20. Can return up to 400 objects.<br> |
 
 ## Searchable Attributes
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| resourcesReconciled | Boolean | Indicates if an event is reconciled. If set equal to true it returns only events that are reconciled.  |
+| resourcesReconciled<br> | Boolean<br> | Indicates if an event is reconciled. If set equal to true it returns only events that are reconciled.<br> |
 
 ## Response Codes
 
-| Code | Description |
+| Code<br> | Description<br> |
 |  --- |  --- | 
-| 200 | Success |
-| 400 | Failure |
+| 200<br> | Success<br> |
+| 400<br> | Failure<br> |
 
 ## Response Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length | number | number of characters in response |
-| Content\-Type | application/json | content type of response |
-| Date | date | today's date and time |
-| Server | ArenaSolutions |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset  | date | the scheduled time for resetting of the count |
-| X\-Arena\-Requests\-Remaining  | number | how many calls left |
+| Content\-Length<br> | number<br> | number of characters in response<br> |
+| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Date<br> | date<br> | today's date and time<br> |
+| Server<br> | ArenaSolutions<br> |   |
+| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all  events associated with a specific outbound event integration.

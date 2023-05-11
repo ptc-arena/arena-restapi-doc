@@ -7,48 +7,48 @@ Returns a collection of Export Definition objects matching the given search crit
 
 ## Request Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| arena_session_id |   | unique ID for session obtained from login |
-| content\-type | application/json |   |
+| arena_session_id<br> |   | unique ID for session obtained from login<br> |
+| content\-type<br> | application/json<br> |   |
 
 ## Parameters
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| offset | integer | Specifies the position in the list of all export definitions where results should begin. All export definitions before the offset in the search results are ignored. The default value is 0. |
-| limit | integer | Specifies the number of results that should be returned. The default limit is 20. The maximum limit is 400. |
+| offset<br> | integer<br> | Specifies the position in the list of all export definitions where results should begin. All export definitions before the offset in the search results are ignored. The default value is 0.<br> |
+| limit<br> | integer<br> | Specifies the number of results that should be returned. The default limit is 20. The maximum limit is 400.<br> |
 
 ## Searchable Attributes
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| name | string | A user defined name for the export. it must be provided on creation and does not need to be unique. |
-| number | string | A system generated number starting at 1 and incrementing with each export.  |
-| description | string | description of the export definition |
-| creator.guid | GUID | The unique identifier for the creator of the Export Definition. |
-| creator.email | string | The email address of the user account that created the Export Definition. |
-| creator.fullName | string | The full name of the user that created the Export Definition. |
+| name<br> | string<br> | A user defined name for the export. it must be provided on creation and does not need to be unique.<br> |
+| number<br> | string<br> | A system generated number starting at 1 and incrementing with each export.<br> |
+| description<br> | string<br> | description of the export definition<br> |
+| creator.guid<br> | GUID<br> | The unique identifier for the creator of the Export Definition.<br> |
+| creator.email<br> | string<br> | The email address of the user account that created the Export Definition.<br> |
+| creator.fullName<br> | string<br> | The full name of the user that created the Export Definition.<br> |
 
 GET calls that include Object numbers that include a percentage character, %, must encode the percentage as %25 in order to return results. Similarly, the plus character, \+, can be encoded as %2b in order to return results.
 
 ## Response Codes
 
-| Code | Description |
+| Code<br> | Description<br> |
 |  --- |  --- | 
-| 200 | Success |
-| 400 | Failure |
+| 200<br> | Success<br> |
+| 400<br> | Failure<br> |
 
 ## Response Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length | number | number of characters in response |
-| Content\-Type | application/json | content type of response |
-| Date | date | today's date and time |
-| Server | ArenaSolutions |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset  | date | the scheduled time for resetting of the count |
-| X\-Arena\-Requests\-Remaining  | number | how many calls left |
+| Content\-Length<br> | number<br> | number of characters in response<br> |
+| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Date<br> | date<br> | today's date and time<br> |
+| Server<br> | ArenaSolutions<br> |   |
+| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all export definitions

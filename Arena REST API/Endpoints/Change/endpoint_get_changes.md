@@ -9,39 +9,33 @@ Changes include different attributes depending on the effectivityType \(PERMANEN
 
 ## Request Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| arena_session_id |   | unique ID for session obtained from login |
-| content\-type | application/json |   |
+| arena_session_id<br> |   | unique ID for session obtained from login<br> |
+| content\-type<br> | application/json<br> |   |
 
 ## Parameters
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| offset | integer | Specifies the position in the list of all changes where results should begin. All changes before the offset in the search results are ignored. The default value is 0. |
-| limit | integer | Specifies the number of results that should be returned. By default the maximum number of items is 20. Can return up 400 changes. |
+| offset<br> | integer<br> | Specifies the position in the list of all changes where results should begin. All changes before the offset in the search results are ignored. The default value is 0.<br> |
+| limit<br> | integer<br> | Specifies the number of results that should be returned. By default the maximum number of items is 20. Can return up 400 changes.<br> |
 
 ## Searchable Attributes
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| \[additional attribute guid value\] | string | This special search permits searching for strings in additional attribute values. For example GET /items?VDXGZ7E0GO5N6P8PR55G=\*100pF where VDXGZ7E0GO5N6P8PR55G is the GUID of a custom attribute and we are searching for all items whose value for this attribute include the string "100pF". The ability to search for more than one value is available for the following attribute field types: DROP_DOWN & FIXED_DROPDOWN \(where multi\-select is true\). See note below this table for additional details. |
-| category.guid | string | category unique ID |
-| creator.guid | string | creator user unique ID |
-| effectiveDateTimeFrom | Date\-Formatted String | the date and time \(in Zulu format\) a change was made effective. Returns all Changes made effective after this date. |
-| effectiveDateTimeTo | Date\-Formatted String | the date and time \(in Zulu format\) a change was made effective. Returns all Changes made effective before this date. |
-| implementationStatus | string | implementation status of the change. Values can be , , , or . |
-| expirationDateTimeFrom | Date\-Formatted String | the date and time \(in Zulu format\) a change is set to expire. Returns all Changes that expire after this date. |
-| expirationDateTimeTo | Date\-Formatted String | the date and time \(in Zulu format\) a change is set to expire. Returns all Changes that expire before this date. |
-| lifecycleStatus.type | string | lifecycle status of the change. Values can be , , , , , , , , , or . |
-| number | string | number of the change |
-| title | string | title of the change |
-
-Additional attributes, also known as custom attributes, support the date field type. Users can perform searches by additional attributes with a date field type by using the format yyyy\-mm\-dd.
-
-In the following example, the user is using the following to search for a date field type custom attribute with a value of April 1, 2019: 
-
-GET /changes?9QU24KGNKOUGD1Z0RM3X=2019\-04\-01
+| \[additional attribute guid value\]<br> | string<br> | This special search permits searching for strings in additional attribute values. For example GET /items?VDXGZ7E0GO5N6P8PR55G=\*100pF where VDXGZ7E0GO5N6P8PR55G is the GUID of a custom attribute and we are searching for all items whose value for this attribute include the string "100pF". The ability to search for more than one value is available for the following attribute field types: DROP_DOWN & FIXED_DROPDOWN \(where multi\-select is true\). See note below this table for additional details.<br>Additional attributes, also known as custom attributes, support the date field type. Users can perform searches by additional attributes with a date field type by using the format yyyy\-mm\-dd. In the following example, the user is using the following to search for a date field type custom attribute with a value of April 1, 2019:<br>GET /changes?9QU24KGNKOUGD1Z0RM3X=2019\-04\-01<br> |
+| category.guid<br> | string<br> | category unique ID<br> |
+| creator.guid<br> | string<br> | creator user unique ID<br> |
+| effectiveDateTimeFrom<br> | Date\-Formatted String<br> | the date and time \(in Zulu format\) a change was made effective. Returns all Changes made effective after this date.<br> |
+| effectiveDateTimeTo<br> | Date\-Formatted String<br> | the date and time \(in Zulu format\) a change was made effective. Returns all Changes made effective before this date.<br> |
+| implementationStatus<br> | string<br> | implementation status of the change. Values can be , , , or .<br>NOT_STARTED<br>IN_PROGRESS<br>NEEDS_ATTENTION<br>DONE<br> |
+| expirationDateTimeFrom<br> | Date\-Formatted String<br> | the date and time \(in Zulu format\) a change is set to expire. Returns all Changes that expire after this date.<br> |
+| expirationDateTimeTo<br> | Date\-Formatted String<br> | the date and time \(in Zulu format\) a change is set to expire. Returns all Changes that expire before this date.<br> |
+| lifecycleStatus.type<br> | string<br> | lifecycle status of the change. Values can be , , , , , , , , , or .<br>OPEN_AND_UNLOCKED<br>OPEN_AND_LOCKED<br>SUBMITTED_FOR_ROUTING<br>SUBMITTED_FOR_APPROVAL<br>REJECTED<br>CANCELED<br>APPROVED<br>EFFECTIVE<br>COMPLETED<br>EXPIRED<br> |
+| number<br> | string<br> | number of the change<br> |
+| title<br> | string<br> | title of the change<br> |
 
 Search behavior in the Arena REST API differs from search behavior in the Arena application. In the API, a trailing asterisk \(wildcard\) is required to return results that start with a string; in the Arena application, a trailing asterisk is always implied.
 
@@ -59,20 +53,20 @@ GET calls that include Object numbers that include a percentage character, %, mu
 
 ## Response Codes
 
-| Code | Description |
+| Code<br> | Description<br> |
 |  --- |  --- | 
-| 200 | Success |
-| 400 | Failure |
+| 200<br> | Success<br> |
+| 400<br> | Failure<br> |
 
 ## Response Header
 
-| Name | Value | Description |
+| Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type | application/json | content type of response |
-| Date | date | today's date and time |
-| Server | ArenaSolutions |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset  | date | the scheduled time for resetting of the count |
-| X\-Arena\-Requests\-Remaining  | number | how many calls left |
+| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Date<br> | date<br> | today's date and time<br> |
+| Server<br> | ArenaSolutions<br> |   |
+| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all changes

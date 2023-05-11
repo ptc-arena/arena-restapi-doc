@@ -2,14 +2,14 @@
 BOM Substitutes attributes are listed in the order they appear in the BOM Substitutes CSV file.
 
 
-| Field | Data Type | Description |
+| Field<br> | Data Type<br> | Description<br> |
 |  --- |  --- |  --- | 
-| parent | Reference | Parent Item. Includes number, guid, revisionNumber, and name. |
-| item | Reference | Child Item Number. Includes number, guid, revisionNumber, and name. |
-| substitute | Reference | Substitute Child Item. Includes number, guid, revisionNumber, and name. |
-| bom.guid | String | GUID of the BOM being substituted |
-| guid | String | The unique identifier of the BOM substitute. |
-| rank | Integer | The rank of the substitute |
-| quantity | Integer | The quantity of the substitute. |
-| notes | String | BOM Substitute notes |
+| parent<br> | Reference<br> | Parent Item. Includes number, guid, revisionNumber, and name.<br> |
+| item<br> | Reference<br> | Child Item Number. Includes number, guid, revisionNumber, and name.<br> |
+| substitute<br> | Reference<br> | Substitute Child Item. Includes number, guid, revisionNumber, and name.<br> |
+| bom.guid<br> | String<br> | GUID of the BOM being substituted<br> |
+| guid<br> | String<br> | The unique identifier of the BOM substitute.<br> |
+| rank<br> | Integer<br> | The rank of the substitute<br> |
+| quantity<br> | Integer<br> | The quantity of the substitute.<br> |
+| notes<br> | String<br> | BOM Substitute notes<br> |
 
