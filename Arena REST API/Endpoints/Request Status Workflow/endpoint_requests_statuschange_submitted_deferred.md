@@ -1,0 +1,66 @@
+# POST Requests Status Change (Submitted to Deferred)
+
+
+/requests/statuschanges
+
+This example of this endpoint demonstrates how to change the status of a Request from Submitted to Deferred. This endpoint example is equivalent to deferring a submitted Request within the browser\-based application.
+
+## Request Header
+
+| Name | Value | Description |
+|  --- |  --- |  --- | 
+| arena_session_id |   | unique ID for session obtained from login |
+| content\-type | application/json |   |
+
+## Response Codes
+
+| Code | Description |
+|  --- |  --- | 
+| 201 | Success |
+| 400 | Failure |
+
+## Response Header
+
+| Name | Value | Description |
+|  --- |  --- |  --- | 
+| Content\-Length | number | number of characters in response |
+| Content\-Type | application/json | content type of response |
+| Date | date | today's date and time |
+| Server | ArenaSolutions |   |
+| X\-Arena\-Next\-Request\-Limit\-Reset  | date | the scheduled time for resetting of the count |
+| X\-Arena\-Requests\-Remaining  | number | how many calls left |
+
+## Sample Requests and Responses
+Upgrade the status of a Request from SUBMITTED to DEFERRED.
+
+
+
+POST /requests/statuschanges
+
+
+
+```
+{
+    "request": {
+        "guid": "K2M5O1MD03ML4NJ32ZN1"
+    },
+    "comment": "Deferring to a future release.",
+    "status": "DEFERRED",
+    "deferralCode": "Next Version",
+    "deferDeadlineDateTime": "2023-03-17T09:00:00Z"
+}
+```
+
+
+```
+{
+    "comment": "Deferring to a future release.",
+    "deferDeadlineDateTime": "2023-03-17T07:00:00Z",
+    "deferralCode": "Next Version",
+    "request": {
+        "guid": "K2M5O1MD03ML4NJ32ZN1",
+        "number": "ECR-000009"
+    },
+    "status": "DEFERRED"
+}
+```

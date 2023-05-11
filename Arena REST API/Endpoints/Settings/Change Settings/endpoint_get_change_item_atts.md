@@ -3,7 +3,7 @@
 
 /settings/changes/items/attributes
 
-Returns Item Modification  and Inventory Disposition Setting  available for Changes. 
+Returns   \(including inventory disposition\) available for Changes. 
 
 ## Request Header
 
@@ -17,6 +17,11 @@ Returns Item Modification  and Inventory Disposition Setting  available for Chan
 | Name | Value | Description |
 |  --- |  --- |  --- | 
 | includePossibleValues | true or false | If this is set to true, it returns all the possible values for Drop Down List attributes. The default value is false. |
+| creatableOnly | true or false | If this is set to true, it returns only creatable attributes, which are settable during the addition of an item to a change. |
+| editableOnly | true or false | If this is set to true, it returns only editable attributes, which are settable during updates to a change\-item relationship. The default value is false. |
+| searchableOnly | true or false | If this is set to true, it returns only searchable attributes, which are searchable when getting changes\-item associations. |
+
+If this is set to false, it returns only non\-creatable attributes.
 
 ## Response Codes
 
@@ -36,7 +41,7 @@ Returns Item Modification  and Inventory Disposition Setting  available for Chan
 | X\-Arena\-Requests\-Remaining  | number | how many calls left |
 
 ## Sample Response Body
-Get all change inventory disposition settings, showing all possible values
+Get all modified item attributes, showing all possible values
 
 
 
@@ -47,6 +52,7 @@ GET /settings/changes/items/attributes?includePossibleValues=true
    "count":14,
    "results":[
       {
+         "allowsExplicitNullValue":true,
          "apiName":"custom4168105",
          "creatable":true,
          "custom":true,
@@ -65,6 +71,7 @@ GET /settings/changes/items/attributes?includePossibleValues=true
          "searchable":true
       },
       {
+         "allowsExplicitNullValue":true,
          "apiName":"custom4168107",
          "creatable":true,
          "custom":true,
@@ -83,6 +90,7 @@ GET /settings/changes/items/attributes?includePossibleValues=true
          "searchable":true
       },
       {
+         "allowsExplicitNullValue":true,
          "apiName":"custom4168106",
          "creatable":true,
          "custom":true,
@@ -102,6 +110,7 @@ GET /settings/changes/items/attributes?includePossibleValues=true
          "searchable":true
       },
       {
+         "allowsExplicitNullValue":true,
          "apiName":"custom4168103",
          "creatable":true,
          "custom":true,
@@ -120,6 +129,7 @@ GET /settings/changes/items/attributes?includePossibleValues=true
          "searchable":true
       },
       {
+         "allowsExplicitNullValue":true,
          "apiName":"custom2269737",
          "creatable":true,
          "custom":true,
@@ -137,6 +147,7 @@ GET /settings/changes/items/attributes?includePossibleValues=true
          "searchable":true
       },
       {
+         "allowsExplicitNullValue":true,
          "apiName":"custom4168104",
          "creatable":true,
          "custom":true,
@@ -155,6 +166,7 @@ GET /settings/changes/items/attributes?includePossibleValues=true
          "searchable":true
       },
       {
+         "allowsExplicitNullValue":false,
          "apiName":"affectedItemRevision",
          "creatable":true,
          "custom":false,
@@ -168,7 +180,8 @@ GET /settings/changes/items/attributes?includePossibleValues=true
          "searchable":false
       },
       {
-         "apiName":"bom",
+         "allowsExplicitNullValue":false,
+         "apiName":"bomView",
          "creatable":false,
          "custom":false,
          "editable":false,
@@ -179,7 +192,8 @@ GET /settings/changes/items/attributes?includePossibleValues=true
          "searchable":false
       },
       {
-         "apiName":"files",
+         "allowsExplicitNullValue":false,
+         "apiName":"filesView",
          "creatable":false,
          "custom":false,
          "editable":false,
@@ -190,6 +204,7 @@ GET /settings/changes/items/attributes?includePossibleValues=true
          "searchable":false
       },
       {
+         "allowsExplicitNullValue":true,
          "apiName":"materialEffectivityDateTime",
          "creatable":true,
          "custom":false,
@@ -202,6 +217,7 @@ GET /settings/changes/items/attributes?includePossibleValues=true
          "searchable":false
       },
       {
+         "allowsExplicitNullValue":false,
          "apiName":"newItemRevision",
          "creatable":false,
          "custom":false,
@@ -214,6 +230,7 @@ GET /settings/changes/items/attributes?includePossibleValues=true
          "searchable":false
       },
       {
+         "allowsExplicitNullValue":false,
          "apiName":"newLifecyclePhase",
          "creatable":true,
          "custom":false,
@@ -226,7 +243,8 @@ GET /settings/changes/items/attributes?includePossibleValues=true
          "searchable":false
       },
       {
-         "apiName":"sourcing",
+         "allowsExplicitNullValue":false,
+         "apiName":"sourcingView",
          "creatable":false,
          "custom":false,
          "editable":false,
@@ -237,7 +255,8 @@ GET /settings/changes/items/attributes?includePossibleValues=true
          "searchable":false
       },
       {
-         "apiName":"specs",
+         "allowsExplicitNullValue":false,
+         "apiName":"specsView",
          "creatable":false,
          "custom":false,
          "editable":false,
