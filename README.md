@@ -557,7 +557,7 @@ Before using our API, we recommend reviewing the following **Export Notes and Re
   - [GET Integration Administrators](Arena%20REST%20API/Endpoints/Outbound-Events%20Integration%20(Event%20Engine)/Outbound-Events%20Integration%20Definitions/endpoint_get_outbound_events_integration_administrators.md)
 ### Triggers
   - [GET Triggers](Arena%20REST%20API/Endpoints/Outbound-Events%20Integration%20(Event%20Engine)/Triggers/endpoint_get_tiggers.md)
-  - [GET Trigger](Arena%20REST%20API/Endpoints/Outbound-Events%20Integration%20(Event%20Engine)/Triggers/endpoint_get_tigger.md
+  - [GET Trigger](Arena%20REST%20API/Endpoints/Outbound-Events%20Integration%20(Event%20Engine)/Triggers/endpoint_get_tigger.md)
   - [GET Outbound-Events Integration Events](Arena%20REST%20API/Endpoints/Outbound-Events%20Integration%20(Event%20Engine)/Outbound-Events%20Events/endpoint_get_outbound_events_integration_events.md)
   - [GET Outbound-Event Integration Event](Arena%20REST%20API/Endpoints/Outbound-Events%20Integration%20(Event%20Engine)/Outbound-Events%20Events/endpoint_get_outbound_event_integration_event.md)
 ### Outbound-Events Event Resources and Reconciliation
@@ -576,7 +576,7 @@ Before using our API, we recommend reviewing the following **Export Notes and Re
 ### Onshape Arena Connection Errors
 - [Errors When Updating and Creating Items](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/error_post_put_manage_item_onshape.md)
 - [Errors When Creating Items ](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/error_post_reserve_item_onshape.md)
-- Onshape Arena User Access Errors
+### Onshape Arena User Access Errors
 - [Errors Encountered When Logging In](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Onshape%20Arena%20User%20Access%20Errors/error_post_login.md)
 - [Errors Encountered When Authorizing an Onshape User](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Onshape%20Arena%20User%20Access%20Errors/error_post_login_authorize.md)
 - [Errors Encountered When Logging Out in the Onshape-Arena Connection](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Onshape%20Arena%20User%20Access%20Errors/error_post_logout.md)
