@@ -67,6 +67,11 @@ POST /changes/statuschanges
     "implementationStatus": {
         "value": "DONE"
     },
-    "status": "COMPLETED"
+    "status": "COMPLETED",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/52517F9A48748AVBDC",
+           "app": "https://app.bom.com/52517F9A48748AVBDC"
+
+   }
 }
 ```

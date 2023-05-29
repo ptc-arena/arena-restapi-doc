@@ -26,4 +26,5 @@ This object includes all fields in a Change.
 | submissionDateTime<br> | String<br> | the date and time \(in Zulu format\) a change was submitted for approval<br> |
 | submitter<br> | String<br> | the user who submitted the change for approval. Includes email, fullName, and guid.<br> |
 | title<br> | String<br> | the title of a change<br> |
+| url<br> | Array of References<br> | The direct urls of the object within the api and the application.<br> |
 

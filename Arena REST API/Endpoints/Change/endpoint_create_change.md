@@ -131,7 +131,12 @@ POST /changes
       }
    ],
    "submissionDateTime":null,
-   "title":"EveryRoad Model 300 Case Melting"
+   "title":"EveryRoad Model 300 Case Melting",
+   "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/96003C3DB703EDPIJK",
+           "app": "https://app.bom.com/96003C3DB703EDPIJK"
+
+   }
 }
 ```
 Change with permanent\-on\-date effectivity
@@ -231,7 +236,12 @@ POST /changes
       }
    ],
    "submissionDateTime":null,
-   "title":"New Fabrication for Everyroad Rear Panel"
+   "title":"New Fabrication for Everyroad Rear Panel",
+   "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/40089E611AA751DKPA",
+           "app": "https://app.bom.com/40089E611AA751DKPA"
+
+   }
 }
 ```
 Change with temporary effectivity
@@ -332,7 +342,12 @@ POST /changes
       }
    ],
    "submissionDateTime":null,
-   "title":"Temporarily use gray enclosure while black enclosure is unavailable."
+   "title":"Temporarily use gray enclosure while black enclosure is unavailable.",
+   "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/AF27027AB8B84AE59A",
+           "app": "https://app.bom.com/AF27027AB8B84AE59A"
+
+   }
 }
 ```
 value supplied for effectivityType does not match  default value enforced for the selected category

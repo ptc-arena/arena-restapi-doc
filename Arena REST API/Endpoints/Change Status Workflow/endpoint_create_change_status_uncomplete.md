@@ -65,6 +65,11 @@ POST /changes/statuschanges
     "implementationStatus": {
         "value": "NEEDS_ATTN"
     },
-    "status": "EFFECTIVE"
+    "status": "EFFECTIVE",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/1A7731B47BCBDBKLJN",
+           "app": "https://app.bom.com/1A7731B47BCBDBKLJN"
+
+   }
 }
 ```

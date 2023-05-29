@@ -57,7 +57,12 @@ POST /changes/statuschanges
         "number": "ECO-000023"
     },
     "comment": "Unlocking Change to edit routing and description.",
-    "status": "EFFECTIVE"
+    "status": "EFFECTIVE",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/9E97F4657967ECPDMS",
+           "app": "https://app.bom.com/9E97F4657967ECPDMS"
+
+   }
 }
 ```
 Submits a Change when the routing method is set to auto\-routing. In this scenario, a routing is specified within the workspace configuration settings or within the Routing tab for the change category.
@@ -86,7 +91,12 @@ POST /changes/statuschanges
         "number": "ECO-000023"
     },
     "comment": "Submitting for approval. Routing is specified by the modifications of the Item within the change.",
-    "status": "SUBMITTED_FOR_APPROVAL"
+    "status": "SUBMITTED_FOR_APPROVAL",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/BC715466F5504BF1BD",
+           "app": "https://app.bom.com/BC715466F5504BF1BD"
+
+   }
 }
 ```
 Returns an error if a user includes a change administrator when the change has a routing method of auto\-routing.

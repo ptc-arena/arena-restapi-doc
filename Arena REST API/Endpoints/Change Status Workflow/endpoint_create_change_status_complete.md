@@ -61,6 +61,11 @@ POST /changes/statuschanges
         "number": "ECO-000022"
     },
     "comment": "Completing this effective Change without inputting an implementation status.",
-    "status": "COMPLETED"
+    "status": "COMPLETED",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/6EE9DB6EBD3F488F99",
+           "app": "https://app.bom.com/6EE9DB6EBD3F488F99"
+
+   }
 }
 ```

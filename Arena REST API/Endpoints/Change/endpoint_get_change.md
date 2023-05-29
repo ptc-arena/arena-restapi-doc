@@ -106,6 +106,10 @@ GET /changes/&lt;GUID&gt;
       "guid":"4M6P8GPPM3K3M5O7QMJ9"
    },
    "title":"Replace at-risk components in EveryRoad PCBA",
+   "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/96CF9D9AD470728CRW",
+           "app": "https://app.bom.com/96CF9D9AD470728CRW"
+   },
    "withdrawnDateTime":"2018-05-23T22:35:41Z"
 }
 ```
@@ -190,6 +194,10 @@ GET /changes/&lt;GUID&gt;
       "guid":"4M6P8GPPM3K3M5O7QMJ9"
    },
    "title":"New Fabrication for Everyroad Rear Panel,
+   "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/7B7A029742744C2FDF",
+           "app": "https://app.bom.com/7B7A029742744C2FDF"
+   },
 }
 ```
 Get a change with temporary effectivity
@@ -260,7 +268,11 @@ GET /changes/&lt;GUID&gt;
       "fullName":"Heidi Walker",
       "guid":"4M6P8GPPM3K3M5O7QMJ9"
    },
-   "title":"Use Existing Stock for EveryRoad Bezel"
+   "title":"Use Existing Stock for EveryRoad Bezel",
+   "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/8ADD63B4E2BDCA59RT",
+           "app": "https://app.bom.com/8ADD63B4E2BDCA59RT"
+   },
 }
 ```
 Request with bad GUID

@@ -17,6 +17,13 @@ Returns an  object with a given GUID. Note that while the standard practice is t
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | includeEmptyAdditionalAttributes<br> | true or false<br> | If this is true, the response returns empty additional attributes. The default is false.<br> |
+| responseview<br> | string<br> | Allows users to customize the scope and size of the response data. Possible values and definitions:<br> <br> * minimum \- returns the GUID, item number, and url.<br><br> * compact \- returns the commen set of data that includes some core attrinutes in addition to the attributes returned in the minimum response.<br><br> * full \- returns the complete set of data including custom attributes.<br> |
+
+* minimum \- returns the GUID, item number, and url.
+
+* compact \- returns the common set of data that includes some core attrinutes in addition to the attributes returned in the minimum response.
+
+* full \- returns the complete set of data including custom attributes.
 
 ## Response Codes
 

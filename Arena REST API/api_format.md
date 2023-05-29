@@ -15,7 +15,7 @@ https://api.arenasolutions.com/v1/items.
 
 For example, a request to return all Items in a workspace would be
 
-https://api.arenagov.com/v1/v1/items.
+https://api.arenagov.com/v1/items.
 
 
 

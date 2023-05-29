@@ -57,7 +57,12 @@ POST /changes/statuschanges
         "number": "ECO-000028"
     },
     "comment": "Submitting Change for Approval. User defined routing method. Routing specified.",
-    "status": "SUBMITTED_FOR_APPROVAL"
+    "status": "SUBMITTED_FOR_APPROVAL",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/2CCFA0FDBA554619B8",
+           "app": "https://app.bom.com/2CCFA0FDBA554619B8"
+
+   }
 }
 ```
 Returns an error if the user submits the change and no routing is specified.

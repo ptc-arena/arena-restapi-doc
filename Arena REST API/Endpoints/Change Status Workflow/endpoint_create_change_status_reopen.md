@@ -59,6 +59,11 @@ POST /changes/statuschanges
         "number": "ECO-000027"
     },
     "comment": "In light of our new circumstances, we are re-opening the rejected change.",
-    "status": "OPEN_AND_UNLOCKED"
+    "status": "OPEN_AND_UNLOCKED",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/16BD9134D5A24BDF9C",
+           "app": "https://app.bom.com/16BD9134D5A24BDF9C"
+
+   }
 }
 ```

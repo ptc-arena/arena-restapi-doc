@@ -68,6 +68,11 @@ POST /changes/statuschanges
         "number": "ECO-000022"
     },
     "comment": "ECO-000022 is Submitted for Approval. Force Approving by Executive authority.",
-    "status": "EFFECTIVE"
+    "status": "EFFECTIVE",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/DD1402A0F92949BB9B",
+           "app": "https://app.bom.com/DD1402A0F92949BB9B"
+
+   }
 }
 ```

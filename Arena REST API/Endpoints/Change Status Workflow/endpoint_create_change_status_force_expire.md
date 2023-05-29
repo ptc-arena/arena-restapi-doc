@@ -66,6 +66,11 @@ POST /changes/statuschanges
         "number": "ECO-000026"
     },
     "comment": "Per management, we're forcing the expiration of DEV-000026.",
-    "status": "EXPIRED"
+    "status": "EXPIRED",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/6FED7D50362782JFBC",
+           "app": "https://app.bom.com/6FED7D50362782JFBC"
+
+   }
 }
 ```

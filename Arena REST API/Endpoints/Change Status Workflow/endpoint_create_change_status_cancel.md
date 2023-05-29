@@ -66,6 +66,11 @@ POST /changes/statuschanges
         "number": "ECO-000023"
     },
     "comment": "As discussed in the Monday triage meeting, we are canceling this Change.",
-    "status": "CANCELED"
+    "status": "CANCELED",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/6B52B6D575A269HDKE",
+           "app": "https://app.bom.com/6B52B6D575A269HDKE"
+
+   }
 }
 ```

@@ -57,6 +57,11 @@ POST /changes/statuschanges
         "number": "ECO-000024"
     },
     "comment": "ECO-000024 does not have the required criteria for submission. Withdrawing. Please resubmit once errors are corrected.",
-    "status": "OPEN_AND_UNLOCKED"
+    "status": "OPEN_AND_UNLOCKED",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/AE496C8A7C0E2CSJNB",
+           "app": "https://app.bom.com/AE496C8A7C0E2CSJNB"
+
+   }
 }
 ```

@@ -71,7 +71,12 @@ POST /changes/statuschanges
         "number": "ECO-000027"
     },
     "comment": "Change was built with a category that contains an admin defined routing method.",
-    "status": "SUBMITTED_FOR_ROUTING"
+    "status": "SUBMITTED_FOR_ROUTING",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/A3FE5DD85583420B83",
+           "app": "https://app.bom.com/A3FE5DD85583420B83"
+
+   }
 }
 ```
 
@@ -115,7 +120,12 @@ Submits a change for routing when routing method is set to admin\-defined. In th
         "number": "ECO-000027"
     },
     "comment": "Change was built with a category that contains an admin defined routing method. Modifying to a different Change Admin",
-    "status": "SUBMITTED_FOR_ROUTING"
+    "status": "SUBMITTED_FOR_ROUTING",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/FF1DF627041A4CDLPD",
+           "app": "https://app.bom.com/FF1DF627041A4CDLPD"
+
+    }   
 }
 ```
 
@@ -151,7 +161,12 @@ In this example, a change administrator submits a change that has been submitted
         "number": "ECO-000027"
     },
     "comment": "Submitting Change for Approval. The user performing this call is the Change Administrator",
-    "status": "SUBMITTED_FOR_APPROVAL"
+    "status": "SUBMITTED_FOR_APPROVAL",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/23A808129C5E4A009F",
+           "app": "https://app.bom.com/23A808129C5E4A009F"
+
+    } 
 }
 ```
 

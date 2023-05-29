@@ -19,6 +19,13 @@ Returns a collection of  objects matching the given search criteria.
 | offset<br> | integer<br> | Specifies the position in the list of all items where results should begin. All items before the offset in the search results are ignored. The default value is 0.<br> |
 | limit<br> | integer<br> | Specifies the number of results that should be returned. By default the maximum number of items is 20. Can return up to 400 compact items.<br> |
 | criteria<br> | url encoded string<br> | The criteria search parameter uses the same criteria format used in API Item Exports. Passing this criteria through a query string requires url encoding of the characters. For additional information See .<br>GET Items \(Search\) Criteria Parameter<br> |
+| responseview<br> | string<br> | Allows users to customize the scope and size of the response data. Possible values and definitions:<br> <br> * minimum \- returns the GUID, item number, and url.<br><br> * compact \- returns the commen set of data that includes some core attrinutes in addition to the attributes returned in the minimum response.<br><br> * full \- returns the complete set of data including custom attributes.<br> |
+
+* minimum \- returns the GUID, item number, and url.
+
+* compact \- returns the commen set of data that includes some core attrinutes in addition to the attributes returned in the minimum response.
+
+* full \- returns the complete set of data including custom attributes.
 
 ## Searchable Attributes
 

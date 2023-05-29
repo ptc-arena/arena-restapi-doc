@@ -124,7 +124,11 @@ Edit a Change with permanent\-on\-approval effectivity
       }
    ],
    "submissionDateTime":null,
-   "title":"New injection molding for Everyroad Rear Panel"
+   "title":"New injection molding for Everyroad Rear Panel",
+   "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/A5AFCAA4D4804D7BBA",
+           "app": "https://app.bom.com/A5AFCAA4D4804D7BBA"
+   },
 }
 ```
 Edit a Change with permanent\-on\-date effectivity
@@ -207,6 +211,10 @@ Edit a Change with permanent\-on\-date effectivity
       "guid": "WEYH0DYPCFWFYH0JSIPD"
    },
    "title": "New Fabrication for Everyroad Rear Panel",
+   "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/6E5732F4E3FA4733BF",
+           "app": "https://app.bom.com/6E5732F4E3FA4733BF"
+   },
    "withdrawnDateTime": "2018-03-07T18:52:06Z"
 }
 ```
@@ -283,7 +291,11 @@ Edit a Change with temporary effectivity
       }
    ],
    "submissionDateTime":null,
-   "title":"Use Alternate Chipset with New Logic in 500 Boards"
+   "title":"Use Alternate Chipset with New Logic in 500 Boards",
+   "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/A71F7F3C92C360FD",
+           "app": "https://app.bom.com/A71F7F3C92C360FD"
+   },
 }
 ```
 Set a change attribute to null.
@@ -345,7 +357,11 @@ PUT /changes/&lt;GUID&gt;?setnull=true
       }
    ],
    "submissionDateTime":null,
-   "title":"Use Alternate Chipset with New Logic in 500 Boards"
+   "title":"Use Alternate Chipset with New Logic in 500 Boards",
+   "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/1195453472824E318A",
+           "app": "https://app.bom.com/1195453472824E318A"
+   },
 }
 ```
 Attempt to move a Change beteween permanent and temporary effectivity

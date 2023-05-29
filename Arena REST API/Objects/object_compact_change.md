@@ -13,4 +13,5 @@
 | number<br> | String<br> | the number of a change<br> |
 | submissionDateTime<br> | Date\-Formatted String<br> | the date and time \(in Zulu format\) a change was submitted for approval<br> |
 | title<br> | String<br> | the title of a change<br> |
+| url<br> | Array of References<br> | The direct urls of the object within the api and the application<br> |
 

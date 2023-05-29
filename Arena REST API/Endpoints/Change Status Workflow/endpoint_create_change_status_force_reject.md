@@ -66,6 +66,11 @@ POST /changes/statuschanges
         "number": "ECO-000023"
     },
     "comment": "Per the Executive Escalation meeting, we are unilaterally rejecting the Change.",
-    "status": "REJECTED"
+    "status": "REJECTED",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/C11E57AC03C94831BD",
+           "app": "https://app.bom.com/C11E57AC03C94831BD"
+
+   }
 }
 ```

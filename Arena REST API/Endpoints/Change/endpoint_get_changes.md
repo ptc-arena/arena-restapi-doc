@@ -98,7 +98,11 @@ GET /changes
          },
          "number":"DCO-000003",
          "submissionDateTime":"2013-12-11T19:38:10Z",
-         "title":"Release new rev of discretes to include CoCs"
+         "title":"Release new rev of discretes to include CoCs",
+         "url": {
+               "api": "https://api.arenasolutions.com/v1/changes/VDXGLBCCLSBSBQMM0SJU",
+               "app": "https://app.bom.com/VDXGLBCCLSBSBQMM0SJU"
+         }
       },
       {
          "category":{
@@ -120,7 +124,11 @@ GET /changes
          },
          "number":"DEV-000002",
          "submissionDateTime":null,
-         "title":"Use Alternate Chipset with New Logic in 500 Boards"
+         "title":"Use Alternate Chipset with New Logic in 500 Boards",
+         "url": {
+               "api": "https://api.arenasolutions.com/v1/changes/657EAC4C55AB453AQW",
+               "app": "https://app.bom.com/657EAC4C55AB453AQW"
+         },
       },
       {
          "category":{
@@ -141,7 +149,11 @@ GET /changes
          },
          "number":"ECO-000017",
          "submissionDateTime":"2016-07-18T21:18:39Z",
-         "title":"Switch resistor combination in 830-00001"
+         "title":"Switch resistor combination in 830-00001",
+         "url": {
+               "api": "https://api.arenasolutions.com/v1/changes/B42041B334DD0310DS",
+               "app": "https://app.bom.com/B42041B334DD0310DS"
+         },
       },
       {
          "category":{
@@ -162,7 +174,11 @@ GET /changes
          },
          "number":"DCO-000002",
          "submissionDateTime":"2012-01-11T19:14:46Z",
-         "title":"BOM correction - Docs only"
+         "title":"BOM correction - Docs only",
+         "url": {
+               "api": "https://api.arenasolutions.com/v1/changes/890B4D40D1B74E84CV",
+               "app": "https://app.bom.com/890B4D40D1B74E84CV"
+         },
       },
       {
          "category":{
@@ -183,7 +199,11 @@ GET /changes
          },
          "number":"MCO-000003",
          "submissionDateTime":"2012-04-27T22:34:47Z",
-         "title":"Add Trilby Technology as Source for 830-00001"
+         "title":"Add Trilby Technology as Source for 830-00001",
+         "url": {
+               "api": "https://api.arenasolutions.com/v1/changes/9B712FD146DE9444WW",
+               "app": "https://app.bom.com/9B712FD146DE9444WW"
+         },
       },
       {
          "category":{
@@ -204,7 +224,11 @@ GET /changes
          },
          "number":"ECO-000022",
          "submissionDateTime":"2018-03-07T01:21:20Z",
-         "title":"New Fabrication for Everyroad Rear Panel"
+         "title":"New Fabrication for Everyroad Rear Panel",
+         "url": {
+               "api": "https://api.arenasolutions.com/v1/changes/3E0C3E8E869A42CFXZ",
+               "app": "https://app.bom.com/3E0C3E8E869A42CFXZ"
+         },
       },
       {
          "category":{
@@ -225,7 +249,11 @@ GET /changes
          },
          "number":"MCO-000002",
          "submissionDateTime":"2012-01-11T00:50:00Z",
-         "title":"Add Plasmus Plastics as Source for Everyroad Front Bezel 432-00001"
+         "title":"Add Plasmus Plastics as Source for Everyroad Front Bezel 432-00001",
+         "url": {
+               "api": "https://api.arenasolutions.com/v1/changes/884B4C71EF639C43LP",
+               "app": "https://app.bom.com/884B4C71EF639C43LP"
+         },
       },
       ...
    ]
@@ -260,7 +288,11 @@ GET &lt;url&gt;/changes?lifecycleStatus.type=effective&category.guid=L3N6PX663K3
          },
          "number":"ECO-000002",
          "submissionDateTime":"2011-02-15T00:05:03Z",
-         "title":"Production Release of EveryRoad GPS PCBA and components"
+         "title":"Production Release of EveryRoad GPS PCBA and components",
+         "url": {
+               "api": "https://api.arenasolutions.com/v1/changes/39D31D3F0B464B83LD",
+               "app": "https://app.bom.com/39D31D3F0B464B83LD"
+         },
       },
       {
          "category":{
@@ -281,7 +313,11 @@ GET &lt;url&gt;/changes?lifecycleStatus.type=effective&category.guid=L3N6PX663K3
          },
          "number":"ECO-000005",
          "submissionDateTime":"2011-02-15T19:30:12Z",
-         "title":"Production Release of Everyroad GPS Custom Mechanical Parts"
+         "title":"Production Release of Everyroad GPS Custom Mechanical Parts",
+         "url": {
+               "api": "https://api.arenasolutions.com/v1/changes/39D31D3F0B464B83LD",
+               "app": "https://app.bom.com/39D31D3F0B464B83LD"
+         },
       },
       ...
    ]

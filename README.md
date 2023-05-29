@@ -1,4 +1,10 @@
 # Arena Rest API 
+- [Arena REST API](Arena%20REST%20API%2Fapi-landing.md)
+- [API Format](Arena%20REST%20API/api_format.md)
+- [Licensing](Arena%20REST%20API/api_licensing.md)
+- [Note on Date/Time Handling](Arena%20REST%20API/api_date_time_handling.md)
+- [Connecting and Permissions](Arena%20REST%20API/api_connecting_permissions.md)
+
 Before using our API, we recommend reviewing the following **Export Notes and References**:
 - [About Export Results and the JSON Format](Arena%20REST%20API/Export:%20Notes%20and%20References/item_export_json_results_empty.md)
 - [Export Options](Arena%20REST%20API/Export:%20Notes%20and%20References/option_export_views.md)
@@ -168,7 +174,7 @@ Before using our API, we recommend reviewing the following **Export Notes and Re
   - [GET Change Implementation Task File](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/Implementation%20Task%20Files/endpoint_get_change_implementationtasks_file.md)
   - [GET Change Implementation Task Files](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/Implementation%20Task%20Files/endpoint_get_change_implementationtasks_files.md)
   - [POST Change Implementation Task](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/endpoint_post_change_implementationtask.md)
-  - Implementation Task Notes
+#### Implementation Task
   - [POST Change Implementation Task Note](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/Implementation%20Task%20Notes/endpoint_post_change_implementationtask_note.md)
   - [PUT Change Implementation Task Note](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/Implementation%20Task%20Notes/endpoint_put_change_implementationtask_note.md)
   - [GET Change Implementation Task Notes](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/Implementation%20Task%20Notes/endpoint_get_change_implementationtasks_notes.md)
@@ -350,7 +356,6 @@ Before using our API, we recommend reviewing the following **Export Notes and Re
   - [POST Ticket Create](Arena%20REST%20API/Endpoints/Tickets%20Summary/endpoint_create_ticket.md)
   - [GET Ticket](Arena%20REST%20API/Endpoints/Tickets%20Summary/endpoint_get_ticket.md)
   - [GET Tickets](Arena%20REST%20API/Endpoints/Tickets%20Summary/endpoint_get_tickets.md)
-  - [API Format](Arena%20REST%20API/api_format.md)
 #### Ticket Ticket References
   - [GET Ticket Tickets](Arena%20REST%20API/Endpoints/Ticket%20References/Ticket%20Ticket%20References/endpoint_get_tickets_tickets.md)
   - [DELETE Ticket Remove Ticket Association](Arena%20REST%20API/Endpoints/Ticket%20References/Ticket%20Ticket%20References/endpoint_delete_ticket_remove_tickets.md)

@@ -61,7 +61,12 @@ POST /changes/statuschanges
         "number": "ECO-000020"
     },
     "comment": "Locking change.",
-    "status": "OPEN_AND_LOCKED"
+    "status": "OPEN_AND_LOCKED",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/6B52B6D575A269HDKE",
+           "app": "https://app.bom.com/6B52B6D575A269HDKE"
+
+   }
 }
 ```
 Unlocks a Change. Change must initially have a status of OPEN_AND_LOCKED.
@@ -90,6 +95,11 @@ POST /changes/statuschanges
         "number": "ECO-000020"
     },
     "comment": "Unlocking Change to edit routing and description.",
-    "status": "OPEN_AND_UNLOCKED"
+    "status": "OPEN_AND_UNLOCKED",
+    "url": {
+           "api": "https://api.arenasolutions.com/v1/changes/62E11329239730KJNM",
+           "app": "https://app.bom.com/62E11329239730KJNM"
+
+   }
 }
 ```
