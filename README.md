@@ -4,6 +4,7 @@
 - [Licensing](Arena%20REST%20API/api_licensing.md)
 - [Note on Date/Time Handling](Arena%20REST%20API/api_date_time_handling.md)
 - [Connecting and Permissions](Arena%20REST%20API/api_connecting_permissions.md)
+- [Overview](Arena%20REST%20API/api_overview.md)
 
 Before using our API, we recommend reviewing the following **Export Notes and References**:
 - [About Export Results and the JSON Format](Arena%20REST%20API/Export:%20Notes%20and%20References/item_export_json_results_empty.md)
