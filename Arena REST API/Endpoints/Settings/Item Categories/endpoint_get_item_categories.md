@@ -16,7 +16,7 @@ This returns  Category objects available for Items. Appending a  GUID to the URL
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| path<br> | string<br> | This is used to filter out categories. The root of path for item is "item". If you want to get all the categories under the root category which start with A, you can send a request as , where "\" is the separator between parent category and child category.<br>api.arenasolutions.com/items/categories? path=item\A\*<br> |
+| path<br> | string<br> | This is used to filter out categories. The root of path for item is "item". If you want to get all the categories under the root category which start with A, you can send a request as api.arenasolutions.com/items/categories? path=item\A\*<br>, where "\" is the separator between parent category and child category.<br> |
 | includeDeleted<br> | Boolean<br> | This is used to include deleted Categories. If includeDeleted is true, then deleted Categories will be included in the results. If includeDeleted is false, then deleted Categories will not be included in the results. Omitting the includeDeleted parameter altogether in this call will also exclude deleted Categories from the results.<br> |
 
 ## Response Codes
