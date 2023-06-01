@@ -12,6 +12,7 @@ Before using our API, we recommend reviewing the following **Export Notes and Re
 - [About Export Results and the JSON Format](Arena%20REST%20API/Export:%20Notes%20and%20References/item_export_json_results_empty.md)
 - [Export Options](Arena%20REST%20API/Export:%20Notes%20and%20References/option_export_views.md)
 - [Export Criteria](Arena%20REST%20API/Export:%20Notes%20and%20References/criteria_export.md)
+- [About Criteria and Options in API Export](Arena%20REST%20API/Export:%20Notes%20and%20References/about_criteria_option.md)
 - [Criteria: Attributes and Operators](Arena%20REST%20API/Export:%20Notes%20and%20References/criterion_attribute_operator.md)
 
 ## Endpoints
@@ -518,6 +519,7 @@ Before using our API, we recommend reviewing the following **Export Notes and Re
   - [GET Export Run](Arena%20REST%20API/Endpoints/Export/endpoint_get_export_run.md)
   - [GET Export Definitions (Search)](Arena%20REST%20API/Endpoints/Export/endpoint_get_export_definitions_search.md)
   - [POST Export Run](Arena%20REST%20API/Endpoints/Export/endpoint_run_export_definition.md)
+  - [POST Export Run (Multiple Guids)](Arena%20REST%20API/Endpoints/Export/endpoint_run_export_definition_multi_guids.md)
   - [GET Export Definition](Arena%20REST%20API/Endpoints/Export/endpoint_get_export_definition.md)
   - [GET Export Runs](Arena%20REST%20API/Endpoints/Export/endpoint_get_export_runs.md)
   - [GET Export Run File Content (Download)](Arena%20REST%20API/Endpoints/Export/endpoint_get_export_run_file_content.md)
