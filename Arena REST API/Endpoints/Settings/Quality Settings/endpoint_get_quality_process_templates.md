@@ -1,22 +1,18 @@
 # GET Quality Process Templates
-
-
 /settings/qualityprocesses/templates
-
-
 
 /settings/qualityprocesses/templates/&lt;GUID&gt;
 
-This returns   available for Quality Processes in the workspace. Appending a GUID to the URL returns the template with that GUID.  
+This returns  Quality Process Templates available for Quality Processes in the workspace. Appending a GUID to the URL returns the template with that GUID.  
 
-All Quality Processes must be created based on templates. These templates are administrator\-defined and can include Steps and Sign\-Off Steps. In the response, Steps are indicated as Type=REGULAR and Sign\-Off Steps are indicated as Type=SIGNOFF.
+All Quality Processes must be created based on templates. These templates are administrator-defined and can include Steps and Sign-Off Steps. In the response, Steps are indicated as Type=REGULAR and Sign-Off Steps are indicated as Type=SIGNOFF.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Searchable Attributes (for GET /settings/qualityprocesses/templates only)
 
@@ -36,16 +32,14 @@ All Quality Processes must be created based on templates. These templates are ad
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all Quality Process Templates defined for the workspace
-
-
 
 GET /settings/qualityprocesses/templates
 
@@ -219,8 +213,6 @@ GET /settings/qualityprocesses/templates
 }
 ```
 Get all active Quality Process templates
-
-
 
 GET /settings/qualityprocesses/templates?active=true
 
@@ -577,8 +569,6 @@ GET /settings/qualityprocesses/templates?active=true
 
 ```
 Get a single Quality Process Template
-
-
 
 GET /settings/qualityprocesses/templates/GNFSTNO51TW4EJ211ZCW
 

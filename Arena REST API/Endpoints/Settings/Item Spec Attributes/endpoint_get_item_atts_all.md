@@ -1,27 +1,23 @@
 # GET Item Attributes
-
-
 /settings/items/attributes
-
-
 
 /settings/items/attributes/&lt;GUID&gt;
 
-Returns   available for Items. By adding a valid Item Attribute GUID at the end of the URL, the endpoint returns a single unique Item attribute.
+Returns  Attributes available for Items. By adding a valid Item Attribute GUID at the end of the URL, the endpoint returns a single unique Item attribute.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | includePossibleValues<br> | true or false<br> | If this is set to true, it returns all the possible values for Drop Down List attributes. The default value is false.<br> |
-| creatableOnly<br> | true or false<br> | If this is set to true, it returns only creatable attributes, which can be set during creation of an item.<br>If this is set to false, it returns only non\-creatable sattributes.<br> |
+| creatableOnly<br> | true or false<br> | If this is set to true, it returns only creatable attributes, which can be set during creation of an item.<br>If this is set to false, it returns only non-creatable sattributes.<br> |
 | editableOnly<br> | true or false<br> | If this is set to true, it returns only editable attributes, which can be set during update of an item. The default value is false.<br> |
 | searchableOnly<br> | true or false<br> | If this is set to true, it returns only searchable attributes, which are searchable when getting items.<br> |
 
@@ -36,16 +32,14 @@ Returns   available for Items. By adding a valid Item Attribute GUID at the end 
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all item attributes with possible values included
-
-
 
 GET /settings/items/attributes?includePossibleValues=true
 

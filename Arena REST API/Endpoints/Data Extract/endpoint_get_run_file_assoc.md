@@ -1,16 +1,14 @@
 # GET Extract Run File
-
-
 /extracts/&lt;GUID&gt;/runs/&lt;GUID&gt;/files/&lt;GUID&gt;
 
-Returns an  object with a given GUID for a run with a given GUID of an extract with a given GUID. 
+Returns an Extract Run File Association object with a given GUID for a run with a given GUID of an extract with a given GUID. 
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,17 +21,15 @@ Returns an  object with a given GUID for a run with a given GUID of an extract w
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 Get a file association with a specific GUID  for a Data Extract run
-
-
 
 /extracts/&lt;GUID&gt;/runs/&lt;GUID&gt;/files/&lt;GUID&gt;
 
@@ -64,6 +60,9 @@ Get a file association with a specific GUID  for a Data Extract run
 }
 ```
 An error is returned if:
+          
+          
+        
 
 * the GUID is not valid.
 
@@ -91,5 +90,5 @@ An error is returned if:
    ]
 }
 ```
-* \*If the file server is inaccessible, it may return a 400 status with no message.
+* *If the file server is inaccessible, it may return a 400 status with no message.
 

@@ -1,11 +1,13 @@
 # POST Item Create
-
-
 /items
 
-Creates a new  object. You can specify no number format, the basic number format, or a valid number format for the workspace \(with or without an auto\-generating sequence\), in which case you must specify valid values for each field type in the number format. Each case is shown below.
+Creates a new Item object. You can specify no number format, the basic number format, or a valid number format for the workspace \(with or without an auto-generating sequence\), in which case you must specify valid values for each field type in the number format. Each case is shown below.
 
 NOTES:
+          
+          
+          
+        
 
 * The values you specify for attributes must match the attribute types specified in the workspace. For example, when specifying a value for a predefined list, the value must be one of the allowed values.
 
@@ -18,7 +20,7 @@ NOTES:
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 * Create Item with No Number
@@ -77,6 +79,8 @@ NOTES:
 }
 ```
 * Create Item with Autogenerating Number and Additional Attributes
+              
+            
 
 When submitting values for Additional Attributes of type NUMBER, the value must be submitted as a number \(not wrapped in quotes.\)
 
@@ -131,12 +135,12 @@ When submitting values for Additional Attributes of type NUMBER, the value must 
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Create Item with no number
@@ -333,7 +337,7 @@ The request is validated to make sure it doesn’t violate any business rules. A
    ]
 }
 ```
-* An option is not valid value for a fixed \(non\-user\-editable\) dropdown list.
+* An option is not valid value for a fixed (non-user-editable) dropdown list.
 
 ```
 

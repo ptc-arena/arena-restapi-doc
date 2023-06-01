@@ -4,8 +4,8 @@
 |  --- |  --- |  --- | 
 | assemblyType<br> | String<br> | Determines if an item is an assembly, not an assembly, or a top level assembly. Top level assemblies are items that contain other items in its own bill of materials but themselves are not included as an item in another item's bill of materials.<br> |
 | category<br> | Reference<br> | GUID representing the category to which the item is assigned. See object.<br>Category<br> |
-| creationDateTime<br> | Date\-Formatted String<br> | the date and time \(in Zulu format\) an Item was created<br> |
-| effectiveDateTime<br> | Date\-Formatted String<br> | the date and time \(in Zulu format\) an Item \(specifically an item revision\) became effective.<br> |
+| creationDateTime<br> | Date-Formatted String<br> | the date and time \(in Zulu format\) an Item was created<br> |
+| effectiveDateTime<br> | Date-Formatted String<br> | the date and time \(in Zulu format\) an Item \(specifically an item revision\) became effective.<br> |
 | guid<br> | String<br> | The unique identifier for an object<br> |
 | inAssembly<br> | Boolean<br> | Determines if an item is in an assembly. Values can be true or false.<br> |
 | lifecyclePhase<br> | Reference<br> | GUID and name of the lifecycle phase of an item \(e.g. In Design\). See object.<br>Item Lifecycle Phase<br> |

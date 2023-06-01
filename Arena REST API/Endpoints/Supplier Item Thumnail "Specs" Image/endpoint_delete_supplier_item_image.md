@@ -1,6 +1,4 @@
 # DELETE Supplier Item Thumbnail Image
-
-
 DELETE /supplieritems/&lt;GUID&gt;/image
 
 Deletes the Supplier Item Image Thumbnail Image of an Supplier Item with a specific GUID. The Supplier Item Thumbnail Image is located in the Specs view of a Supplier Item.   
@@ -10,7 +8,7 @@ Deletes the Supplier Item Image Thumbnail Image of an Supplier Item with a speci
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,12 +21,12 @@ Deletes the Supplier Item Image Thumbnail Image of an Supplier Item with a speci
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Successful Response Body
 no response
@@ -43,9 +41,11 @@ no response
 ## Sample Responses
 No JSON response if successful.
 
-Failure \- 400
+Failure - 400
 
 An error is returned if:
+          
+        
 
 * The GUID is not valid. 
 

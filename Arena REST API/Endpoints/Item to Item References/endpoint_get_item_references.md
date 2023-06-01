@@ -1,6 +1,4 @@
 # GET Item-To-Item References
-
-
 /items/&lt;GUID&gt;/items
 
 Returns an array of    Item references for an item with a given GUID.
@@ -10,7 +8,7 @@ Returns an array of    Item references for an item with a given GUID.
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,17 +21,15 @@ Returns an array of    Item references for an item with a given GUID.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 Get Item References for a given item
-
-
 
 /items/&lt;GUID&gt;/items/
 
@@ -52,6 +48,9 @@ Get Item References for a given item
 }
 ```
 Returns an error if:
+          
+          
+        
 
 * the format of the request is incorrect:
 

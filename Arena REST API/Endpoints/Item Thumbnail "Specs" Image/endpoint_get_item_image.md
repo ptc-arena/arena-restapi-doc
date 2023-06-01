@@ -1,6 +1,4 @@
 # GET Item Thumbnail Image Content
-
-
 GET /items/&lt;GUID&gt;/image/content
 
 Returns the Item Thumbnail Image content with a given Item GUID. The Item Thumbnail Image \(also known as the Specs Image\) is located within the Specs view of an Item.
@@ -10,7 +8,7 @@ Returns the Item Thumbnail Image content with a given Item GUID. The Item Thumbn
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,17 +21,20 @@ Returns the Item Thumbnail Image content with a given Item GUID. The Item Thumbn
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | determined by file<br> | content type of file<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | determined by file<br> | content type of file<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 No JSON response. Returns the content of the File as an Input Stream.
 
 An error is returned if:
+          
+          
+        
 
 * the GUID is not valid.
 
@@ -61,5 +62,5 @@ An error is returned if:
   ]
 }
 ```
-* \*If the file server is inaccessible, it may return a 400 status with no message.
+* *If the file server is inaccessible, it may return a 400 status with no message.
 

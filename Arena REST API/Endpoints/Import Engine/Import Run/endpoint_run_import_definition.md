@@ -1,11 +1,14 @@
 # POST Import Run
-
-
 /imports/&lt;GUID&gt;/runs
 
 Initiates an Import run based using an import source file in conjunection with an existing Import Definition.  Each case is shown below.
 
 NOTES:
+          
+          
+          
+          
+        
 
 * The import run endpoint executes an import definition.
 
@@ -28,7 +31,7 @@ Import runs can have the following six statuses.
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | multipart/form\-data<br> |   |
+| content-type<br> | multipart/form-data<br> |   |
 
 ## Sample Request Body
 * Run Import Definition with an Excel worksheet.  Do not commit data to workspace.
@@ -39,7 +42,7 @@ submitFileType: EXCEL_WORKSHEET
 submitWorsheetName:everyscanBOM
 commit: false
 ```
-* Run Import Definition with a CSV file. Commit data to workspace \(assuming there are no errors\).
+* Run Import Definition with a CSV file. Commit data to workspace (assuming there are no errors).
 
 ```
 submitContent:updated_parts_for_winter_23_fan.csv
@@ -57,12 +60,12 @@ commit: true
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Run Import Definition with an Excel worksheet.  Do not commit data to workspace.

@@ -1,6 +1,4 @@
 # GET Event Items
-
-
 /outboundintegrations/&lt;GUID&gt;/events/&lt;GUID&gt;/items
 
 Returns items of an outbound integrations matching the given search criteria.
@@ -10,7 +8,7 @@ Returns items of an outbound integrations matching the given search criteria.
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
@@ -23,9 +21,9 @@ Returns items of an outbound integrations matching the given search criteria.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| reconciled<br> | string<br> | Reconciled can equal true, false, or any. Any will return GUIDs for reconciled and non\-reconciled Items. If reconciled is omitted from the query string then the endpoint will assume a default value of false.<br> |
-| reconciledDateTimeFrom<br> | Date\-Formatted String<br> | The date in which the items in an event were reconciled. Often combined with reconciledDateTimeTo to search within a range. The search attribute assumes that reconciled is equal to true. If user provides both reconciledDateTimeFrom/reconciledDateTimeTo with the search attribute reconciled, then reconciled will not be assumed to be true but will be the value set by the user.<br> |
-| reconciledDateTimeTo<br> | Date\-Formatted String<br> | The date in which the items in an event were reconciled. Often combined with reconciledDateTimeFrom to search within a range. The search attribute assumes that reconciled is equal to true. If user provides both reconciledDateTimeFrom/reconciledDateTimeTo with the search attribute reconciled, then reconciled will not be assumed to be true but will be the value set by the user.<br> |
+| reconciled<br> | string<br> | Reconciled can equal true, false, or any. Any will return GUIDs for reconciled and non-reconciled Items. If reconciled is omitted from the query string then the endpoint will assume a default value of false.<br> |
+| reconciledDateTimeFrom<br> | Date-Formatted String<br> | The date in which the items in an event were reconciled. Often combined with reconciledDateTimeTo to search within a range. The search attribute assumes that reconciled is equal to true. If user provides both reconciledDateTimeFrom/reconciledDateTimeTo with the search attribute reconciled, then reconciled will not be assumed to be true but will be the value set by the user.<br> |
+| reconciledDateTimeTo<br> | Date-Formatted String<br> | The date in which the items in an event were reconciled. Often combined with reconciledDateTimeFrom to search within a range. The search attribute assumes that reconciled is equal to true. If user provides both reconciledDateTimeFrom/reconciledDateTimeTo with the search attribute reconciled, then reconciled will not be assumed to be true but will be the value set by the user.<br> |
 
 ## Response Codes
 
@@ -38,15 +36,15 @@ Returns items of an outbound integrations matching the given search criteria.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
-Get all non\-reconciled Items associated with an event.
+Get all non-reconciled Items associated with an event.
 
 GET &lt;URL&gt;/outboundintegrations/&lt;GUID&gt;/events/&lt;GUID&gt;/items?reconciled=false
 
@@ -165,8 +163,6 @@ GET &lt;URL&gt;/outboundintegrations/&lt;GUID&gt;/events/&lt;GUID&gt;/items?reco
 ```
 Get all reconciled |Items associated with an event.
 
-
-
 GET &lt;url&gt;/outboundintegrations/&lt;GUID&gt;/events/&lt;GUID&gt;/items?reconciled=true
 
 ```
@@ -246,7 +242,7 @@ GET &lt;url&gt;/outboundintegrations/&lt;GUID&gt;/events/&lt;GUID&gt;/items?reco
     ]
 }
 ```
-Get all Items \(reconciled or non\-reconciled\) associated with an event.
+Get all Items \(reconciled or non-reconciled\) associated with an event.
 
 GET &lt;url&gt;/outboundintegrations/&lt;GUID&gt;/events/&lt;GUID&gt;/items?reconciled=any
 
@@ -433,9 +429,9 @@ GET &lt;url&gt;/outboundintegrations/&lt;GUID&gt;/events/&lt;GUID&gt;/items?reco
     ]
 }
 ```
-Get all Items \(reconciled or non\-reconciled\) associated with an event within a specific date and time.
+Get all Items \(reconciled or non-reconciled\) associated with an event within a specific date and time.
 
-GET &lt;url&gt;/outboundintegrations/&lt;GUID&gt;/events/&lt;GUID&gt;/items?reconciledDateTimeFrom=2020\-12\-16T12:29:00Z&reconciledDateTimeTo=2020\-12\-18T23:59:59Z
+GET &lt;url&gt;/outboundintegrations/&lt;GUID&gt;/events/&lt;GUID&gt;/items?reconciledDateTimeFrom=2020-12-16T12:29:00Z&reconciledDateTimeTo=2020-12-18T23:59:59Z
 
 ```
 {

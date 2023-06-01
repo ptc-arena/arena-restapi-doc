@@ -1,20 +1,20 @@
 # PUT Change Affected Item Edit
-
-
 /changes/&lt;GUID&gt;/items/&lt;GUID&gt;
 
-Updates modification information for an item on a change with a given change\-item association GUID, included in a change with a  given GUID, including  item views/notes, new revision number, new lifecycle phase, and inventory disposition information. 
+Updates modification information for an item on a change with a given change-item association GUID, included in a change with a  given GUID, including  item views/notes, new revision number, new lifecycle phase, and inventory disposition information. 
 
 Item modifications can only be edited while a change is in the Open and Unlocked lifecycle phase. As soon as a change is submitted, all included Items are locked to modification.
+          
+        
 
-When making edits to an Item's modification information, you  provide  newRevisionNumber, even if you do not wish to change it from the current value.
+When making edits to an Item's modification information, you **must**  provide  newRevisionNumber, even if you do not wish to change it from the current value.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 ```
@@ -58,17 +58,15 @@ When making edits to an Item's modification information, you  provide  newRevisi
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Update the modification information for an item on a change
-
-
 
 /changes/&lt;GUID&gt;/items/&lt;GUID&gt;
 

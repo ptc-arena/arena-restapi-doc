@@ -1,16 +1,14 @@
 # PUT Item-To-Item Reference Update
-
-
 /items/&lt;GUID&gt;/items/&lt;GUID&gt;
 
-Updates the metadata of an Item\-To\-Item reference with a given GUID
+Updates the metadata of an Item-To-Item reference with a given GUID
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Set Null
 
@@ -44,17 +42,15 @@ PUT /items/&lt;GUID&gt;/items/&lt;GUID&gt;?setnull=true
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
-Update a given Item\-To\-Item Reference.
-
-
+Update a given Item-To-Item Reference.
 
 /items/&lt;GUID&gt;/items/&lt;GUID&gt;
 
@@ -81,6 +77,9 @@ PUT /items/&lt;GUID&gt;/items/&lt;GUID&gt;?setnull=true
 }
 ```
 Returns an error if:
+          
+          
+        
 
 * the format of the request is incorrect:
 

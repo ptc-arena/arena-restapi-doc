@@ -1,6 +1,4 @@
 # GET Change Implementation Task Template
-
-
 /settings/changes/categories/&lt;GUID&gt;/implementationtemplates/&lt;GUID&gt;
 
 Returns the implementation tasks template for a change. Implementation Task Management needs to be enabled for the category.
@@ -10,7 +8,7 @@ Returns the implementation tasks template for a change. Implementation Task Mana
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,16 +21,14 @@ Returns the implementation tasks template for a change. Implementation Task Mana
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get a specific implementation task template of a specific change category.
-
-
 
 GET /settings/changes/categories/&lt;GUID&gt;/implementationtemplates/&lt;GUID&gt;
 

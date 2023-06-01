@@ -15,11 +15,11 @@ Item Specs attributes that are included in the SPECS CSV of the Export.
 | procurementType<br> | String<br> | OTS and MTS only<br> |
 | offTheShelf<br> | Boolean<br> | True if procurementType=OTS, else False<br> |
 | owner<br> | Reference<br> | The owner of an Item<br> |
-| creationDateTime<br> | Date\-Formatted String<br> | The date and time \(in Zulu format\) an Item was created.<br> |
+| creationDateTime<br> | Date-Formatted String<br> | The date and time \(in Zulu format\) an Item was created.<br> |
 | shared<br> | Boolean<br> | Indicates whether or not an item is shared with Suppliers. The value can be true or false<br> |
 | creator<br> | Reference<br> | The creator of an Item. Contains the email and fullName<br> |
 | deviated<br> | Boolean<br> | Indicates whether or not an Item is currently affected by a temporary change. The value can be true or false.<br> |
-| effectiveDateTime<br> | Date\-Formatted String<br> | The date and time \(in Zulu format\) an Item was made effective<br> |
+| effectiveDateTime<br> | Date-Formatted String<br> | The date and time \(in Zulu format\) an Item was made effective<br> |
 | isAssembly<br> | Boolean<br> | Indicates whether or not an item is in an assembly. The value can be true or false<br> |
 | modifiedBOM<br> | Boolean<br> | Indicates whether or not the BOM view of an item contains working modifications. The value can be true or false<br> |
 | modifiedFiles<br> | Boolean<br> | Indicates whether or not the Files view of an item contains working modifications. The value can be true or false.<br> |

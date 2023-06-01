@@ -1,22 +1,18 @@
 # GET Supplier Item Compliance Requirements
-
-
 /settings/supplieritems/requirements
-
-
 
 /settings/supplieritems/requirements/&lt;GUID&gt;
 
-Returns all supplier item  objects  in the workspace. Appending a GUID to the URL returns the requirement with that GUID.  
+Returns all supplier item Compliance Requirement objects  in the workspace. Appending a GUID to the URL returns the requirement with that GUID.  
 
-Note in the evidenceLocation attribute, if the allFileCategories attribute is set to , the fileCategories attribute gives the categories in which evidence can be located.
+Note in the evidenceLocation attribute, if the allFileCategories attribute is set to false, the fileCategories attribute gives the categories in which evidence can be located.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -29,17 +25,15 @@ Note in the evidenceLocation attribute, if the allFileCategories attribute is se
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all compliance requirements for supplier items in the workspace
-
-
 
 GET /settings/supplieritems/requirements
 
@@ -70,8 +64,6 @@ GET /settings/supplieritems/requirements
 }
 ```
 Get a single supplier item compliance requirement
-
-
 
 GET /settings/supplieritems/requirements/8QATYOPPY5NM5O61JCQW
 

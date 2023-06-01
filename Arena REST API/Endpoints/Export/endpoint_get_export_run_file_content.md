@@ -1,6 +1,4 @@
 # GET Export Run File Content (Download)
-
-
 /exports/&lt;GUID&gt;/runs/&lt;GUID&gt;/files/&lt;GUID&gt;/content
 
 Streams the content of an export file generated from an export run with a given GUID. 
@@ -14,7 +12,7 @@ Streams the content of an export file generated from an export run with a given 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -27,17 +25,15 @@ Streams the content of an export file generated from an export run with a given 
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Downloads the export file.
-
-
 
 GET /exports/&lt;export definition GUID&gt;/runs/&lt;export run GUID&gt;/files/&lt;export file GUID&gt;/content
 

@@ -1,6 +1,4 @@
 # GET Item Ticket References
-
-
 /items/&lt;GUID&gt;/tickets
 
 /items/&lt;GUID&gt;/tickets/&lt;GUID&gt;
@@ -12,7 +10,7 @@ Returns the Ticket References of an Item object. If the endpoint is appended wit
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -25,17 +23,15 @@ Returns the Ticket References of an Item object. If the endpoint is appended wit
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all the Ticket References associated with an Item of a given GUID.
-
-
 
 GET /items/&lt;GUID&gt;/tickets
 
@@ -68,8 +64,6 @@ GET /items/&lt;GUID&gt;/tickets
 }
 ```
 Get a single Ticket Reference  with a specific GUID associated with an Item with a specific GUID.
-
-
 
 GET /items/&lt;GUID&gt;/tickets/&lt;GUID&gt;
 

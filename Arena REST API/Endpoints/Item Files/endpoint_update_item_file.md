@@ -1,6 +1,4 @@
 # POST Item File Content Update
-
-
 /items/&lt;GUID&gt;/files/&lt;GUID&gt;/content
 
 Updates file content for an existing File with a given GUID associated with an item with a given GUID. 
@@ -28,17 +26,20 @@ content: [physical file]
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | determined by file type<br> | content type of file<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | determined by file type<br> | content type of file<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 no JSON response
 
 An error is returned if:
+          
+          
+        
 
 * The GUID is not valid.
 

@@ -1,6 +1,4 @@
 # GET Request File View Associations
-
-
 /requests/&lt;GUID&gt;/files
 
 Returns a list of files for a Request with a given GUID. 
@@ -10,7 +8,7 @@ Returns a list of files for a Request with a given GUID.
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,19 +21,17 @@ Returns a list of files for a Request with a given GUID.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Request Files View  Associations
 
- 
-
-GET &lt;url&gt;/requests/&lt;GUID&gt;/files
+ GET &lt;url&gt;/requests/&lt;GUID&gt;/files
 
 ```
 {

@@ -1,6 +1,4 @@
 # POST File Check Out
-
-
 /files/checkoutstatuschanges
 
 Checks out a File Edition. Note that only the latest edition can be checked out and only files of storageMethod "FILE" can be checked out.
@@ -15,7 +13,7 @@ Users must have a Full license to perform a File Check Out. Access Policies user
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 
@@ -40,13 +38,13 @@ Users must have a Full license to perform a File Check Out. Access Policies user
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | determined by file type<br> | content type of file<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | determined by file type<br> | content type of file<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-FileGuid<br> | GUID string<br> | GUID for new file \- only when including content<br> |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-FileGuid<br> | GUID string<br> | GUID for new file - only when including content<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 * Checking Out a File that has not been Checked Out:

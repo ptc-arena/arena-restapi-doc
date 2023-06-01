@@ -1,6 +1,4 @@
 # POST Change Affected Item Add
-
-
 /changes/&lt;GUID&gt;/items
 
 Adds an item to a change with a specific GUID. 
@@ -9,11 +7,11 @@ For an overview of the Change Lifecyle in Arena, including a summary of Lifecycl
 
 NOTES:
 
-* newItemRevision is the GUID of the working revision of the Item being added to the change. In workspaces that include Revision Sequences \(wherein the next revision is automatically assigned to an Item as long as no revision has been specified on the working revision\), newRevisionNumber can be omitted, as long as there is a next revision available in the sequence.
+* newItemRevision is the GUID of the working revision of the Item being added to the change. In workspaces that include Revision Sequences (wherein the next revision is automatically assigned to an Item as long as no revision has been specified on the working revision), newRevisionNumber can be omitted, as long as there is a next revision available in the sequence.
 
 * affectedItemRevision is the GUID of the effective revision of the Item being added to the Change.
 
-* The GUID in the response to this call is the Change\-Item association GUID and is used in the PUT Change Affected Item endpoint.
+* The GUID in the response to this call is the Change-Item association GUID and is used in the PUT Change Affected Item endpoint.
 
 * If includedInThisChange=false for any view, the notes field is not allowed.
 
@@ -24,12 +22,10 @@ NOTES:
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 Add an item to a change, specifying included views and inventory disposition
-
-
 
 /changes/&lt;GUID&gt;/items
 
@@ -79,12 +75,12 @@ Add an item to a change, specifying included views and inventory disposition
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 ```

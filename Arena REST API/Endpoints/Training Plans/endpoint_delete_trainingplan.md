@@ -1,6 +1,4 @@
 # DELETE Training Plans
-
-
 /trainingplans/&lt;GUID&gt;
 
 Deletes a Training Plan with a given GUID.  In order to delete a Training Plan, the user must be the assigned Training Manager of the Training Plan. For Access Policies workspaces, users need a Delete Training rule in order in order to delete a Training Plan.
@@ -10,7 +8,7 @@ Deletes a Training Plan with a given GUID.  In order to delete a Training Plan, 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,11 +21,11 @@ Deletes a Training Plan with a given GUID.  In order to delete a Training Plan, 
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 No JSON response.

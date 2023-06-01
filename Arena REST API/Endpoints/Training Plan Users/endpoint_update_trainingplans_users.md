@@ -1,6 +1,4 @@
 # PUT Update Training Plan User
-
-
 /trainingplans/&lt;GUID&gt;/users/&lt;GUID&gt;
 
 In order to modify  a user in a Training Plan, the user must be a Training Plan Manager within the workspace. Currently, the only modification to a user in a Training Plan supported is the ability to change due date of  a user's training assignments..
@@ -10,7 +8,7 @@ In order to modify  a user in a Training Plan, the user must be a Training Plan 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,19 +21,19 @@ In order to modify  a user in a Training Plan, the user must be a Training Plan 
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Requests and Responses
 Edit the due date of a user's training assignment in a specific Training Plan.
 
 /trainingplans/&lt;GUID&gt;/users/&lt;GUID&gt;
 
-
+**Request** 
 
 ```
 {
@@ -43,7 +41,7 @@ Edit the due date of a user's training assignment in a specific Training Plan.
 }
 
 ```
-
+**Response** 
 
 ```
 {

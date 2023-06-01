@@ -1,6 +1,4 @@
 # PUT Item File Association Update
-
-
 /items/&lt;GUID&gt;/files/&lt;GUID&gt;
 
 Updates the details of an existing File association  with a given GUID. 
@@ -12,7 +10,7 @@ This endpoint can only be used to update whether the latest edition of the File 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 ```
@@ -32,17 +30,15 @@ This endpoint can only be used to update whether the latest edition of the File 
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Update the details of a file associated with an item
-
-
 
 /items/&lt;GUID&gt;/files/&lt;GUID&gt;
 

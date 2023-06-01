@@ -38,7 +38,7 @@ When a request returns  one or more errors:
     "status": <error_class>
 }
 ```
-To make responses more human\-readable, the first level shows all attributes—attributes with no value will show a default empty value \(e.g., "null", 0\). Second\-level objects are shown in a compact version. In the Get Item response example shown below, the second\-level object "category" includes only the attribute "guid". \(The exception to this rule is the File object, which includes the full version when shown in the second level of a fileAssocation GET.\)
+To make responses more human-readable, the first level shows all attributes—attributes with no value will show a default empty value \(e.g., "null", 0\). Second-level objects are shown in a compact version. In the Get Item response example shown below, the second-level object "category" includes only the attribute "guid". \(The exception to this rule is the File object, which includes the full version when shown in the second level of a fileAssocation GET.\)
 
 ```
 {

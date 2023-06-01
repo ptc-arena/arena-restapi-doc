@@ -1,16 +1,14 @@
 # POST Item File Add Existing
-
-
 /items/&lt;GUID&gt;/files
 
-Associates an existing  object with an item with a given GUID.
+Associates an existing File Association object with an item with a given GUID.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -35,17 +33,15 @@ Associates an existing  object with an item with a given GUID.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 Associate an existing file with an item
-
-
 
 /items/&lt;GUID&gt;/files
 
@@ -83,6 +79,9 @@ Associate an existing file with an item
 }
 ```
 An error is returned if:
+          
+          
+        
 
 * The GUID is not valid.
 

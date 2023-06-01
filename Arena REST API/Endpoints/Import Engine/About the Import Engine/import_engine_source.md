@@ -5,7 +5,7 @@ The following source file formats are supported:
 
 * Microsoft 2007 Excel XLSX worksheet
 
-* Comma Separated Values \(CSV\) adhering to RFC\-4180 encoded in UTF\-8.
+* Comma Separated Values (CSV) adhering to RFC-4180 encoded in UTF-8.
 
 Each column within the source file represent an attribute.
 

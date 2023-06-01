@@ -1,6 +1,4 @@
 # DELETE BOM Line
-
-
 /items/&lt;GUID&gt;/bom/&lt;GUID&gt;
 
 Deletes a BOM Line with a given GUID from an Item with a given GUID.
@@ -10,7 +8,7 @@ Deletes a BOM Line with a given GUID from an Item with a given GUID.
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,16 +21,20 @@ Deletes a BOM Line with a given GUID from an Item with a given GUID.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 No JSON response. 
 
 An error is returned if:
+          
+          
+          
+        
 
 * The user does not have access to the Item they are trying to add to a BOM.
 

@@ -1,9 +1,5 @@
 # GET Request Evaluator Groups
-
-
 /settings/requests/evaluatorgroups
-
-
 
 /settings/requests/evaluatorgroups/&lt;GUID&gt;
 
@@ -14,7 +10,7 @@ Returns Evaluator Groups available for Requests. Appending a GUID to the URL ret
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -27,16 +23,14 @@ Returns Evaluator Groups available for Requests. Appending a GUID to the URL ret
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all request evaluator groups
-
-
 
 GET /settings/requests/evaluatorgroups
 
@@ -61,8 +55,6 @@ GET /settings/requests/evaluatorgroups
 }
 ```
 Get a request evaluator group with a specific GUID
-
-
 
 GET /settings/requests/evaluatorgroups/GUID
 

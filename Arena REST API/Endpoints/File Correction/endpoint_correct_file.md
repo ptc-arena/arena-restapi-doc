@@ -1,13 +1,11 @@
 # POST File Correct
-
-
 /files/&lt;guid&gt;/corrections
 
-Creates a corrected  object.
+Creates a corrected File object.
 
-To correct a File, the  setting must be set to  or . File corrections will not be supported if the  setting is set to .
+To correct a File, the Corrections to Files Allowed setting must be set to Yes, and allow removal of original content or Yes, but don't allow removal of original content. File corrections will not be supported if the Corrections to Files Allowed setting is set to No.
 
-The  attribute can only be set to true if the  setting is set to . 
+The removeOriginalContent attribute can only be set to true if the Corrections to Files Allowed setting is set to Yes, and allow removal of original content. 
 
 Only locked Files can be corrected.
 
@@ -24,7 +22,7 @@ Currently, only Files less than 2GB can be uploaded through this endpoint.
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | multipart/form\-data<br> |   |
+| content-type<br> | multipart/form-data<br> |   |
 
 ## Sample Request Body - with uploaded content
 Text attributes:
@@ -61,13 +59,13 @@ content: [physical file]
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | determined by file type<br> | content type of file<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | determined by file type<br> | content type of file<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-File\-Guid<br> | GUID string<br> | GUID for correct file \- only when including content<br> |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-File-Guid<br> | GUID string<br> | GUID for correct file - only when including content<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 * When correcting a File object with uploaded content:

@@ -1,23 +1,21 @@
 # GET Item Specs
-
-
 /items/&lt;GUID&gt;
 
-Returns an  object with a given GUID. Note that while the standard practice is to retrieve an item GUID using the GET Items endpoint and then use an item GUID here \(returning the effective revision\), you  can also use a GUID for a specific revision of an item here.
+Returns an Item object with a given GUID. Note that while the standard practice is to retrieve an item GUID using the GET Items endpoint and then use an item GUID here \(returning the effective revision\), you  can also use a GUID for a specific revision of an item here.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | includeEmptyAdditionalAttributes<br> | true or false<br> | If this is true, the response returns empty additional attributes. The default is false.<br> |
-| responseview<br> | string<br> | Allows users to customize the scope and size of the response data. Possible values and definitions:<br> <br> * minimum \- returns the GUID, item number, and url.<br><br> * compact \- returns the commen set of data that includes some core attrinutes in addition to the attributes returned in the minimum response.<br><br> * full \- returns the complete set of data including custom attributes.<br> |
+| responseview<br> | string<br> | Allows users to customize the scope and size of the response data. Possible values and definitions:<br> <br> * minimum - returns the GUID, item number, and url.<br><br> * compact - returns the commen set of data that includes some core attrinutes in addition to the attributes returned in the minimum response.<br><br> * full - returns the complete set of data including custom attributes.<br> |
 
 ## Response Codes
 
@@ -30,17 +28,15 @@ Returns an  object with a given GUID. Note that while the standard practice is t
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get a single item \(including empty additional attributes\).
-
-
 
 GET /items/GUID?includeEmptyAdditionalAttributes=true
 

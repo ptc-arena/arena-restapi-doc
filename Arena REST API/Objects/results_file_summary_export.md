@@ -16,8 +16,8 @@ File Summary attributes are listed in the order that they appear in the CSV file
 | author.fullName<br> | String<br> | The author of a File.<br> |
 | format<br> | String<br> | The format of a File.<br> |
 | size<br> | Integer<br> | The size of a File.<br> |
-| creationDateTime<br> | Date\-Formatted String<br> | The date and time \(in Zulu format\) the File was created.<br> |
-| lastModifiedDataTime<br> | Date\-Formatted String<br> | The date and time \(in Zulu format\) a File was modified.<br> |
+| creationDateTime<br> | Date-Formatted String<br> | The date and time \(in Zulu format\) the File was created.<br> |
+| lastModifiedDataTime<br> | Date-Formatted String<br> | The date and time \(in Zulu format\) a File was modified.<br> |
 | hasMarkup<br> | Boolean<br> | Indicates if a File has markups. Value can be true or false.<br> |
 | mimeType<br> | String<br> | Identifier for file formats and format contents transmitted on the Internet<br> |
 | private<br> | Boolean<br> | Indicates if a File is private. Value can be true or false.<br> |

@@ -1,23 +1,24 @@
 # GET Item Number Formats
-
-
 /settings/items/numberformats
-
-
 
 /settings/items/numberformats/&lt;GUID&gt;
 
-This returns  . Appending a GUID to the URL returns an  \(including all fields\) with that GUID. 
+This returns  Compact Item Number Formats. Appending a GUID to the URL returns an Item Number Format \(including all fields\) with that GUID. 
 
 Number formats in Arena are constructed as multiple fields of the following types:
+          
+          
+          
+          
+        
 
-* Free Text \(a specified number of characters\)
+* Free Text (a specified number of characters)
 
-* Delimiter \(a character that acts as a separator\)
+* Delimiter (a character that acts as a separator)
 
-* Pre\-Defined Code List \(a drop\-down list that the user can pick from when creating a new Item Number. In the API, it is called VALUE_LIST\)
+* Pre-Defined Code List (a drop-down list that the user can pick from when creating a new Item Number. In the API, it is called VALUE_LIST)
 
-* Auto\-Generated Sequence \(an incrementing number\)
+* Auto-Generated Sequence (an incrementing number)
 
 
 For more on Item Numbers in Arena, see Arena Help or download the Arena User Manual.
@@ -27,7 +28,7 @@ For more on Item Numbers in Arena, see Arena Help or download the Arena User Man
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -40,19 +41,15 @@ For more on Item Numbers in Arena, see Arena Help or download the Arena User Man
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in the response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in the response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all item number formats
-
-
-
-
 
 GET /settings/items/numberformats
 
@@ -106,8 +103,6 @@ GET /settings/items/numberformats
 }
 ```
 Get an item number format with a specific GUID
-
-
 
 /settings/items/numberformats/YG0J2AJJGXGP8RAROAUE
 

@@ -1,16 +1,14 @@
 # DELETE File
-
-
 /files/&lt;GUID&gt;
 
-Deletes the latest edition of a file with a given GUID.   When a File has more than one edition, only the latest, unlocked edition can be deleted\-\-to delete an entire file, repeat the DELETE request for all editions.
+Deletes the latest edition of a file with a given GUID.   When a File has more than one edition, only the latest, unlocked edition can be deleted--to delete an entire file, repeat the DELETE request for all editions.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,12 +21,12 @@ Deletes the latest edition of a file with a given GUID.   When a File has more t
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 No JSON response.

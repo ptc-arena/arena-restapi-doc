@@ -14,6 +14,6 @@ Sourcing attributes are listed in the order that they appear in the CSV file..
 | activePrototype<br> | Boolean<br> | Indicates if a source relationship is the active prototype relationship. This value can be true or false.<br> |
 | amlRank<br> | Integer<br> | The AML rank. This value is numeric.<br> |
 | amlSplit<br> | Integer<br> | The AM percentage.<br> |
-| vendorItemConversionFactor<br> | String<br> | The conversion factor of the vendor item \(how many used per one bougt. e.g. for a roll of 100 resistors, wen you use one at a time, the conversion factor is 100\), For a Make\-Item Source relationship, this must be null.,<br> |
+| vendorItemConversionFactor<br> | String<br> | The conversion factor of the vendor item \(how many used per one bougt. e.g. for a roll of 100 resistors, wen you use one at a time, the conversion factor is 100\), For a Make-Item Source relationship, this must be null.,<br> |
 | makeItem<br> | Boolean<br> | Indicates whether or not an item is made internally. This value can be true \(made internally\) or false \(made by supplier\).<br> |
 

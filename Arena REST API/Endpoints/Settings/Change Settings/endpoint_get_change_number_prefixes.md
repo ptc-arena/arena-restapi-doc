@@ -1,18 +1,16 @@
 # GET Change Number Prefixes
-
-
 /settings/changes/numbersequenceprefixes
 
-This returns all   available for the workspace.
+This returns all  Change Number Prefixes available for the workspace.
 
-Change number formats in Arena consist of a prefix \(such as ECO\) and a six\-digit autogenerating sequence \(such as 000001\), separated by a dash.
+Change number formats in Arena consist of a prefix \(such as ECO\) and a six-digit autogenerating sequence \(such as 000001\), separated by a dash.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -25,19 +23,15 @@ Change number formats in Arena consist of a prefix \(such as ECO\) and a six\-di
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in the response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in the response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all change number prefixes
-
-
-
-
 
 GET /settings/changes/numbersequenceprefixes
 

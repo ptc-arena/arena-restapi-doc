@@ -1,12 +1,10 @@
 # GET Individual File Association for an Item
-
-
 /items/&lt;GUID&gt;/files/&lt;GUID&gt;
 
-Returns a  object with a given GUID belonging to an item with a given GUID. 
+Returns a File Association object with a given GUID belonging to an item with a given GUID. 
 
 ## Sample Responses
-Success \- 200
+Success - 200
 
 ```
 {
@@ -42,6 +40,9 @@ Success \- 200
 
 ```
 An error is returned if:
+          
+          
+        
 
 * the GUID is not valid.
 

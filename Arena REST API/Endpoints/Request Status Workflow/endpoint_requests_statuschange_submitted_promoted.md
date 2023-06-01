@@ -1,9 +1,7 @@
 # POST Requests Status Change (Submitted to Promoted)
-
-
 /requests/statuschanges
 
-This example of this endpoint demonstrates how to change the status of a Request from Submitted to Promoted. This endpoint example is equivalent to promoting a submitted Request within the browser\-based application.
+This example of this endpoint demonstrates how to change the status of a Request from Submitted to Promoted. This endpoint example is equivalent to promoting a submitted Request within the browser-based application.
 
 Note that Requests created by supplier users contain an additional property, labeled resolutionNotes, within their responses when promoted.
 
@@ -12,7 +10,7 @@ Note that Requests created by supplier users contain an additional property, lab
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -25,21 +23,19 @@ Note that Requests created by supplier users contain an additional property, lab
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Requests and Responses
 Upgrade the status of a Request from SUBMITTED to PROMOTED.
 
-
-
 POST /requests/statuschanges
 
-
+**Request** 
 
 ```
 {
@@ -51,7 +47,7 @@ POST /requests/statuschanges
     "resolutionCode": "Approved [Immediate]"
 }
 ```
-
+**Response** 
 
 ```
 {
@@ -66,11 +62,9 @@ POST /requests/statuschanges
 ```
 Upgrade the status of a Request created by a Supplier user \(with access to Requests\) from SUBMITTED to PROMOTED. When a Request created by a Supplier user is promoted, it contains an additional attribute, labeled Resolution Notes, in the response.
 
-
-
 POST /requests/statuschanges
 
-
+**Request** 
 
 ```
 {
@@ -83,7 +77,7 @@ POST /requests/statuschanges
     "resolutionNotes": "Please notifify Digi-Key we're promiting their ECR-000045"
 }
 ```
-
+**Response** 
 
 ```
 {

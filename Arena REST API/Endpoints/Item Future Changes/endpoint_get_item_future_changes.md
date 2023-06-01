@@ -1,6 +1,4 @@
 # GET Item Future Changes
-
-
 /items/&lt;GUID&gt;/futurechanges
 
 /items/&lt;GUID&gt;/futurechanges/&lt;GUID&gt;
@@ -12,7 +10,7 @@ Returns the future changes of an Item object. These are Changes that may affect 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -25,17 +23,15 @@ Returns the future changes of an Item object. These are Changes that may affect 
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all the future changes associated with an Item of a given GUID.
-
-
 
 GET /items/&lt;GUID&gt;/futurechanges
 
@@ -87,8 +83,6 @@ GET /items/&lt;GUID&gt;/futurechanges
 }
 ```
 Get a single future change with a specific GUID associated with an Item with a specific GUID.
-
-
 
 GET /items/&lt;GUID&gt;/futurechanges/&lt;GUID&gt;
 

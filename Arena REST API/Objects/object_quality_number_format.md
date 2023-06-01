@@ -2,7 +2,7 @@
 
 | Field<br> | Data Type<br> | Description<br> |
 |  --- |  --- |  --- | 
-| creationDateTime<br> | Date\-Formatted String<br> | the date and time \(in Zulu format\) a number Format was created<br> |
+| creationDateTime<br> | Date-Formatted String<br> | the date and time \(in Zulu format\) a number Format was created<br> |
 | guid<br> | String<br> | The unique identifier for a number Format<br> |
 | lastUsed<br> | String<br> | The highest used value for the number format in the workspace<br> |
 | name<br> | String<br> | The name of a number format<br> |

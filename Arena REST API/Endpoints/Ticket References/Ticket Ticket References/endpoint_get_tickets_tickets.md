@@ -1,6 +1,4 @@
 # GET Ticket Tickets
-
-
 /tickets/&lt;GUID&gt;/tickets
 
 /tickets/&lt;GUID&gt;/tickets/&lt;GUID&gt;
@@ -12,7 +10,7 @@ Returns a collection of  tickets added as references to a ticket   object. Appen
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -25,16 +23,14 @@ Returns a collection of  tickets added as references to a ticket   object. Appen
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all tickets added as references to a  ticket
-
-
 
 GET /tickets/&lt;GUID&gt;/tickets
 
@@ -67,8 +63,6 @@ GET /tickets/&lt;GUID&gt;/tickets
 }
 ```
 Get  a specific ticket with a specific GUID added as a reference to a ticket of a specific GUID
-
-
 
 GET /tickets/&lt;GUID&gt;/tickets/&lt;GUID&gt;
 

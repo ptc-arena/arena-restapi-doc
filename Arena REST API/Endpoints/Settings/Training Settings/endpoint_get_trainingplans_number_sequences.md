@@ -1,18 +1,16 @@
 # GET Training Plan Number Sequences
-
-
 /settings/trainingplans/numbersequences
 
 This first url returns all  Training Plan number sequences available in the workspace. .  
 
-Training Number Sequences consist of a list of  prefixes and an auto\-incrementing number field.
+Training Number Sequences consist of a list of  prefixes and an auto-incrementing number field.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -25,17 +23,15 @@ Training Number Sequences consist of a list of  prefixes and an auto\-incrementi
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in the response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in the response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all Training number sequences defined for the workspace
-
-
 
 /settings/trainingplans/numbersequences
 

@@ -1,11 +1,20 @@
 # POST Export Definition
-
-
 /exports
 
 Creates a new  Export Definition object.  Each case is shown below.
 
 NOTES:
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        
 
 * Export Definitions cannot be edited or deleted.
 
@@ -19,20 +28,20 @@ NOTES:
 
 * For an Item Export with revisionStatus set to LATEST used in conjunction with modifiedBOM equals true or modifiedBOM equals false, the modifiedBOM attribute refers to the working revision for  those released Items. The reason for this is because released, effective revisions can't have a modified BOM. Only working revision Items can have a modified BOM. In other words, if you run an export for modifiedBOM equals true and revisionStatus equals LATEST and you're results show released Items with modifiedBOM set to false then it is an indicator that the modifiedBOM is in the working revision of that Item. This behavior extends to exports that use modifiedSpecs, modifiedSourcing, and modifiedFiles used in conjunction with revisionStatus set to LATEST.
 
-* Arena Export currently doesn't support export for category.guid using the GUID for uncategorized. The category.guid works for all other categorized GUIDs. To run an export for uncategorized Items use the following criteria: attribute is euqal to category.name, operator is IS_EQUAL_TO, and value is \-uncategorized\-.
+* Arena Export currently doesn't support export for category.guid using the GUID for uncategorized. The category.guid works for all other categorized GUIDs. To run an export for uncategorized Items use the following criteria: attribute is euqal to category.name, operator is IS_EQUAL_TO, and value is -uncategorized-.
 
 * An Item Export with revisionStatus set to WORKING or POTENTIAL, will return the working revision of the Items even if these Items contain an efffective, released version.
 
-* A full list of Export Options can be found in .
+* A full list of Export Options can be found in Export Options.
 
-* If an export has a JSON format and certain Export Options selected it can result in a JSON export file without any content. See .
+* If an export has a JSON format and certain Export Options selected it can result in a JSON export file without any content. See About Export Results and the JSON Format.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 * Create Export Definition with no Criteria
@@ -217,12 +226,12 @@ NOTES:
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Create Export Definition with no Criteria

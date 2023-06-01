@@ -1,9 +1,7 @@
 # GET Supplier Item Source Relationship
-
-
 /supplieritems/&lt;GUID&gt;/sourcing/&lt;GUID&gt;
 
-Returns a  single  objects for a supplier item with a given GUID.
+Returns a  single Source Relationship objects for a supplier item with a given GUID.
 
 The source relationship GUID in the response is identical to the source relationship GUID for GET items/&lt;GUID&gt;/sourcing.
 
@@ -12,7 +10,7 @@ The source relationship GUID in the response is identical to the source relation
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
@@ -33,17 +31,15 @@ The source relationship GUID in the response is identical to the source relation
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get a specific source relationships for a specific supplier item
-
-
 
 /supplieritems/&lt;GUID&gt;/sourcing/&lt;GUID&gt;
 

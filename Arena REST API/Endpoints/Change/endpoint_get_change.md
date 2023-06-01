@@ -1,16 +1,14 @@
 # GET Change
-
-
 /changes/&lt;GUID&gt;
 
-Returns a  object with a given GUID. The attributes returned in the response differ according to the effectivityType. For example, a Change with a future effectivity \(effectivityType=PERMANENT_ON_DATE\) includes the attribute effectivityPlannedDateTime.
+Returns a Change object with a given GUID. The attributes returned in the response differ according to the effectivityType. For example, a Change with a future effectivity \(effectivityType=PERMANENT_ON_DATE\) includes the attribute effectivityPlannedDateTime.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,18 +21,16 @@ Returns a  object with a given GUID. The attributes returned in the response dif
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
-Get a change with permanent\-on\-approval effectivity
+Get a change with permanent-on-approval effectivity
 
- 
-
-GET /changes/&lt;GUID&gt;
+GET /changes/&lt;GUID&gt; 
 
 ```
 {
@@ -113,9 +109,7 @@ GET /changes/&lt;GUID&gt;
    "withdrawnDateTime":"2018-05-23T22:35:41Z"
 }
 ```
-Get a change with permanent\-on\-date effectvity
-
-
+Get a change with permanent-on-date effectvity
 
 GET /changes/&lt;GUID&gt;
 
@@ -201,8 +195,6 @@ GET /changes/&lt;GUID&gt;
 }
 ```
 Get a change with temporary effectivity
-
-
 
 GET /changes/&lt;GUID&gt;
 

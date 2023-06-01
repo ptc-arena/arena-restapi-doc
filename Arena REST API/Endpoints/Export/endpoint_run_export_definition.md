@@ -1,11 +1,17 @@
 # POST Export Run
-
-
 /exports/&lt;GUID&gt;/runs
 
 Initiates an Export run based on an existing Export Definition.  Each case is shown below.
 
 NOTES:
+          
+          
+          
+          
+          
+          
+          
+        
 
 * The export run endpoint executes an export definition.
 
@@ -29,17 +35,17 @@ Exports runs can have the following six statuses.
 | FAILED<br> | The export failed at runtime and there are no results.<br> |
 | ABORTED<br> | The export run was manually aborted by Arena Technical Support.<br> |
 
-* If an export has a JSON format and certain Export Options selected it can result in a JSON export file without any content. See .
+* If an export has a JSON format and certain Export Options selected it can result in a JSON export file without any content. See About Export Results and the JSON Format.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
-* Run Export Definition \(Criteria not specified in the export definition so it must be specified in the run\)
+* Run Export Definition (Criteria not specified in the export definition so it must be specified in the run)
 
 ```
    "criteria":[
@@ -50,7 +56,7 @@ Exports runs can have the following six statuses.
       }
    ]
 ```
-* Run Export Definition \(Criterion specified in the export definition so it is not necessary to specify it in the run\)
+* Run Export Definition (Criterion specified in the export definition so it is not necessary to specify it in the run)
 
 ```
 {}
@@ -66,12 +72,12 @@ Exports runs can have the following six statuses.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Export Run is processing

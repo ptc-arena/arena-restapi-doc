@@ -1,9 +1,7 @@
 # POST Supplier Item File Content Update
-
-
 /supplieritems/&lt;GUID&gt;/files/&lt;GUID&gt;/content
 
-Updates file content for an existing  with a given GUID associated with a supplier item with a given GUID.
+Updates file content for an existing File with a given GUID associated with a supplier item with a given GUID.
 
 Currently, only Files less than 2GB can be uploaded through this endpoint.
 
@@ -30,17 +28,21 @@ content: [physical file]
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | determined by file type<br> | content type of file<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | determined by file type<br> | content type of file<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 no JSON response
 
 An error is returned if:
+          
+          
+          
+        
 
 * The GUID is not valid.
 

@@ -1,16 +1,14 @@
 # GET Files Search
-
-
 /files
 
-Returns a collection of    matching the given search criteria. The editions returned are the latest editions for each matching file. 
+Returns a collection of  Compact Files  matching the given search criteria. The editions returned are the latest editions for each matching file. 
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
@@ -42,17 +40,15 @@ Search behavior in the Arena REST API differs from search behavior in the Arena 
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 Get PDF format files whose title begins with the string "everyroad"
-
-
 
 GET &lt;url&gt;/files?title=everyroad\*&format=pdf 
 
@@ -98,8 +94,6 @@ GET &lt;url&gt;/files?title=everyroad\*&format=pdf
 
 ```
 Get a file with a given GUID
-
-
 
 GET &lt;url&gt;/files/&lt;GUID&gt;
 

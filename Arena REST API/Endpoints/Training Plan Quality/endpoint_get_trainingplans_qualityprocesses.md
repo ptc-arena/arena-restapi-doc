@@ -1,16 +1,14 @@
 # GET Training Plan Quality Process References
-
-
 /trainingplans/&lt;GUID&gt;/quality
 
-Returns all the Quality Processes and the specific step associated within a specific Training Plan. Using the browser\-based application as a point of comparison, this endpoint returns the Quality Process \(and the specified step\) located within the References view of a specific Training Plan.
+Returns all the Quality Processes and the specific step associated within a specific Training Plan. Using the browser-based application as a point of comparison, this endpoint returns the Quality Process \(and the specified step\) located within the References view of a specific Training Plan.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,17 +21,15 @@ Returns all the Quality Processes and the specific step associated within a spec
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get the Quality Processes \(and their respective steps\) within the Reference view  of  a Training Plan.
-
-
 
 GET /trainingplans/&lt;GUID&gt;/quality
 

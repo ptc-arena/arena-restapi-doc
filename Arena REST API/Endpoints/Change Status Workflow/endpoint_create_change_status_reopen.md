@@ -1,9 +1,7 @@
 # POST Change Status (Reopen)
-
-
 /changes/statuschanges
 
-This endpoint can be used  to change the status of a  object. This version of the POST Change Status endpoint demonstates how to reopen a rejected Change. Only Change Administators can perform this version of the endpoint. 
+This endpoint can be used  to change the status of a Change object. This version of the POST Change Status endpoint demonstates how to reopen a rejected Change. Only Change Administators can perform this version of the endpoint. 
 
 For changes that have reached a status of  REJECTED, a Change administrator can reopen the change by inputting a value of OPEN_AND_UNLOCKED for the attribute status within the request body of the POST Change Status endpoint.
 
@@ -12,7 +10,7 @@ For changes that have reached a status of  REJECTED, a Change administrator can 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -25,21 +23,19 @@ For changes that have reached a status of  REJECTED, a Change administrator can 
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Requests and Responses
 For Change administrators, inputting a status of OPEN_AND_UNLOCKED in a Change that has a status of REJECTED reopens the change.
 
-
-
 POST /changes/statuschanges
 
-
+**Request** 
 
 ```
 {
@@ -50,7 +46,7 @@ POST /changes/statuschanges
     "status": "OPEN_AND_UNLOCKED"
 }
 ```
-
+**Response** 
 
 ```
 {

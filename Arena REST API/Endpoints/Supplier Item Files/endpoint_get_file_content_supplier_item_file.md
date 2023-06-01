@@ -1,6 +1,4 @@
 # GET Supplier Item File Content
-
-
 /suppplieritems/&lt;GUID&gt;/files/&lt;GUID&gt;/content
 
 Returns file content belonging to a file with a given GUID, which is associated with a supplier item with a given GUID. 
@@ -10,7 +8,7 @@ Returns file content belonging to a file with a given GUID, which is associated 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,17 +21,20 @@ Returns file content belonging to a file with a given GUID, which is associated 
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | determined by file type<br> | content type of file<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | determined by file type<br> | content type of file<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 Returns the content of the File as an InputStream.
 
 An error is returned if:
+          
+          
+        
 
 * the GUID is not valid.
 
@@ -61,5 +62,5 @@ An error is returned if:
    ]
 }
 ```
-* \*If the file server is inaccessible, it may return a 400 status with no message.
+* *If the file server is inaccessible, it may return a 400 status with no message.
 

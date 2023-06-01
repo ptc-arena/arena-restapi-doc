@@ -1,6 +1,4 @@
 # PUT BOM Substitute Create
-
-
 /items/&lt;GUID&gt;/bom/&lt;GUID&gt;/substitutes/&lt;GUID&gt;
 
 Edits an existing  BOM Substitute for an item with a given GUID. Only the working reivision of the parent Item can be modified with BOM Substitutes. Items must be released to be specified as a subtitute. BOM Substitutes can be superseded revisions of the child Item. Existing BOM Substitutes can not be added again to the same BOM Line.
@@ -12,7 +10,7 @@ Rank is a positive integeter between one and the total number of substitutes. If
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 Edit an existing BOM Substitute
@@ -34,17 +32,15 @@ Edit an existing BOM Substitute
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Edit BOM Substitute
-
-
 
 /items/&lt;GUID&gt;/bom/&lt;GUID&gt;/substitutes/&lt;GUID&gt;
 

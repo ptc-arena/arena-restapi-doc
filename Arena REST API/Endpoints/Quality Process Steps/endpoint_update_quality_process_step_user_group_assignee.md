@@ -1,11 +1,11 @@
 # PUT Quality Process Step Update (User Group Assignee)
-
-
 /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;
 
-Updates an existing  object with a given GUID  in a Quality Process with a given GUID. 
+Updates an existing Step object with a given GUID  in a Quality Process with a given GUID. 
 
 Editable attributes: Assignee, attribute values,  dueDateTime.
+          
+        
 
 When you specify dueDateTime for a step, only the date portion of the dueDateTime string is honored. Time always appears as 23:59:59 local time.
 
@@ -16,7 +16,7 @@ This endpoint can only be used in workspaces that have Access Policies enabled.
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Set Null
 
@@ -76,17 +76,15 @@ PUT /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;?setnull=true
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Update a quality process step
-
-
 
 /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;
 

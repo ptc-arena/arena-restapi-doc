@@ -1,6 +1,4 @@
 # PUT Item Update
-
-
 /items/&lt;GUID&gt;
 
 Updates the metadata of an item with a given GUID. 
@@ -12,7 +10,7 @@ Editable attributes: Additional attribute values, category, description, name, o
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Set Null 
 
@@ -80,12 +78,12 @@ PUT &lt;url&gt;/items/&lt;GUID&gt;?setnull=true
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 ```
@@ -282,7 +280,7 @@ Requests return an error if:
    ]
 }
 ```
-* An option is not valid value for a fixed \(non\-user\-editable\) dropdown list.
+* An option is not valid value for a fixed (non-user-editable) dropdown list.
 
 ```
 

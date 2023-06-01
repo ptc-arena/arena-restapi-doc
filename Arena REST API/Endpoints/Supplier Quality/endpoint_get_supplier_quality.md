@@ -1,11 +1,9 @@
 # GET Supplier Quality Processes
-
-
 GET /suppliers/&lt;GUID&gt;/quality
 
 GET /suppliers/&lt;GUID&gt;/quality/&lt;GUID&gt;
 
-Returns a collection of   objects for a supplier with a given GUID \(all Quality Processes in which the Supplier is an affected object\). 
+Returns a collection of  Quality Process objects for a supplier with a given GUID \(all Quality Processes in which the Supplier is an affected object\). 
 
 If the endpoint is apprended with a valid GUID, it returns a specific Quality Process and the step information where the specified Supplier has been added as an affected object.
 
@@ -14,7 +12,7 @@ If the endpoint is apprended with a valid GUID, it returns a specific Quality Pr
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -27,17 +25,15 @@ If the endpoint is apprended with a valid GUID, it returns a specific Quality Pr
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get quality processes for a supplier
-
-
 
 GET /suppliers/&lt;GUID&gt;/quality
 
@@ -63,8 +59,6 @@ GET /suppliers/&lt;GUID&gt;/quality
 }
 ```
 Gets a specific Quality Process \(and specific step information\) where the specified Supplier has been added as an affected object.
-
-
 
 GET /suppliers/&lt;GUID&gt;/quality/&lt;GUID&gt;
 

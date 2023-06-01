@@ -10,7 +10,7 @@
 | integrationUser<br> | Reference<br> | Integration user information. fullName, guid, and email included.<br> |
 | enabled<br> | Boolean<br> | Determines whether Integration is enabled or disabled. Enabled is true; disabled is false.<br> |
 | creator<br> | Reference<br> | User account information on the creator of the Integration. Includes: fullName, guid, and email.<br> |
-| creationDateTime<br> | Date\-Formatted String<br> | The date and time \(in Zulu format\) the the Integration was created.<br> |
+| creationDateTime<br> | Date-Formatted String<br> | The date and time \(in Zulu format\) the the Integration was created.<br> |
 | modifyUser<br> | Reference<br> | User who last modified the Integration. Included: fullName, guid and email.<br> |
-| modifyDateTime<br> | Date\-Formatted String<br> | The date and time \(in Zulu format\) that the integration was last modified.<br> |
+| modifyDateTime<br> | Date-Formatted String<br> | The date and time \(in Zulu format\) that the integration was last modified.<br> |
 

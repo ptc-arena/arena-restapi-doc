@@ -4,7 +4,7 @@
 |  --- |  --- |  --- | 
 | active<br> | Boolean<br> | Indicates whether or not an attribute is available for Quality Process steps. The value can be true or false.<br> |
 | allowNegatives<br> | Boolean<br> | Indicates whether or not a numeric value can be a negative number. The value can be true or false.<br> |
-| creationDateTime<br> | Date\-Formatted String<br> | the date and time \(in Zulu format\) a step attribute was created.<br> |
+| creationDateTime<br> | Date-Formatted String<br> | the date and time \(in Zulu format\) a step attribute was created.<br> |
 | decimalPlaces<br> | String<br> | Indicates the number of decimal places that should be specified for the attribute.<br> |
 | defaultValue<br> | String<br> | The default value for an attribute<br> |
 | description<br> | String<br> | The description of an attribute<br> |
@@ -17,6 +17,6 @@
 | name<br> | String<br> | The name of the attribute<br> |
 | objectType<br> | String<br> | The type of object<br> |
 | required<br> | Boolean<br> | Indicates whether the attribute is required on creation.<br> |
-| possibleValues<br> | Array of Strings<br> | All possible values for a drop\-down list. This field is used only for attributes of type drop\-down list.<br> |
+| possibleValues<br> | Array of Strings<br> | All possible values for a drop-down list. This field is used only for attributes of type drop-down list.<br> |
 | userViewable<br> | Boolean<br> | Indicates whether an attribute is visible in the user interface. The value can be true or false.<br> |
 

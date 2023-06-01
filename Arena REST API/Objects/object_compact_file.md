@@ -4,7 +4,7 @@
 |  --- |  --- |  --- | 
 | category<br> | reference<br> | The category to which a file is assigned. Contains a category GUID.<br> |
 | corrected<br> | boolean<br> | Indicates whether a File has been corrected or not. True if corrected. False if not.<br> |
-| creationDateTime<br> | Date\-Formatted String<br> | the date and time \(in Zulu format\) \(in Zulu time\) at which a file edition was created<br> |
+| creationDateTime<br> | Date-Formatted String<br> | the date and time \(in Zulu format\) \(in Zulu time\) at which a file edition was created<br> |
 | edition<br> | String<br> | The edition identifier of a file<br> |
 | format<br> | String<br> | The format of a file<br> |
 | guid<br> | String<br> | The unique identifier for a file<br> |

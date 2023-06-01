@@ -1,13 +1,11 @@
 # POST File Update
-
-
 /files/&lt;GUID&gt;
 
 Updates an existing File with storageMethodName FTP, WEB, or PLACE_HOLDER to FILE .
 
 To update an existing File with a storageMethodName of FILE to FTP, WEB, or PLACE_HOLDER please refer to the PUT File Summary Update endpoint.
 
-Construct a request with  content\-type "multipart/form\-data" \(in the header of the request\) and file content.
+Construct a request with  content-type "multipart/form-data" \(in the header of the request\) and file content.
 
 Currently, only Files less than 2GB can be uploaded through this endpoint.
 
@@ -42,13 +40,13 @@ content: <file stream>
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | determined by file type<br> | content type of file<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | determined by file type<br> | content type of file<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-File\-GUID<br> | GUID string<br> | GUID for new file \- only when including content.<br> |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-File-GUID<br> | GUID string<br> | GUID for new file - only when including content.<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 no JSON response

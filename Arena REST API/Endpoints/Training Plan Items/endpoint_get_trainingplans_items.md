@@ -1,16 +1,14 @@
 # GET Training Plan Items
-
-
 /trainingplans/&lt;GUID&gt;/items
 
-Returns all the items associated within a specific Training Plan. In terms of the browser\-based application, this endpoint returns the items located within the Items view of a specific Training Plan.
+Returns all the items associated within a specific Training Plan. In terms of the browser-based application, this endpoint returns the items located within the Items view of a specific Training Plan.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,17 +21,15 @@ Returns all the items associated within a specific Training Plan. In terms of th
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get the items within the Items view  of  a Training Plan.
-
-
 
 GET /trainingplans/&lt;GUID&gt;/items
 

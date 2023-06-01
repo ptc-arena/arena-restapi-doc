@@ -1,6 +1,4 @@
 # DELETE Remove a Request from a Change
-
-
 changes/&lt;GUID&gt;/requests/&lt;GUID&gt;
 
 Removes an request with a given GUID from a change with a given GUID.
@@ -10,7 +8,7 @@ Removes an request with a given GUID from a change with a given GUID.
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,16 +21,16 @@ Removes an request with a given GUID from a change with a given GUID.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 * No JSON response.
 
-* Request with invalid GUID \(item not included in change\)
+* Request with invalid GUID (item not included in change)
 
 ```
 {

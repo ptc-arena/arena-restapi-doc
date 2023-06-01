@@ -1,16 +1,14 @@
 # POST Request File Markup Create
-
-
 /requests/&lt;GUID&gt;/markupfiles
 
-Creates a Request File Markup  object.
+Creates a Request File Markup File object.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | multipart/form\-data<br> |   |
+| content-type<br> | multipart/form-data<br> |   |
 
 ## Sample Request Body
 
@@ -33,13 +31,13 @@ Creates a Request File Markup  object.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | determined by file type<br> | content type of file<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | determined by file type<br> | content type of file<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-FileGuid<br> | GUID string<br> | GUID for new file \- only when including content<br> |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-FileGuid<br> | GUID string<br> | GUID for new file - only when including content<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 * When associating a File Markup to a Request:

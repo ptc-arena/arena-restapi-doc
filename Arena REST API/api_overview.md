@@ -11,7 +11,7 @@ The table below details specific capabilties of the API.
 | Item Source Relationships<br> | N/A<br> | ✔<br> | ✔<br> | ✔<br> | ✔<br> |
 | Item Revisions<br> | N/A<br> | ✔\*<br> | ✔<br> | N/A<br> | N/A<br> |
 | Item Files Associations<br> | N/A<br> | ✔<br> | ✔<br> | ✔<br> | ✔<br> |
-| Item Compliance Requirements<br> | N/A<br> | ✔<br> | ✔<br> | ✔<br> | \-<br> |
+| Item Compliance Requirements<br> | N/A<br> | ✔<br> | ✔<br> | ✔<br> | -<br> |
 | Item Where Used<br> | N/A<br> | N/A<br> | ✔<br> | N/A<br> | N/A<br> |
 | Item Lifecycle<br> |   | ✔<br> |   |   |   |
 | Item Export<br> | ✔<br> | ✔<br> | ✔<br> | N/A<br> | N/A<br> |
@@ -21,13 +21,13 @@ The table below details specific capabilties of the API.
 | Supplier Quality<br> |   |   | ✔<br> |   |   |
 | Supplier Item Summary<br> | ✔<br> | ✔<br> | ✔<br> | ✔<br> | ✔<br> |
 | Supplier Item File Associations<br> | N/A<br> | ✔<br> | ✔<br> | ✔<br> | ✔<br> |
-| Supplier Item Compliance Requirements<br> | N/A<br> | ✔<br> | ✔<br> | ✔<br> | \-<br> |
+| Supplier Item Compliance Requirements<br> | N/A<br> | ✔<br> | ✔<br> | ✔<br> | -<br> |
 | Supplier Item Sourcing<br> |   |   | ✔<br> |   |   |
 | File Records<br> | ✔<br> | ✔<br> | ✔<br> | ✔<br> | ✔<br> |
 | File Editions<br> |   | ✔<br> | ✔<br> |   |   |
 | File Associations<br> |   |   | ✔<br> |   |   |
 | Quality Process Summary<br> | ✔<br> | ✔<br> | ✔<br> | ✔<br> | ✔<br> |
-| Quality Process Details<br> | N/A<br> | \-<br> | ✔<br> | \-<br> | \-<br> |
+| Quality Process Details<br> | N/A<br> | -<br> | ✔<br> | -<br> | -<br> |
 | Quality Process Step/Affected Objects<br> | ✔<br> | ✔<br> | ✔<br> | ✔<br> | ✔<br> |
 | DataExtract<br> |   | ✔<br> |   |   |   |
 | Outbound Integrations<br> | ✔<br> |   | ✔<br> | ✔<br> |   |

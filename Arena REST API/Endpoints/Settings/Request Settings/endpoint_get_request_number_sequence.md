@@ -1,22 +1,18 @@
 # GET Request Number Sequences
-
-
 /settings/requests/numbersequences
-
-
 
 /settings/requests/numbersequences/&lt;GUID&gt;
 
 This returns  Request Number Sequences available in the workspace. Appending a GUID to the URL returns the number format with that GUID.  
 
-Request Number Sequences consist of a list of  prefixes and an auto\-incrementing number field.
+Request Number Sequences consist of a list of  prefixes and an auto-incrementing number field.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -29,17 +25,15 @@ Request Number Sequences consist of a list of  prefixes and an auto\-incrementin
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in the response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in the response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all Request number formats defined for the workspace
-
-
 
 /settings/requests/numbersequences
 
@@ -91,8 +85,6 @@ Get all Request number formats defined for the workspace
 }
 ```
 Get a Request number format with a specific GUID
-
-
 
 /settings/requests/numbersequences/R9TCV8TK7AQN6P76AXNQ
 

@@ -1,20 +1,18 @@
 # PUT Import Commit
-
-
 /imports/&lt;GUID&gt;/runs/&lt;GUID&gt;
 
 When performing a POST import run endpoint, users can set the commit value to false. The import then can use information within the response and GET import run error content or GET import run results content to find any errors within an import run. This allows users to double check for any import errors without commiting it to the workspace.
 
 Once the user has completed troubleshooting the errors, they can then use this PUT Import commit endpoint to commit the import to the workspace.
 
-Please note that this endpoint is uni\-directional. Once the import commit has been set to true, it cannot be returned to a value of false.
+Please note that this endpoint is uni-directional. Once the import commit has been set to true, it cannot be returned to a value of false.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 * Commit and "finish" an import run. Once set to true, the import run commit attribute cannot be set back to false.
@@ -35,12 +33,12 @@ Please note that this endpoint is uni\-directional. Once the import commit has b
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Import Run has successfully been commited to the workspace.

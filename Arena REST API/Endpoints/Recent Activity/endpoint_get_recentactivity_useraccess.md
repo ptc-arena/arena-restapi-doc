@@ -1,16 +1,14 @@
 # GET Recent Activity - User Access
-
-
 /settings/recentactivities/useraccesses
 
-Returns an array of  objects.
+Returns an array of Login objects.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
@@ -37,19 +35,17 @@ Returns an array of  objects.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 Get all user logins on January 1st 2017 \(no offset, 50 result limit\)
 
-
-
-GET /settings/recentactivities/useraccesses?offset=0&limit=50&dateTimeFrom= 2017\-01\-01T00:00:00Z&dateTimeFrom=2017\-01\-01T23:59:59Z
+GET /settings/recentactivities/useraccesses?offset=0&limit=50&dateTimeFrom= 2017-01-01T00:00:00Z&dateTimeFrom=2017-01-01T23:59:59Z
 
 ```
 {  

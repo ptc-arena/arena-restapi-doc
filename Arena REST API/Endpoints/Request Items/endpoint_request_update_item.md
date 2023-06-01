@@ -1,16 +1,14 @@
 # PUT Request Item Edit
-
-
 /requests/&lt;GUID&gt;/items/&lt;GUID&gt;
 
-Updates the notes for an item on a request with a given request\-item association GUID, included in a request with a  given GUID.. 
+Updates the notes for an item on a request with a given request-item association GUID, included in a request with a  given GUID.. 
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 ```
@@ -29,17 +27,15 @@ Updates the notes for an item on a request with a given request\-item associatio
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Update the notes information for an item on a request
-
-
 
 /requests/&lt;GUID&gt;/items/&lt;GUID&gt;
 

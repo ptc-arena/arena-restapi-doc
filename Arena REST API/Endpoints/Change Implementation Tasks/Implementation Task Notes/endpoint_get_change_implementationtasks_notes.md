@@ -1,6 +1,4 @@
 # GET Change Implementation Task Notes
-
-
 /changes/&lt;GUID&gt;/implementationtasks/&lt;GUID/notes
 
 Returns the notes in a specific implementation task within a specific change. Only supported in categories that have Implementation Task Management enabled.
@@ -10,7 +8,7 @@ Returns the notes in a specific implementation task within a specific change. On
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,16 +21,14 @@ Returns the notes in a specific implementation task within a specific change. On
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get the notes of a specific change implementation task.
-
-
 
 GET /changes/&lt;GUID&gt;/implementationtasks/&lt;GUID&gt;/notes
 

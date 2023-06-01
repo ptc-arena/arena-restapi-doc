@@ -1,28 +1,30 @@
 # POST Change Create
-
-
 /changes
 
-Creates a new  object. You can create changes with three different types of effectivity:
+Creates a new Change object. You can create changes with three different types of effectivity:
+          
+          
+          
+        
 
 * Permanent on Approval: The Change becomes effective immediately upon the last necessary vote being entered.
 
 * Permanent on Date: The Change enters the Approved state upon the last necessary vote being entered, but does not become effective until the specified date. Requires the attribute plannedEffectivityDateTime.
 
-* Temporary: Changes with temporary effectivity \(often called Deviations\) become effective immediately upon the last necessary vote being entered, and expire on a specified date. Requires the attribute expirationDate.
+* Temporary: Changes with temporary effectivity (often called Deviations) become effective immediately upon the last necessary vote being entered, and expire on a specified date. Requires the attribute expirationDate.
 
 In all cases, numberSequencePrefix is required. If a default numberSequencePrefix is associated with the specified change category, not specifying a  numberSequencePrefix will result in automatically selecting the default.  
 
 Below are examples of each type of Change, including all fields that can be created for each effectivity type.
 
-See the 
+See the Note on Date/Time Handling
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -35,21 +37,19 @@ See the
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Requests and Responses
-Create change with permanent\-on\-approval effectivity
-
-
+Create change with permanent-on-approval effectivity
 
 POST /changes
 
-
+**Request** 
 
 ```
 {
@@ -81,7 +81,7 @@ POST /changes
    ]
 }
 ```
-
+**Response** 
 
 ```
 {
@@ -139,13 +139,11 @@ POST /changes
    }
 }
 ```
-Change with permanent\-on\-date effectivity
-
-
+Change with permanent-on-date effectivity
 
 POST /changes
 
-
+**Request** 
 
 ```
 {
@@ -181,7 +179,7 @@ POST /changes
    ]
 }
 ```
-
+**Response** 
 
 ```
 {
@@ -246,11 +244,9 @@ POST /changes
 ```
 Change with temporary effectivity
 
-
-
 POST /changes
 
-
+**Request** 
 
 ```
 {
@@ -285,7 +281,7 @@ POST /changes
    ]
 }
 ```
-
+**Response** 
 
 ```
 {

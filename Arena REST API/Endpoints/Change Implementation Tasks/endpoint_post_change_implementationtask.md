@@ -1,6 +1,4 @@
 # POST Change Implementation Task
-
-
 /changes/&lt;GUID&gt;/implementationtasks
 
 Creates an  implementation tasks for a specific change. Note that Implementation Task Management and Object Level Override must be enabled for the category. If it is not enabled, the endpoints shall return an error indicating it is not enabled. Not supported for Canceled, Completed or Uncategorized changes.
@@ -10,7 +8,7 @@ Creates an  implementation tasks for a specific change. Note that Implementation
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 Adds an implementation task to a change that supports implementation tasks.
@@ -39,16 +37,14 @@ Adds an implementation task to a change that supports implementation tasks.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Adds a specific implementation tasks of a specific change.
-
-
 
 POST /changes/&lt;GUID&gt;/implementationtasks
 

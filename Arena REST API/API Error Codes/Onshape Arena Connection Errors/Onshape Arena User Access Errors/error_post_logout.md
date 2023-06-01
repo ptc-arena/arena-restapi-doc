@@ -6,5 +6,5 @@ This endpoint is used to authorize the Onshape User with Arena after a session h
 
 | Status Code<br> | Error Code<br> | Message<br> | Explanation<br> |
 |  --- |  --- |  --- |  --- | 
-| 401<br> | 401<br> |  ```There is no access token associated with this request or the access token is not valid.``` | The session is no longer valid due to a session being terminated or expired and the integration issues a logout.<br> |
+| 401<br> | 401<br> |  ```There is no access token associated with this request or the access token is not valid.```  | The session is no longer valid due to a session being terminated or expired and the integration issues a logout.<br> |
 

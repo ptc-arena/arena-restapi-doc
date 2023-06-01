@@ -1,6 +1,4 @@
 # GET Events (Search)
-
-
 /outboundintegrations/&lt;GUID&gt;/events
 
 Returns unreconciled event objects matching the given search criteria. 
@@ -10,7 +8,7 @@ Returns unreconciled event objects matching the given search criteria.
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
@@ -24,8 +22,8 @@ Returns unreconciled event objects matching the given search criteria.
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | itemsReconciled<br> | string<br> | True returns all events that are reconciled. False returns all events that are not reconciled. Any returns events that are both reconciled and not reconciled.<br> |
-| creationDateTimeFrom<br> | Date\-Formatted String<br> | The date in which the integration event was created. Typically coincides with the effective date of a Change or a revisioning event. Often combined with creationDateTimeTo to create a range.<br> |
-| creationDateTimeTo<br> | Date\-Formatted String<br> | The date in which the integration event was created. Typically coincides with the effective date of a Change or a revisioning event. Often combined with creationDateTimeFrom to create a range.<br> |
+| creationDateTimeFrom<br> | Date-Formatted String<br> | The date in which the integration event was created. Typically coincides with the effective date of a Change or a revisioning event. Often combined with creationDateTimeTo to create a range.<br> |
+| creationDateTimeTo<br> | Date-Formatted String<br> | The date in which the integration event was created. Typically coincides with the effective date of a Change or a revisioning event. Often combined with creationDateTimeFrom to create a range.<br> |
 
 Search behavior in the Arena REST API differs from search behavior in the Arena application. In the API, a trailing asterisk \(wildcard\) is required to return results that start with a string; in the Arena application, a trailing asterisk is always implied.
 
@@ -44,16 +42,14 @@ GET calls that include Object numbers that include a percentage character, %, mu
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
-
-
 GET &lt;url&gt;/outboundintegrations/&lt;GUID&gt;/events
 
 ```
@@ -125,8 +121,6 @@ GET &lt;url&gt;/outboundintegrations/&lt;GUID&gt;/events
 ```
 Get events that are not reconciled with a limit of 400 results
 
-
-
 GET &lt;url&gt;/outboundintegrations/&lt;GUID&gt;/events?itemsReconciled=false&limit=400
 
 ```
@@ -183,9 +177,7 @@ GET &lt;url&gt;/outboundintegrations/&lt;GUID&gt;/events?itemsReconciled=false&l
 ```
 Get events created within a specific time frame.
 
-
-
-GET &lt;url&gt;/outboundintegrations/&lt;GUID&gt;/events?creationDateTimeFrom=2020\-10\-25T10:00:00Z&creationDateTimeTo=2020\-11\-11T12:20:00Z
+GET &lt;url&gt;/outboundintegrations/&lt;GUID&gt;/events?creationDateTimeFrom=2020-10-25T10:00:00Z&creationDateTimeTo=2020-11-11T12:20:00Z
 
 ```
 {

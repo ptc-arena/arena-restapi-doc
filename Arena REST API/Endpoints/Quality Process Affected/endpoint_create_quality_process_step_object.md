@@ -1,16 +1,14 @@
 # POST Quality Process Step Affected Object Add
-
-
 /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;/affected
 
-Adds an  in a step with a given GUID in a Quality Process with a given GUID. The type can be ITEM,   REQUEST, CHANGE, SUPPLIER, SUPPLIER ITEM, FILE, QUALITY,  or URL.
+Adds an Affected Object in a step with a given GUID in a Quality Process with a given GUID. The type can be ITEM,   REQUEST, CHANGE, SUPPLIER, SUPPLIER ITEM, FILE, QUALITY,  or URL.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 Add an object of type ITEM
@@ -108,17 +106,15 @@ Add an object of type URL
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 add an affected object of type ITEM to a step
-
-
 
 /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;/affected
 
@@ -134,8 +130,6 @@ add an affected object of type ITEM to a step
 ```
 add an affected object of type REQUEST to a step
 
-
-
 /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;/affected
 
 ```
@@ -150,8 +144,6 @@ add an affected object of type REQUEST to a step
 ```
 add an affected object of type CHANGE to a step
 
-
-
 /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;/affected
 
 ```
@@ -165,8 +157,6 @@ add an affected object of type CHANGE to a step
 }
 ```
 add an affected object of type SUPPLIER to a step
-
-
 
 /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;/affected
 
@@ -196,8 +186,6 @@ add an affected object of type SUPPLIER ITEM to a step
 ```
 add an affected object of type FILE to a step
 
-
-
 /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;/affected
 
 ```
@@ -211,8 +199,6 @@ add an affected object of type FILE to a step
 }
 ```
 add an affected object of type QUALITY to a step
-
-
 
 /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;/affected
 
@@ -229,8 +215,6 @@ add an affected object of type QUALITY to a step
 }
 ```
 add an affected object of type URL to a step
-
-
 
 /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;/affected
 

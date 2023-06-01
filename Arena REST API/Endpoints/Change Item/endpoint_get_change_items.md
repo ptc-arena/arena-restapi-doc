@@ -1,16 +1,14 @@
 # GET Change Affected Items
-
-
 /changes/&lt;GUID&gt;/items
 
-Returns all  included in a change with a given GUID. The response includes inventory dispostion and information about each view of each item, including whether it is included in the change and whether it contains modifications to the working revision.
+Returns all Change Affected Items included in a change with a given GUID. The response includes inventory dispostion and information about each view of each item, including whether it is included in the change and whether it contains modifications to the working revision.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,16 +21,14 @@ Returns all  included in a change with a given GUID. The response includes inven
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all items included in a change
-
-
 
 GET /changes/&lt;GUID&gt;/items
 

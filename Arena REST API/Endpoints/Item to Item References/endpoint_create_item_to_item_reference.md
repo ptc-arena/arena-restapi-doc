@@ -1,11 +1,12 @@
 # POST Item-To-Item Reference Create
-
-
 /items/&lt;GUID&gt;/items
 
-Creates a new  for an item with a given GUID. 
+Creates a new Item-to-Item reference for an item with a given GUID. 
 
 NOTES:
+          
+          
+        
 
 * Item references are bidirectional.  Creating an Item reference between Items means that that both Items will appear in each others Items view.
 
@@ -16,10 +17,10 @@ NOTES:
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
-* Create Item\-To\-Item Reference
+* Create Item-To-Item Reference
 
 ```
 {
@@ -40,17 +41,15 @@ NOTES:
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
-Create a new Item\-to\-Item reference.
-
-
+Create a new Item-to-Item reference.
 
 /items/&lt;GUID&gt;/items
 
@@ -64,6 +63,9 @@ Create a new Item\-to\-Item reference.
 }
 ```
 Returns an error if:
+          
+          
+        
 
 * the format of the request is incorrect:
 

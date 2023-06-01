@@ -1,9 +1,7 @@
 # GET Extract Run Files
-
-
 /extracts/&lt;GUID&gt;/runs/&lt;GUID&gt;/files
 
-Returns  objects for a run with a given GUID of an extract with a given GUID. 
+Returns Extract Run File Association objects for a run with a given GUID of an extract with a given GUID. 
 Appending a file association GUID returns the file association with that GUID.
 
 ## Request Header
@@ -11,7 +9,7 @@ Appending a file association GUID returns the file association with that GUID.
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
@@ -40,12 +38,12 @@ Search behavior in the Arena REST API differs from search behavior in the Arena 
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all file associations for a Data Extract run
@@ -86,6 +84,9 @@ Get all file associations for a Data Extract run
 }
 ```
 An error is returned if:
+          
+          
+        
 
 * the GUID is not valid.
 
@@ -113,5 +114,5 @@ An error is returned if:
    ]
 }
 ```
-* \*If the file server is inaccessible, it may return a 400 status with no message.
+* *If the file server is inaccessible, it may return a 400 status with no message.
 

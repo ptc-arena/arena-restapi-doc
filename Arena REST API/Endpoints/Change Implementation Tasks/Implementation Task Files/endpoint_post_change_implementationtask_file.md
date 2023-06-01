@@ -1,6 +1,4 @@
 # POST Change Implementation Task File
-
-
 /changes/&lt;GUID&gt;/implementationtasks/&lt;GUID&gt;/files
 
 Adds a specific, already existing in the workspace, File to a specific implementation task. Implementation Task Management must be enabled to execute this endpoint. Not supported for Canceled or Completed Changes.
@@ -10,7 +8,7 @@ Adds a specific, already existing in the workspace, File to a specific implement
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 Adds an existing file to an existing implementation task.
@@ -33,16 +31,14 @@ Adds an existing file to an existing implementation task.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Adds a specific change implementation task file.
-
-
 
 POST /changes/&lt;GUID&gt;/implementationtasks/&lt;GUID&gt;
 

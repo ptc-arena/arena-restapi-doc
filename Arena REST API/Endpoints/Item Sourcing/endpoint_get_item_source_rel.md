@@ -1,16 +1,14 @@
 # GET Item Source Relationship
-
-
 /items/&lt;GUID&gt;/sourcing/&lt;GUID&gt;
 
-Returns a  object with a given GUID for an item with a given GUID.
+Returns a Source Relationship object with a given GUID for an item with a given GUID.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,17 +21,15 @@ Returns a  object with a given GUID for an item with a given GUID.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 Get a source relationship for a given item
-
-
 
 /items/&lt;GUID&gt;/sourcing/&lt;GUID&gt;
 
@@ -57,6 +53,9 @@ Get a source relationship for a given item
 }
 ```
 Returns an error if:
+          
+          
+        
 
 * the format of the request is incorrect:
 

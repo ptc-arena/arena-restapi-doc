@@ -9,7 +9,7 @@ Change Affected Items appear in  GET Change Item and GET Change Items responses 
 | dispositionAttributes<br> | Collection of References<br> | Details of the inventory disposition settings of an item \(e.g. In Design\). See object.<br>Disposition Attribute<br> |
 | filesView<br> | Reference<br> | Details about the Files view of an item included in a change. See object<br>Item View<br> |
 | guid<br> | String<br> | unique ID for a modified item<br> |
-| materialEffectivityDateTime<br> | Date\-Formatted String<br> | date when inventory disposition settings for a change become effective<br> |
+| materialEffectivityDateTime<br> | Date-Formatted String<br> | date when inventory disposition settings for a change become effective<br> |
 | newItemRevision<br> | Reference<br> | Details of the item revision entered on the Specs view of the working revision in the Items world. See object.<br>Revision<br> |
 | newRevisionNumber<br> | Reference<br> | Details of the item revision that will be released by a change. \(The value on the Specs view of the working revision in the Items world\). See object.<br>Revision<br> |
 | newLifecyclePhase<br> | Reference<br> | Details of the target lifecycle phase for an item included in a change<br> |

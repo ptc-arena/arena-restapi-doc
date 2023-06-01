@@ -1,20 +1,16 @@
 # GET Item Categories
-
-
 /settings/items/categories
-
-
 
 /settings/items/categories/&lt;GUID&gt;
 
-This returns   objects available for Items. Appending a  GUID to the URL returns the Category with that GUID.
+This returns  Category objects available for Items. Appending a  GUID to the URL returns the Category with that GUID.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
@@ -34,16 +30,14 @@ This returns   objects available for Items. Appending a  GUID to the URL returns
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
-Get all non\-deleted  item categories
-
-
+Get all non-deleted  item categories
 
 GET /settings/items/categories
 
@@ -145,8 +139,6 @@ GET /settings/items/categories
 }
 ```
 Get all item categories including deleted categories
-
-
 
 GET settings/items/categories?includeDeleted=true
 
@@ -299,8 +291,6 @@ GET settings/items/categories?includeDeleted=true
 ```
 Get all item categories that begin with A
 
-
-
 GET settings/items/categories?path=item\A
 
 ```
@@ -360,8 +350,6 @@ GET settings/items/categories?path=item\A
 }
 ```
 Get a single item category
-
-
 
 GET /settings/items/categories/UCWFKABBKRAK3MY6UNTU
 

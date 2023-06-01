@@ -1,6 +1,4 @@
 # GET All Changes Associated with a Request
-
-
 /requests/&lt;GUID&gt;/changes
 
 Returns all  the changes associated with a specific request.  Users must have a Read Request Summary and  Edit Request Changes rule. Additionally users must have a  Read Change Summary rule for the referenced changes.
@@ -10,7 +8,7 @@ Returns all  the changes associated with a specific request.  Users must have a 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,16 +21,14 @@ Returns all  the changes associated with a specific request.  Users must have a 
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all changes associated with a request.
-
-
 
 GET /requests/&lt;GUID&gt;/changes
 

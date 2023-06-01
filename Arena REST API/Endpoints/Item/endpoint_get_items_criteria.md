@@ -1,30 +1,26 @@
 # GET Items (Search) Criteria Parameter
-
-
 /items?criteria=&lt;URL encoded criteria&gt;
 
-This article describes a special variation of the  endpoint that uses the criteria search parameter.
+This article describes a special variation of the GET Items \(Search\) endpoint that uses the criteria search parameter.
 
-Using the Criteria parameter requires URL encoding of the query string. URL encoding, also known as Percent\-encoding, encodes data in using only the limited US\-ASCII characters. Typically special characters are encoded with percentages and numbers.
+Using the Criteria parameter requires URL encoding of the query string. URL encoding, also known as Percent-encoding, encodes data in using only the limited US-ASCII characters. Typically special characters are encoded with percentages and numbers.
 
-The Criteria search parameter utilizes the same attributes and operators used in API Item Export. See  for a full list of attributes and operators that can be used for the Criteria parameter.
+The Criteria search parameter utilizes the same attributes and operators used in API Item Export. See Criteria: Attributes and Operators for a full list of attributes and operators that can be used for the Criteria parameter.
 
-Additional information on criteria structure is available in .
+Additional information on criteria structure is available in Export Criteria.
 
-
+**Warning: In order to protect product data, we advise users to URL encode their data using functions within their programming languages and to avoid using third party sites to encode their data.** 
 
 ## Criteria Parameter Search Examples
-Get all items with a creation date between 2001\-07\-12T10:00:01Z and 2030\-07\-12T20:23:59Z.
+Get all items with a creation date between 2001-07-12T10:00:01Z and 2030-07-12T20:23:59Z.
 
 Below is the non url encoded version. This should not be used but is included here for instructional purposes.
 
-
-
-GET /items?criteria=\[\[  \{ "attribute": "creationDateTime", "value": \["2001\-07\-12T10:00:01Z" ,"2030\-07\-12T20:23:59Z" \], "operator": "IS_BETWEEN" \} \] \]
+GET /items?criteria=\[\[  \{ "attribute": "creationDateTime", "value": \["2001-07-12T10:00:01Z" ,"2030-07-12T20:23:59Z" \], "operator": "IS_BETWEEN" \} \] \]
 
 Below is the url encoded criteria parameter search version that should be used.
 
-GET items?criteria=%5B%5B%20%20%7B%20%22attribute%22%3A%20%22creationDateTime%22%2C%20%22value%22%3A%20%5B%222015\-07\-12T10%3A00%3A01Z%22%20%2C%222020\-07\-12T20%3A23%3A59Z%22%20%5D%2C%20%22operator%22%3A%20%22IS_BETWEEN%22%20%7D%20%5D%20%5D
+GET items?criteria=%5B%5B%20%20%7B%20%22attribute%22%3A%20%22creationDateTime%22%2C%20%22value%22%3A%20%5B%222015-07-12T10%3A00%3A01Z%22%20%2C%222020-07-12T20%3A23%3A59Z%22%20%5D%2C%20%22operator%22%3A%20%22IS_BETWEEN%22%20%7D%20%5D%20%5D
 
 Example Response
 
@@ -76,8 +72,6 @@ Example Response
 Get items with a lifecycle phase guid of 9RBUDQB2PSADWFYH0AUY.
 
 Below is the non url encoded version. This should not be used but is included here for instructional purposes.
-
-
 
 GET /items?criteria=\[ \[ \{ "attribute": "lifecyclePhase.guid", "value": \[ "9RBUDQB2PSADWFYH0AUY"\], "operator": "IS_IN" \} \] \]
 
@@ -157,8 +151,6 @@ Example Response
 Get Items that have a value equal to WEYH0DYPCFWFYH0JSIPD for creator guid OR were created by a user who has an email that contains the value hwalker@everyroadgps.com.
 
 Below is the non url encoded version. This should not be used but is included here for instructional purposes.
-
-
 
 GET /items?criteria=\[ \[ \{ "attribute": "creator.guid", "value": "WEYH0DYPCFWFYH0JSIPD", "operator": "IS_EQUAL_TO" \} \], "OR", \[ \{ "attribute": "creator.email", "value": "hwalker@everyroadgps.com", "operator": "CONTAINS" \} \] \]
 

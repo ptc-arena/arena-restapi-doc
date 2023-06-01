@@ -1,6 +1,4 @@
 # GET Change Implementation Task
-
-
 /changes/&lt;GUID&gt;/implementationtasks/&lt;GUID&gt;
 
 Returns an implementation task for a specific change category. Note that Implementation Task Management must be enabled for the category. If it is not enabled, the endpoints shall return an error indicating it is not enabled.
@@ -10,7 +8,7 @@ Returns an implementation task for a specific change category. Note that Impleme
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,16 +21,14 @@ Returns an implementation task for a specific change category. Note that Impleme
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get a specific implementation task.
-
-
 
 GET /changes/&lt;GUID&gt;/implementationtasks/&lt;GUID&gt;
 

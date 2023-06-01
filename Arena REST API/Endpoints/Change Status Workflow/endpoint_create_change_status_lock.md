@@ -1,9 +1,7 @@
 # POST Change Status (Lock/Unlock)
-
-
 /changes/statuschanges
 
-This endpoint can be used  to change the status of a  object. This article demonstates how to lock a change to prevent users from editing any of its views. This article also demonstrates how to unlock a change.
+This endpoint can be used  to change the status of a Change object. This article demonstates how to lock a change to prevent users from editing any of its views. This article also demonstrates how to unlock a change.
 
 To lock a change with a specific GUID, include the new attribute status and input a value of OPEN_AND_LOCKED within the request body.
 
@@ -14,7 +12,7 @@ To unlock a change, input a value of OPEN_AND_UNLOCKED for the attribute status 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -27,21 +25,19 @@ To unlock a change, input a value of OPEN_AND_UNLOCKED for the attribute status 
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Requests and Responses
 Locks a Change. The Change must have an initial status of OPEN_AND_UNLOCKED.
 
-
-
 POST /changes/statuschanges
 
-
+**Request** 
 
 ```
 {
@@ -52,7 +48,7 @@ POST /changes/statuschanges
     "status": "OPEN_AND_LOCKED"
 }
 ```
-
+**Response** 
 
 ```
 {
@@ -71,11 +67,9 @@ POST /changes/statuschanges
 ```
 Unlocks a Change. Change must initially have a status of OPEN_AND_LOCKED.
 
-
-
 POST /changes/statuschanges
 
-
+**Request** 
 
 ```
 {
@@ -86,7 +80,7 @@ POST /changes/statuschanges
     "status": "OPEN_AND_UNLOCKED"
 }
 ```
-
+**Response** 
 
 ```
 {

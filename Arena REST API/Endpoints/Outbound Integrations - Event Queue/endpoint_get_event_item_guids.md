@@ -1,6 +1,4 @@
 # GET Event Item Guids
-
-
 /outboundintegrations/&lt;GUID&gt;/events/&lt;GUID&gt;/itemguids
 
 Returns a list of Item revision GUIDs from an integration event.
@@ -10,13 +8,13 @@ Returns a list of Item revision GUIDs from an integration event.
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Searchable Attributes
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| reconciled<br> | string<br> | Reconciled can equal true, false, or any. Any will return GUIDs for reconciled and non\-reconciled Items. If reconciled is omitted from the query string then the endpoint will assume a default value of false.<br> |
+| reconciled<br> | string<br> | Reconciled can equal true, false, or any. Any will return GUIDs for reconciled and non-reconciled Items. If reconciled is omitted from the query string then the endpoint will assume a default value of false.<br> |
 
 ## Response Codes
 
@@ -29,15 +27,15 @@ Returns a list of Item revision GUIDs from an integration event.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
-Get the Item GUIDs of reconciled and non\-reconciled Items from a specific event from a specific integration.
+Get the Item GUIDs of reconciled and non-reconciled Items from a specific event from a specific integration.
 
 GET &lt;url&gt;/outboundintegrations/&lt;GUID&gt;/events/&lt;GUID&gt;/itemguids?reconciled=any
 
@@ -55,9 +53,7 @@ GET &lt;url&gt;/outboundintegrations/&lt;GUID&gt;/events/&lt;GUID&gt;/itemguids?
     ]
 }       
 ```
-Get the Item GUIDs of non\-reconciled Items from a specific event from a specific integration.
-
-
+Get the Item GUIDs of non-reconciled Items from a specific event from a specific integration.
 
 GET &lt;url&gt;/outboundintegrations/&lt;GUID&gt;/events/&lt;GUID&gt;/itemguids?reconciled=false
 

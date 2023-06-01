@@ -4,7 +4,7 @@ In addition to all the fields from Compact Number Format, Item Number Format has
 
 | Field<br> | Data Type<br> | Description<br> |
 |  --- |  --- |  --- | 
-| creationDateTime<br> | Date\-Formatted String<br> | the date and time \(in Zulu format\) a NumberFormat was created<br> |
+| creationDateTime<br> | Date-Formatted String<br> | the date and time \(in Zulu format\) a NumberFormat was created<br> |
 | exampleNumber<br> | String<br> | An example of a NumberFormat<br> |
 | fields<br> | Reference<br> | An array of the below fields<br> |
 | apiName<br> | String<br> | The unique name of a number format field<br> |

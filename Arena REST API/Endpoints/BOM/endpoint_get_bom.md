@@ -1,16 +1,14 @@
 # GET BOM
-
-
 /items/&lt;GUID&gt;/bom
 
-Returns an array of  objects, the immediate children of an assembly with a given GUID \(with no filters.\) 
+Returns an array of BOM Line objects, the immediate children of an assembly with a given GUID \(with no filters.\) 
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
@@ -29,17 +27,15 @@ Returns an array of  objects, the immediate children of an assembly with a given
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses Body
 Get the BOM of an Item with a specific GUID
-
-
 
 /items/ASCVEMVVS9S9S6D0DDZ5/bom
 
@@ -106,8 +102,6 @@ Get the BOM of an Item with a specific GUID
 }
 ```
 GET the BOM line of an Item with a specific GUID. Also get any BOM Attributes \(also known as Additional Attributes\).
-
-
 
 GET /items/6O8RWMQP21KSBQL/bom?includeAdditionalAttributes=true
 

@@ -1,13 +1,9 @@
 # GET Data Extract Latest
-
-
 /extracts/&lt;GUID&gt;/runs/latestCompleted
 
-Returns a single  object \(but not the extract run content\) for the most recently completed Extract.
+Returns a single Extract object \(but not the extract run content\) for the most recently completed Extract.
 
 You can choose to include run file association information in the response. For example:
-
-
 
 GET &lt;url&gt;/extracts/&lt;GUID&gt;/runs/latestCompleted?view=withFiles
 
@@ -16,7 +12,7 @@ GET &lt;url&gt;/extracts/&lt;GUID&gt;/runs/latestCompleted?view=withFiles
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
@@ -35,12 +31,12 @@ GET &lt;url&gt;/extracts/&lt;GUID&gt;/runs/latestCompleted?view=withFiles
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get the latest data extract, including file information

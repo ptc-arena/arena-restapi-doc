@@ -1,16 +1,14 @@
 # GET Training Plan Records
-
-
 /trainingplans/&lt;GUID&gt;/records
 
-Returns all the  training records for a specific Training Plan. Using the browser\-based application as a point of comparison, this endpoint returns the training records data within the Records view of a specific Training Plan.
+Returns all the  training records for a specific Training Plan. Using the browser-based application as a point of comparison, this endpoint returns the training records data within the Records view of a specific Training Plan.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
@@ -30,17 +28,15 @@ Returns all the  training records for a specific Training Plan. Using the browse
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get the Training Plan records within the Records view  of  a Training Plan.
-
-
 
 GET /trainingplans/&lt;GUID&gt;/records
 

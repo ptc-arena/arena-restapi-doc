@@ -4,6 +4,11 @@ Export Criteria determine which Items are included in an API Export. Through cre
 The simplest form of a criteria is a criterion. A criterion consists of an Arena attribute , a value associated with an attribute, and an operator that links the attribute to the value.
 
 NOTES:
+          
+          
+          
+          
+        
 
 * Export Definitions cannot be edited or deleted.
 

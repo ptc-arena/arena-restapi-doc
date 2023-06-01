@@ -1,16 +1,14 @@
 # GET Item Source Relationships
-
-
 /items/&lt;GUID&gt;/sourcing
 
-Returns an array of  objects for an item with a given GUID.
+Returns an array of Source Relationship objects for an item with a given GUID.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
@@ -30,17 +28,15 @@ Returns an array of  objects for an item with a given GUID.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 Get all source relationships for an item, limit results to 25
-
-
 
 GET /items/Q8SBU2BB8P8P8MTGTTHH/sourcing?limit=25
 
@@ -137,6 +133,9 @@ GET /items/Q8SBU2BB8P8P8MTGTTHH/sourcing?limit=25
 }
 ```
 Returns an error if:
+          
+          
+        
 
 * the format of the request is incorrect:
 

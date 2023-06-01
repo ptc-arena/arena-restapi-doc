@@ -1,9 +1,7 @@
 # GET Change Affected Item
-
-
 /changes/&lt;GUID&gt;/items/&lt;GUID&gt;
 
-Returns a  with a given GUID included in a change with a given GUID. The response includes inventory disposition and information about each view of the item, including whether or not the view is included in the change  and whether or not it contains modifications to the working revision.
+Returns a Change Affected Item with a given GUID included in a change with a given GUID. The response includes inventory disposition and information about each view of the item, including whether or not the view is included in the change  and whether or not it contains modifications to the working revision.
 
 * For permanent Changes, when the Item added to the Change is unreleased:
 
@@ -50,7 +48,7 @@ Returns a  with a given GUID included in a change with a given GUID. The respons
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -63,16 +61,14 @@ Returns a  with a given GUID included in a change with a given GUID. The respons
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get a specific  item included in a change
-
-
 
 GET /changes/&lt;GUID&gt;/items/&lt;GUID&gt;
 

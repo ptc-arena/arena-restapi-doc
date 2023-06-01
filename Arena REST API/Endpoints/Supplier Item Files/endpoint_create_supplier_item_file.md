@@ -1,14 +1,12 @@
 # POST Supplier Item File Create
-
-
 /supplieritems/&lt;GUID&gt;/files/
 
-Creates a new  object and associates it with a supplier item with a given GUID.
+Creates a new File Association object and associates it with a supplier item with a given GUID.
 
 If you wish to create a File record with no uploaded content, construct a JSON request with a storageMethodName of PLACE_HOLDER, FTP, or WEB. When the storageMethodName is FTP or WEB, the location attribute should be the web or ftp address where the file resides.
 
 
-If you wish to create a File record and upload file content to the Arena servers, construct a request that is content type multipart/form\-data and has a storageMethodName  of FILE. 
+If you wish to create a File record and upload file content to the Arena servers, construct a request that is content type multipart/form-data and has a storageMethodName  of FILE. 
 
 
 For File editions with storageMethodName FILE, the location attribute should be null.
@@ -20,12 +18,15 @@ Currently, only Files less than 2GB can be uploaded through this endpoint.
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | multipart/form\-data<br> |   |
+| content-type<br> | multipart/form-data<br> |   |
 
 ## Sample Request Body
 
+          
+          
+        
 
-* Creating a File and uploading content to Arena servers \(example form\):
+* Creating a File and uploading content to Arena servers (example form):
 
 ```
 author.fullName:John Parker
@@ -75,13 +76,13 @@ content:[physical file]
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | determined by file type<br> | content type of file<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | determined by file type<br> | content type of file<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-ItemFileAssociation\-Guid<br> | GUID string<br> | GUID for new file association \- only when including content<br> |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-ItemFileAssociation-Guid<br> | GUID string<br> | GUID for new file association - only when including content<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 * When creating a File object with uploaded content:
@@ -125,6 +126,10 @@ content:[physical file]
 
 ```
 An error is returned if:
+          
+          
+          
+        
 
 * The GUID is not valid.
 

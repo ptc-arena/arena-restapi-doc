@@ -1,20 +1,16 @@
 # GET Users
-
-
 /settings/users
-
-
 
 /settings/users/&lt;GUID&gt;
 
-Returns an array of  matching the given search criteria. Appending a GUID to the URL returns the user with that GUID.
+Returns an array of Users matching the given search criteria. Appending a GUID to the URL returns the user with that GUID.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
@@ -45,17 +41,15 @@ Returns an array of  matching the given search criteria. Appending a GUID to the
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all users
-
-
 
 GET /settings/users
 
@@ -95,9 +89,7 @@ GET /settings/users
 }
 
 ```
-Get all users with the string  in the fullName attribute
-
-
+Get all users with the string john in the fullName attribute
 
 GET /settings/users?fullName=\*john
 
@@ -128,8 +120,6 @@ GET /settings/users?fullName=\*john
 ```
 Get all advanced supplier users
 
-
-
 GET /settings/users?type=ADVANCED_SUPPLIER
 
 ```
@@ -159,8 +149,6 @@ GET /settings/users?type=ADVANCED_SUPPLIER
 
 ```
 Get a single user
-
-
 
 GET /settings/users/N5P8R8R73GXGZI1K3YH7
 

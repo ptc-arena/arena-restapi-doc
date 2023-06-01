@@ -1,20 +1,16 @@
 # GET File Categories
-
-
 /settings/files/categories
-
-
 
 /settings/files/categories/&lt;GUID&gt;
 
-This returns   available for Files. Appending a GUID to the URL returns the category with that GUID. 
+This returns  Categories available for Files. Appending a GUID to the URL returns the category with that GUID. 
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
@@ -33,16 +29,14 @@ This returns   available for Files. Appending a GUID to the URL returns the cate
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all file categories
-
-
 
 GET /settings/files/categories
 
@@ -124,8 +118,6 @@ GET /settings/files/categories
 ```
 Get all file categories that begin with C
 
-
-
 GET settings/files/categories?path=item\C
 
 ```
@@ -154,8 +146,6 @@ GET settings/files/categories?path=item\C
 }
 ```
 Get a single file category
-
-
 
 GET settings/files/categories/9RBUZPQQZ6PZI1DL92A2
 

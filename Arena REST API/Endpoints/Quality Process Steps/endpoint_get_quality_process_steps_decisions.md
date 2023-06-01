@@ -1,22 +1,20 @@
 # GET Quality Process Step Decisions
-
-
 /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;/decisions
 
 /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;/decisions/&lt;GUID&gt;
 
-Returns the decisions of users in a Quality Process sign\-off step when given the GUID of the Quality Process and the GUID of the Quality sign\-off step.
+Returns the decisions of users in a Quality Process sign-off step when given the GUID of the Quality Process and the GUID of the Quality sign-off step.
 
 If appended with a valid decision GUID from the above, the endpoint returns a specific decision from a specific user of a specific step within a specific Quality Process.
 
-The new property  only appears in Quality sign\-off steps.
+The new property decision only appears in Quality sign-off steps.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -29,17 +27,15 @@ The new property  only appears in Quality sign\-off steps.
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
-Get decisions for a given quality process sign\-off step where all users are required to sign off.
-
-
+Get decisions for a given quality process sign-off step where all users are required to sign off.
 
 /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;/decisions
 
@@ -114,9 +110,7 @@ Get decisions for a given quality process sign\-off step where all users are req
     ]
 }
 ```
-Get decisions  for a given quality process sign\-off step where only one user is required to sign off.
-
-
+Get decisions  for a given quality process sign-off step where only one user is required to sign off.
 
 /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;/decisions
 
@@ -151,9 +145,7 @@ Get decisions  for a given quality process sign\-off step where only one user is
     ]
 }
 ```
-Get a specific decision from the existing decisions of a sign\-off step.
-
-
+Get a specific decision from the existing decisions of a sign-off step.
 
 /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;/decisions/&lt;GUID&gt;
 

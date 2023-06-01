@@ -1,6 +1,4 @@
 # GET Export Definitions (Search)
-
-
 /exports?query_string
 
 Returns a collection of Export Definition objects matching the given search criteria.. 
@@ -10,7 +8,7 @@ Returns a collection of Export Definition objects matching the given search crit
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
@@ -43,17 +41,15 @@ GET calls that include Object numbers that include a percentage character, %, mu
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get all export definitions
-
-
 
 GET /exports
 
@@ -163,8 +159,6 @@ GET /exports
 }
 ```
 Get export definitions named "EFFECTIVE PCBAs"
-
-
 
 GET &lt;url&gt;/export?name=EFFECTIVE PCBAs
 

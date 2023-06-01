@@ -1,23 +1,26 @@
 # POST Item Lifecycle Phase Change
-
-
 /items/lifecyclephasechanges
 
 Releases a new revision of an item with a given GUID to a target lifecycle phase specified within the request. Returns revision GUIDs for effective, superseded, and working revisions of the item.
 
 The following phase transitions are allowed:
+          
+          
+          
+          
+        
 
 * Release to Design
-\(move an unreleased Item to a Design stage lifecycle phase.\)
+(move an unreleased Item to a Design stage lifecycle phase.)
 
-* Make Effective in Design \(make working modifications effective in a new revision while remaining in the same Design phase.\)
+* Make Effective in Design (make working modifications effective in a new revision while remaining in the same Design phase.)
 
 
 * Release to Production
-\(move a Design stage Item to a Production stage lifecycle phase.\)
+(move a Design stage Item to a Production stage lifecycle phase.)
 
 * Make Effective in Production
-\(make working modifications effective in a new revision while remaining in the same Production phase.\)
+(make working modifications effective in a new revision while remaining in the same Production phase.)
 
 
 Of these phase transitions, Release to Design, Make Effective in Design, and Make Effective in Production require the working revision of the item because these endpoints operate on the working revision. Release to Production requires that the item GUID  be the effective revision. The target lifecycle phase can be any defined for the workspace, including custom phases.
@@ -29,7 +32,7 @@ This API request can generate  errors, warnings, and notices. The request will f
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 ```
@@ -64,12 +67,12 @@ This API request can generate  errors, warnings, and notices. The request will f
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 ```

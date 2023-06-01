@@ -1,6 +1,4 @@
 # PUT Outbound-Event Event Quality Reconcile
-
-
 /outboundevents/&lt;GUID&gt;/events/&lt;GUID&gt;/qualityprocesses/&lt;GUID&gt;
 
 Marks a change in an event as reconciled if reconciled is set to true within the request body.
@@ -12,7 +10,7 @@ The user must be an integration administrator for the integration in order to pe
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 Request body with reonciled set to true marks a quality process in a specific event as reconciled.
@@ -33,17 +31,15 @@ Request body with reonciled set to true marks a quality process in a specific ev
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
-Marks as reconciled the specific quality process within an a specific event of a specific outbound\-event integration.
-
-
+Marks as reconciled the specific quality process within an a specific event of a specific outbound-event integration.
 
 /outboundevents/&lt;GUID&gt;/events/&lt;GUID&gt;/qualityprocesses/&lt;GUID&gt;
 

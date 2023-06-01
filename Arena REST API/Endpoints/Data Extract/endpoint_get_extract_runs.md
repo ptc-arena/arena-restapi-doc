@@ -1,9 +1,7 @@
 # GET Extract Runs Search
-
-
 /extracts/&lt;GUID&gt;/runs
 
-Returns  objects  for an extract with a given GUID. 
+Returns Extract Run objects  for an extract with a given GUID. 
 Appending a run GUID returns the run with that GUID.
 
 ## Request Header
@@ -11,7 +9,7 @@ Appending a run GUID returns the run with that GUID.
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Parameters
 
@@ -47,19 +45,17 @@ Search behavior in the Arena REST API differs from search behavior in the Arena 
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
-Get extracts which ran between  and  \(inclusive\).
+Get extracts which ran between April 19, 2015, 11:59pm and 59 seconds and September 30, 2015, 11:59pm and 59 seconds \(inclusive\).
 
-
-
-GET /extracts/&lt;GUID&gt;/runs?runDateTimeFrom="2015\-04\-19T23:59:59Z"&runDateTo="2015\-09\-30T23:59:59Z"
+GET /extracts/&lt;GUID&gt;/runs?runDateTimeFrom="2015-04-19T23:59:59Z"&runDateTo="2015-09-30T23:59:59Z"
 
 ```
 {  
@@ -125,8 +121,6 @@ GET /extracts/&lt;GUID&gt;/runs?runDateTimeFrom="2015\-04\-19T23:59:59Z"&runDate
 ```
 Get a specific run
 
-
-
 GET /extracts/&lt;GUID&gt;/runs/BTDWA7BDO5OFYH0J2L22
 
 ```
@@ -143,6 +137,9 @@ GET /extracts/&lt;GUID&gt;/runs/BTDWA7BDO5OFYH0J2L22
 }
 ```
 An error is returned if:
+          
+          
+        
 
 * the GUID is not valid.
 
@@ -170,5 +167,5 @@ An error is returned if:
    ]
 }
 ```
-* \*If the file server is inaccessible, it may return a 400 status with no message.
+* *If the file server is inaccessible, it may return a 400 status with no message.
 

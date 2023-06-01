@@ -1,16 +1,14 @@
 # GET Where Used
-
-
 /items/&lt;GUID&gt;/whereused
 
-Returns an array of  objects in which the given Item appears as a BOM line, along with the line number and other attributes. Note that when "lineNumber" is null for an assembly line, \(a\) line number generation is set to manual but the user has not yet entered line numbers, or \(b\) line number generation is set to automatic.
+Returns an array of Item objects in which the given Item appears as a BOM line, along with the line number and other attributes. Note that when "lineNumber" is null for an assembly line, \(a\) line number generation is set to manual but the user has not yet entered line numbers, or \(b\) line number generation is set to automatic.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,17 +21,15 @@ Returns an array of  objects in which the given Item appears as a BOM line, alon
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 Get where used results for an item
-
-
 
 /items/&lt;GUID&gt;/whereused
 

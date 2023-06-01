@@ -1,17 +1,22 @@
 # POST Item Source Relationship Create
-
-
 /items/&lt;GUID&gt;/sourcing
 
-Creates a new  for an item with a given GUID. Note that you can create two different types of source relationship:
+Creates a new Source Relationship for an item with a given GUID. Note that you can create two different types of source relationship:
+          
+          
+        
 
-* In a direct relationship, you get a manufacturer Item directly from the manufacturer. The manufacturer and vendor items are the same. You can also specify a Make\-Item relationship \(where your own company makes the part\) by setting MakeItem to True.
+* In a direct relationship, you get a manufacturer Item directly from the manufacturer. The manufacturer and vendor items are the same. You can also specify a Make-Item relationship (where your own company makes the part) by setting MakeItem to True.
 
 
 * In an indirect relationship, you buy a manufacturer item from a vendor. The manufacturer and vendor items are different. You can choose not to specify the manufacturer or vendor item in an indirect source relationship, to create an "any" relationship \(source to any manufacturer or vendor.\)
 
 
 NOTES:
+          
+          
+          
+        
 
 * The suppliers and supplier items named in the source relationship must already exist in the workspace. Find their GUIDs with Get Supplier and Get Supplier Item requests.
 
@@ -24,7 +29,7 @@ NOTES:
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 * Create Indirect Source Relationship
@@ -44,7 +49,7 @@ NOTES:
    "makeItem":false
 }
 ```
-* Create Direct Source Relationship \(note that the mfrItem and vendorItem GUIDs are the same\)
+* Create Direct Source Relationship (note that the mfrItem and vendorItem GUIDs are the same)
 
 ```
 {  
@@ -61,7 +66,7 @@ NOTES:
    "makeItem":false
 }
 ```
-* Create Make\-Item Source Relationship \(where your company makes the Item\)
+* Create Make-Item Source Relationship (where your company makes the Item)
 
 ```
 {  
@@ -83,17 +88,15 @@ NOTES:
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Responses
 Create a new source relationship for a given item
-
-
 
 /items/&lt;GUID&gt;/sourcing
 
@@ -119,6 +122,9 @@ Create a new source relationship for a given item
 }
 ```
 Returns an error if:
+          
+          
+        
 
 * the format of the request is incorrect:
 
@@ -133,7 +139,7 @@ Returns an error if:
   ]
 }
 ```
-* the vendorItemConversionFactor attribute is not null in a Make\-Item Source Relationship or when there is no Vendor Item:
+* the vendorItemConversionFactor attribute is not null in a Make-Item Source Relationship or when there is no Vendor Item:
 
 ```
 {

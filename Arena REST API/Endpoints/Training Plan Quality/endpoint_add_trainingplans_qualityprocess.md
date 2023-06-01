@@ -1,16 +1,14 @@
 # POST Add Training Plan Quality Process
-
-
 /trainingplans/&lt;GUID&gt;/quality
 
-This endpoint adds a Quality Process \(with a specified step\) as a reference to a Training Plan.  Using the browser\-based application as a point of comparison, this endpoint adds a specific Quality Process to the Reference view of a specific Training Plan.
+This endpoint adds a Quality Process \(with a specified step\) as a reference to a Training Plan.  Using the browser-based application as a point of comparison, this endpoint adds a specific Quality Process to the Reference view of a specific Training Plan.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,21 +21,19 @@ This endpoint adds a Quality Process \(with a specified step\) as a reference to
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Requests and Responses
 Add a Quality Process \(with a specified step\) to  a Training Plan.
 
-
-
 POST /trainingplans/&lt;GUID&gt;/quality
 
-
+**Request** 
 
 ```
 {
@@ -49,7 +45,7 @@ POST /trainingplans/&lt;GUID&gt;/quality
     }
 }
 ```
-
+**Response** 
 
 ```
 {

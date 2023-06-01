@@ -1,16 +1,14 @@
 # GET A Training Plan Associated With A File
-
-
 files/&lt;GUID&gt;/trainingplans/&lt;GUID&gt;
 
-Returns a specific Training Plan associated within a specific File. Using the browser\-based application as a point of comparison, this endpoint returns a specific Training Plan located within the Associations  view of a specific File.
+Returns a specific Training Plan associated within a specific File. Using the browser-based application as a point of comparison, this endpoint returns a specific Training Plan located within the Associations  view of a specific File.
 
 ## Request Header
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Response Codes
 
@@ -23,12 +21,12 @@ Returns a specific Training Plan associated within a specific File. Using the br
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Get a specific Training Plan with a given GUID within the Associations view of a  File with a given GUID.

@@ -1,6 +1,4 @@
 # PUT Training Plan Edit
-
-
 /trainingplans/&lt;GUID&gt;
 
 In order to edit a Training Plan, the user must be a Training Plan Manager within the workspace. If the user is a Training Plan Manager within the workspace but not the Training Plan Manager of this specific Training Plan, they can only use this endpoint to modify the Training Manager.
@@ -10,7 +8,7 @@ In order to edit a Training Plan, the user must be a Training Plan Manager withi
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Set Null
 
@@ -29,19 +27,19 @@ In order to edit a Training Plan, the user must be a Training Plan Manager withi
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Requests and Responses
 Edit a Training Plan.
 
 /trainingplans/&lt;GUID&gt;
 
-
+**Request** 
 
 ```
 {
@@ -53,7 +51,7 @@ Edit a Training Plan.
     "daysToComplete": 36 
 }
 ```
-
+**Response** 
 
 ```
 {
@@ -76,7 +74,7 @@ Edit a Training Plan.
     "status": "OPEN"
 }
 ```
-
+**Request** 
 
 Set description to null.
 
@@ -92,7 +90,7 @@ PUT /trainingplans/&lt;GUID&gt;?setnull=true
     "daysToComplete": 36 
 }
 ```
-
+**Response** 
 
 ```
 {

@@ -1,19 +1,23 @@
 # POST Quality Process Step Complete
-
-
 /qualityprocesses/statuschanges
 
 Completes a specific Quality Process step. 
 
 NOTES:
+          
+          
+          
+          
+          
+        
 
-* Assigned Quality Process steps \(excluding sign\-off steps\) can be completed by the Quality Process Step Assignee or the Quality Process Owner.
+* Assigned Quality Process steps (excluding sign-off steps) can be completed by the Quality Process Step Assignee or the Quality Process Owner.
 
-* Quality Process steps without an assignee \(excluding sign\-off steps\) can be completed by any user with permissions.
+* Quality Process steps without an assignee (excluding sign-off steps) can be completed by any user with permissions.
 
-* Quality Process steps \(exluding sign\-off steps\) cannot be completed if the Quality Process itself is completed.
+* Quality Process steps (exluding sign-off steps) cannot be completed if the Quality Process itself is completed.
 
-* Quality Process sign\-off steps cannot be completed by this endpoint.
+* Quality Process sign-off steps cannot be completed by this endpoint.
 
 * For Access Policies: A user must have the Quality Edit Details rule enabled to complete a Quality Process step.
 
@@ -22,7 +26,7 @@ NOTES:
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
 | arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content\-type<br> | application/json<br> |   |
+| content-type<br> | application/json<br> |   |
 
 ## Sample Request Body
 ```
@@ -48,17 +52,15 @@ NOTES:
 
 | Name<br> | Value<br> | Description<br> |
 |  --- |  --- |  --- | 
-| Content\-Length<br> | number<br> | number of characters in response<br> |
-| Content\-Type<br> | application/json<br> | content type of response<br> |
+| Content-Length<br> | number<br> | number of characters in response<br> |
+| Content-Type<br> | application/json<br> | content type of response<br> |
 | Date<br> | date<br> | today's date and time<br> |
 | Server<br> | ArenaSolutions<br> |   |
-| X\-Arena\-Next\-Request\-Limit\-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X\-Arena\-Requests\-Remaining<br> | number<br> | how many calls left<br> |
+| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
+| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
 
 ## Sample Response Body
 Complete a quality process step
-
-
 
 /qualityprocesses/statuschanges
 

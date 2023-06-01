@@ -3,7 +3,7 @@
 | Field<br> | Data Type<br> | Description<br> |
 |  --- |  --- |  --- | 
 | active<br> | Boolean<br> | Indicates whether or not a template is available for users to select when creating a quality process. The value can be true or false.<br> |
-| creationDateTime<br> | Date\-Formatted String<br> | the date and time \(in Zulu format\) a template was created<br> |
+| creationDateTime<br> | Date-Formatted String<br> | the date and time \(in Zulu format\) a template was created<br> |
 | creator<br> | Reference<br> | The creator of a template. Contains the attribute fullName.<br> |
 | defaultNumberFormat<br> | Reference<br> | Details of the number format used by default for processes created using a template. See object.<br>Item Number Format<br> |
 | defaultOwner<br> | Reference<br> | The owner that is assigned by default to processes created based upon a template<br> |
