@@ -4,14 +4,6 @@
 Initiates an Export run based on an existing Export Definition.  Each case is shown below.
 
 NOTES:
-          
-          
-          
-          
-          
-          
-          
-        
 
 * The export run endpoint executes an export definition.
 
@@ -26,23 +18,23 @@ NOTES:
 Exports runs can have the following six statuses.
 
 
-| Export Status<br> | Description<br> |
+| Export Status  | Description  |
 |  --- |  --- | 
-| CREATED<br> | The export run has been created and is queued for processing.<br> |
-| RUNNING<br> | The export run is processing.<br> |
-| COMPLETE<br> | The export file is completed and is ready to be downloaded.<br> |
-| DOWNLOADED<br> | The export file has been downloaded by a user.<br> |
-| FAILED<br> | The export failed at runtime and there are no results.<br> |
-| ABORTED<br> | The export run was manually aborted by Arena Technical Support.<br> |
+| CREATED  | The export run has been created and is queued for processing.  |
+| RUNNING  | The export run is processing.  |
+| COMPLETE  | The export file is completed and is ready to be downloaded.  |
+| DOWNLOADED  | The export file has been downloaded by a user.  |
+| FAILED  | The export failed at runtime and there are no results.  |
+| ABORTED  | The export run was manually aborted by Arena Technical Support.  |
 
 * If an export has a JSON format and certain Export Options selected it can result in a JSON export file without any content. See About Export Results and the JSON Format.
 
 ## Request Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | application/json<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | application/json  |   |
 
 ## Sample Request Body
 * Run Export Definition (Criteria not specified in the export definition so it must be specified in the run)
@@ -63,21 +55,21 @@ Exports runs can have the following six statuses.
 ```
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 201<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 201  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Length<br> | number<br> | number of characters in response<br> |
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Length  | number  | number of characters in response  |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Response Body
 Export Run is processing

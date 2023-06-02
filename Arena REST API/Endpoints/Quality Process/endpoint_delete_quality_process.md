@@ -2,34 +2,32 @@
 /qualityprocesses/&lt;GUID&gt;
 
 Deletes a Quality Process with a given GUID. 
-          
-        
 
 Any full user can delete a Quality Process via the API. This differs from the Arena application, in which users must be the owner of the process or an Account Administrator to delete a Quality Process.
 
 ## Request Headers
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | application/json<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | application/json  |   |
 
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 204<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 204  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Responses
 No JSON response

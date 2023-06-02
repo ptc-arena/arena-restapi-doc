@@ -1,9 +1,9 @@
 # Compact Item Number Format
 
-| Field<br> | Data Type<br> | Description<br> |
+| Field  | Data Type  | Description  |
 |  --- |  --- |  --- | 
-| creationDateTime<br> | Date-Formatted String<br> | the date and time \(in Zulu format\) a NumberFormat was created<br> |
-| exampleNumber<br> | String<br> | An example of a NumberFormat.<br> |
-| guid<br> | String<br> | The unique identifier for an object<br> |
-| name<br> | String<br> | The name of a NumberFormat<br> |
+| creationDateTime  | Date-Formatted String  | the date and time \(in Zulu format\) a NumberFormat was created  |
+| exampleNumber  | String  | An example of a NumberFormat.  |
+| guid  | String  | The unique identifier for an object  |
+| name  | String  | The name of a NumberFormat  |
 

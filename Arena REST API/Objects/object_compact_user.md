@@ -1,8 +1,8 @@
 # User Compact
 
-| Field<br> | Data Type<br> | Description<br> |
+| Field  | Data Type  | Description  |
 |  --- |  --- |  --- | 
-| email<br> | String<br> | The email address of the user<br> |
-| fullName<br> | String<br> | The full \(first and last\) name of the user<br> |
-| guid<br> | String<br> | The unique identifier of a the user<br> |
+| email  | String  | The email address of the user  |
+| fullName  | String  | The full \(first and last\) name of the user  |
+| guid  | String  | The unique identifier of a the user  |
 

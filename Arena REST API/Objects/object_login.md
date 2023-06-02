@@ -1,12 +1,12 @@
 # Login
 
-| Field<br> | Data Type<br> | Description<br> |
+| Field  | Data Type  | Description  |
 |  --- |  --- |  --- | 
-| loginDateTime<br> | Date-Formatted String<br> | the date and time \(in Zulu format\) a user's session began<br> |
-| logoutDateTime<br> | Date-Formatted String<br> | the date and time \(in Zulu format\) a user's session ended \(null for currently logged in\)<br> |
-| duration<br> | Integer<br> | The length in minutes of a session \(null for currently logged in\)<br> |
-| connectedThrough<br> | String<br> | The application Zone through which the user connected to Arena. Values can be Arena; Arena FileDrop; SmartLink; Arena PartsList; Arena REST API; Arena Exchange; N/A<br> |
-| originatingIP<br> | String<br> | The IP from which the user connected to Arena<br> |
-| domain<br> | String<br> | The domain from which the user connected to Arena \(null for unknown\)<br> |
-| user<br> | Reference<br> | The user logging in. See object.<br>Compact User<br> |
+| loginDateTime  | Date-Formatted String  | the date and time \(in Zulu format\) a user's session began  |
+| logoutDateTime  | Date-Formatted String  | the date and time \(in Zulu format\) a user's session ended \(null for currently logged in\)  |
+| duration  | Integer  | The length in minutes of a session \(null for currently logged in\)  |
+| connectedThrough  | String  | The application Zone through which the user connected to Arena. Values can be Arena; Arena FileDrop; SmartLink; Arena PartsList; Arena REST API; Arena Exchange; N/A  |
+| originatingIP  | String  | The IP from which the user connected to Arena  |
+| domain  | String  | The domain from which the user connected to Arena \(null for unknown\)  |
+| user  | Reference  | The user logging in. See Compact User object.  |
 

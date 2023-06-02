@@ -3,8 +3,7 @@
 
 Creates a new edition for a File with a given GUID.
 
-If you wish to create an edition with no uploaded content, construct a JSON request with a storageMethodName of FTP \(stored on user FTP server\) or WEB \(web link\). When the storageMethodName is FTP or WEB, the location attribute should be the web or ftp address where the file resides.
-
+If you wish to create an edition with no uploaded content, construct a JSON request with a storageMethodName of FTP \(stored on user FTP server\) or WEB \(web link\). When the storageMethodName is FTP or WEB, the location attribute should be the web or ftp address where the file resides.<br>
 
 If you wish to create an edition and upload file content to the Arena servers, construct a request that is content type multipart/form-data \(specified in the header\) and has a storageMethodName of FILE \(stored on Arena servers.\)
 
@@ -18,10 +17,10 @@ Currently, only Files less than 2GB can be uploaded through this endpoint.
 
 ## Request Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | multipart/form-data<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | multipart/form-data  |   |
 
 ## Sample Request Body - with uploaded content
 Text attributes:
@@ -66,22 +65,22 @@ content: [physical file]
 ```
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 201<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 201  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Length<br> | number<br> | number of characters in response<br> |
-| Content-Type<br> | determined by file type<br> | content type of file<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-FileGuid<br> | GUID string<br> | GUID for new file - only when including content<br> |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Length  | number  | number of characters in response  |
+| Content-Type  | determined by file type  | content type of file  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-FileGuid  | GUID string  | GUID for new file - only when including content  |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Responses
 * When creating a File object with uploaded content:

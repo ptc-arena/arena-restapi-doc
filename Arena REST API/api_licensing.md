@@ -7,7 +7,6 @@ The http headers of all API responses include the remaining number of API reques
 
 X-Arena-Next-Request-Limit-Reset: Fri, 02-May-2014 14:22:13 GMT-0700 \(PDT\) X-Arena-Requests-Remaining: 2
 
-
 And each response to the Log In request includes the total number of API requests for the period. For example:
 
 "workspaceRequestLimit": 10000

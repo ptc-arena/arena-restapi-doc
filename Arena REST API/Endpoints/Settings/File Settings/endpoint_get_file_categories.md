@@ -7,33 +7,33 @@ This returns  Categories available for Files. Appending a GUID to the URL return
 
 ## Request Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | application/json<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | application/json  |   |
 
 ## Parameters
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Path<br> | string<br> | This is used to filter out categories. The root of path for files is "file". If you want to get all the categories under the root category which start with A, you can send a request as , where "\" is the separator between parent category and child category.<br>api.arenasolutions.com/v1/settings/files/categories ?path=item\A<br> |
+| Path  | string  | This is used to filter out categories. The root of path for files is "file". If you want to get all the categories under the root category which start with A, you can send a request as api.arenasolutions.com/v1/settings/files/categories ?path=item\A, where "\" is the separator between parent category and child category.   |
 
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 200<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 200  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Response Body
 Get all file categories

@@ -3,68 +3,60 @@ Item Attributes that can be used in criteria.
 
 ## Supported Criteria Attributes and Their Supported Operators
 
-| Attribute<br> | Field Type<br> | Operators<br> |
+| Attribute  | Field Type  | Operators  |
 |  --- |  --- |  --- | 
-| number<br> | SINGLE_LINE_TEXT<br> | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH<br> |
-| guid<br> | GUID<br> | IS_EQUAL_TO, IS_IN<br> |
-| effectiveDateTime<br> | DATETIME<br> | IS_BEFORE, IS_AFTER, IS_BETWEEN<br> |
-| revisionNumber<br> | SINGLE_LINE_TEXT<br> | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH<br> |
-| description<br> | SINGLE_LINE_TEXT<br> | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH<br> |
-| category.guid\*<br> | GUID<br> | IS_EQUAL_TO, IS_IN<br> |
-| category.name<br> | FIXED_DROP_DOWN \(Single Select\)<br> | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH<br> |
-| owner.fullName<br> | SINGLE_LINE_TEXT<br> | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH<br> |
-| creator.guid<br> | GUID<br> | IS_EQUAL_TO<br> |
-| creator.fullName<br> | SINGLE_LINE_TEXT<br> | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH<br> |
-| creator.email<br> | SINGLE_LINE_TEXT<br> | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH<br> |
-| lifecyclePhase.guid<br> | GUID<br> | IS_EQUAL_TO, IS_IN<br> |
-| lifecyclePhase.name<br> | FIXED_DROP_DOWN \(Single Select\)<br> | IS_EQUAL_TO, IS_NOT_EQUAL_TO<br> |
-| lifecyclePhase.stage<br> | FIXED_DROP_DOWN \(Single Select\)<br> | IS_EQUAL_TO, IS_NOT_EQUAL_TO<br> |
-| creationDateTime<br> | DATETIME<br> | IS_EQUAL_TO, IS_BEFORE, IS_AFTER, IS_BETWEEN<br> |
-| modifiedBOM\*<br> | BOOLEAN<br> | IS_EQUAL_TO<br> |
-| modifiedSpecs\*<br> | BOOLEAN<br> | IS_EQUAL_TO<br> |
-| modifiedSourcing\*<br> | BOOLEAN<br> | IS_EQUAL_TO<br> |
-| modifiedFiles\*<br> | BOOLEAN<br> | IS_EQUAL_TO<br> |
-| any<br> | SINGLE_LINE_TEXT<br> | CONTAINS<br> |
-| supplier.name<br> | SINGLE_LINE_TEXT<br> | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH<br> |
-| supplier.guid<br> | GUID<br> | IS_EQUAL_TO<br> |
-| supplierItem.name<br> | SINGLE_LINE_TEXT<br> | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH<br> |
-| supplierItem.guid<br> | GUID<br> | IS_EQUAL_TO<br> |
-| Additional Attributes \(Various Types\)<br> | SINGLE_LINE_TEXT<br> | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH<br> |
-|   | MULTI_LINE_TEXT<br> | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH<br> |
-|   | FIXED_DROP_DOWN<br> | IS_IN, IS_NOT_IN<br> |
-|   | FIXED_DROP_DOWN \(Pre-defined, Single Select\)<br> | IS_IN, IS_NOT_IN<br> |
-|   | FIXED_DROP_DOWN \(Pre-defined, Multi-Select\)<br> | IS_IN, IS_NOT_IN<br> |
-|   | DATETIME<br> | IS_EQUAL_TO, IS_BEFORE, IS_AFTER, IS_BETWEEN<br> |
-|   | NUMBER<br> | IS_EQUAL_TO, IS_NOT_EQUAL_TO, IS_LESS_THAN_OR_EQUAL_TO, IS_LESS_THAN, IS_GREATOR_THAN_OR_EQUAL_TO, IS_GREATOR_THAN<br> |
+| number  | SINGLE_LINE_TEXT  | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH  |
+| guid  | GUID  | IS_EQUAL_TO, IS_IN  |
+| effectiveDateTime  | DATETIME  | IS_BEFORE, IS_AFTER, IS_BETWEEN  |
+| revisionNumber  | SINGLE_LINE_TEXT  | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH  |
+| description  | SINGLE_LINE_TEXT  | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH  |
+| category.guid\*  | GUID  | IS_EQUAL_TO, IS_IN  |
+| category.name  | FIXED_DROP_DOWN \(Single Select\)  | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH  |
+| owner.fullName  | SINGLE_LINE_TEXT  | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH  |
+| creator.guid  | GUID  | IS_EQUAL_TO  |
+| creator.fullName  | SINGLE_LINE_TEXT  | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH  |
+| creator.email  | SINGLE_LINE_TEXT  | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH  |
+| lifecyclePhase.guid  | GUID  | IS_EQUAL_TO, IS_IN  |
+| lifecyclePhase.name  | FIXED_DROP_DOWN \(Single Select\)  | IS_EQUAL_TO, IS_NOT_EQUAL_TO  |
+| lifecyclePhase.stage  | FIXED_DROP_DOWN \(Single Select\)  | IS_EQUAL_TO, IS_NOT_EQUAL_TO  |
+| creationDateTime  | DATETIME  | IS_EQUAL_TO, IS_BEFORE, IS_AFTER, IS_BETWEEN  |
+| modifiedBOM\*  | BOOLEAN  | IS_EQUAL_TO  |
+| modifiedSpecs\*  | BOOLEAN  | IS_EQUAL_TO  |
+| modifiedSourcing\*  | BOOLEAN  | IS_EQUAL_TO  |
+| modifiedFiles\*  | BOOLEAN  | IS_EQUAL_TO  |
+| any  | SINGLE_LINE_TEXT  | CONTAINS  |
+| supplier.name  | SINGLE_LINE_TEXT  | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH  |
+| supplier.guid  | GUID  | IS_EQUAL_TO  |
+| supplierItem.name  | SINGLE_LINE_TEXT  | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH  |
+| supplierItem.guid  | GUID  | IS_EQUAL_TO  |
+| Additional Attributes \(Various Types\)  | SINGLE_LINE_TEXT  | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH  |
+|   | MULTI_LINE_TEXT  | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH  |
+|   | FIXED_DROP_DOWN  | IS_IN, IS_NOT_IN  |
+|   | FIXED_DROP_DOWN \(Pre-defined, Single Select\)  | IS_IN, IS_NOT_IN  |
+|   | FIXED_DROP_DOWN \(Pre-defined, Multi-Select\)  | IS_IN, IS_NOT_IN  |
+|   | DATETIME  | IS_EQUAL_TO, IS_BEFORE, IS_AFTER, IS_BETWEEN  |
+|   | NUMBER  | IS_EQUAL_TO, IS_NOT_EQUAL_TO, IS_LESS_THAN_OR_EQUAL_TO, IS_LESS_THAN, IS_GREATOR_THAN_OR_EQUAL_TO, IS_GREATOR_THAN  |
 
 Table of Criterion Operators organized by field type.
 
 
-| fieldType<br> | Operators<br> | Data Type<br> |
+| fieldType  | Operators  | Data Type  |
 |  --- |  --- |  --- | 
-| SINGLE_LINE_TEXT<br> | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH<br> | String<br> |
-| GUID<br> | IS_IN<br> | Array of Strings<br> |
-| DATETIME<br> | IS_EQUAL_TO, IS_BEFORE, IS_AFTER<br> | String \(Date\)<br> |
-| DATETIME<br> | IS_BETWEEN<br> | Array of 2 Strings \(Date\). Dates must be in chronological order.<br> |
-| BOOLEAN<br> | IS_EQUAL_TO<br> | Boolean<br> |
-| DATE<br> | IS_BEFORE, IS_AFTER<br> | String \(Date\)<br> |
-| DATE<br> | IS_BETWEEN<br> | Array of 2 Strings \(Date\). Dates must be in chronological order.<br> |
-| DROP_DOWN<br> | IS_EQUAL_TO, IS_NOT_EQUAL_TO<br> | Array of Strings<br> |
-| FIXED_DROP_DOWN, multi-select<br> | IS_EQUAL_TO, IS_NOT_EQUAL_TO<br> | Array of Strings<br> |
-| FIXED_DROP_DOWN, single select<br> | IS_EQUAL_TO, IS_NOT_EQUAL_TO<br> | Array of Strings<br> |
-| MULTI_LINE_TEXT<br> | IS_EQUAL_TO, IS_LESS_THAN_OR EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH<br> | String<br> |
-| NUMBER<br> | IS_EQUAL_TO, IS_LESS_THAN_OR_EQUAL_TO, IS_LESS_THANK, IS_GREATER_THAN_OR_EQUAL_TO, IS_GREATER_THAN<br> | Number<br> |
-| POSITIVE_DOUBLE<br> | IS_EQUAL_TO, IS_LESS_THAN_OR_EQUAL_TO, IS_LESS_THAN, IS_GREATER_THAN_OR_EQUAL_TO<br> | Number<br> |
+| SINGLE_LINE_TEXT  | IS_EQUAL TO, IS_NOT_EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH  | String  |
+| GUID  | IS_IN  | Array of Strings  |
+| DATETIME  | IS_EQUAL_TO, IS_BEFORE, IS_AFTER  | String \(Date\)  |
+| DATETIME  | IS_BETWEEN  | Array of 2 Strings \(Date\). Dates must be in chronological order.  |
+| BOOLEAN  | IS_EQUAL_TO  | Boolean  |
+| DATE  | IS_BEFORE, IS_AFTER  | String \(Date\)  |
+| DATE  | IS_BETWEEN  | Array of 2 Strings \(Date\). Dates must be in chronological order.  |
+| DROP_DOWN  | IS_EQUAL_TO, IS_NOT_EQUAL_TO  | Array of Strings  |
+| FIXED_DROP_DOWN, multi-select  | IS_EQUAL_TO, IS_NOT_EQUAL_TO  | Array of Strings  |
+| FIXED_DROP_DOWN, single select  | IS_EQUAL_TO, IS_NOT_EQUAL_TO  | Array of Strings  |
+| MULTI_LINE_TEXT  | IS_EQUAL_TO, IS_LESS_THAN_OR EQUAL_TO, CONTAINS, DOES_NOT_CONTAIN, STARTS_WITH, DOES_NOT_START_WITH  | String  |
+| NUMBER  | IS_EQUAL_TO, IS_LESS_THAN_OR_EQUAL_TO, IS_LESS_THANK, IS_GREATER_THAN_OR_EQUAL_TO, IS_GREATER_THAN  | Number  |
+| POSITIVE_DOUBLE  | IS_EQUAL_TO, IS_LESS_THAN_OR_EQUAL_TO, IS_LESS_THAN, IS_GREATER_THAN_OR_EQUAL_TO  | Number  |
 
 
-            
-            
-            
-            
-            
-            
-            
-          
 
 * Searches for "SINGLE_LINE_TEXT": "IS_EQUAL_TO" and "IS_NOT_EQUAL_TO" user astrisk literally and not as a wildcard.
 

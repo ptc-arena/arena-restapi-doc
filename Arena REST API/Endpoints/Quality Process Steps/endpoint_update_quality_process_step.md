@@ -4,12 +4,10 @@
 Updates an existing Step object with a given GUID  in a Quality Process with a given GUID. 
 
 Editable attributes: Assignee, attribute values,  dueDateTime.
-          
-        
 
 When you specify dueDateTime for a step, only the date portion of the dueDateTime string is honored. Time always appears as 23:59:59 local time.
 
-Please note that the Assignee response object is deprecated. Please use Assignees when assigning a user or User Group to a Quality Proecss step. See note attached to Assignee object body within response body.
+Please note that the *Assignee*  response object is deprecated. Please use *Assignees*  when assigning a user or User Group to a Quality Proecss step. See note attached to *Assignee*  object body within response body.
 
 ## Request Header
 ## Sample Request Body
@@ -29,21 +27,21 @@ Please note that the Assignee response object is deprecated. Please use Assignee
 ```
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 201<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 201  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Length<br> | number<br> | number of characters in response<br> |
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Length  | number  | number of characters in response  |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Response Body
 Update a quality process step

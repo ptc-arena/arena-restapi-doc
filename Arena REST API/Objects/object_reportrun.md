@@ -1,10 +1,10 @@
 # Report Run
 
-| Field<br> | Data Type<br> | Description<br> |
+| Field  | Data Type  | Description  |
 |  --- |  --- |  --- | 
-| dateTime<br> | Date-Formatted String<br> | the date and time \(in Zulu format\) an report began<br> |
-| description<br> | String<br> | The description of the report run<br> |
-| numberOfObjects<br> | Integer<br> | The number of objects in the report run<br> |
-| report<br> | Reference<br> | Details of the report. See object<br>Report<br> |
-| user<br> | Reference<br> | The User who ran the report. See object.<br>Compact User<br> |
+| dateTime  | Date-Formatted String  | the date and time \(in Zulu format\) an report began  |
+| description  | String  | The description of the report run  |
+| numberOfObjects  | Integer  | The number of objects in the report run  |
+| report  | Reference  | Details of the report. See Report object  |
+| user  | Reference  | The User who ran the report. See Compact User object.  |
 

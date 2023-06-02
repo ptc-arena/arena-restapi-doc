@@ -7,36 +7,36 @@ The source relationship GUID in the responses is identical to the source relatio
 
 ## Request Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | application/json<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | application/json  |   |
 
 ## Parameters
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| offset<br> | integer<br> | Specifies the position in the list of all source relationships where results should begin. All relationships before the offset in the search results are ignored. The default value is 0.<br> |
-| limit<br> | integer<br> | Specifies the maximum number of returned results. The default value \(no specified limit\) is 20, the maximum is 400.<br> |
-| item.status<br> | number<br> | Specifies the revision types of items that can be included in returned results. The possible values are 0 \(working\), 1 \(effective\), 2 \(superseded\)<br> |
+| offset  | integer  | Specifies the position in the list of all source relationships where results should begin. All relationships before the offset in the search results are ignored. The default value is 0.  |
+| limit  | integer  | Specifies the maximum number of returned results. The default value \(no specified limit\) is 20, the maximum is 400.  |
+| item.status  | number  | Specifies the revision types of items that can be included in returned results. The possible values are 0 \(working\), 1 \(effective\), 2 \(superseded\)  |
 
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 200<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 200  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Length<br> | number<br> | number of characters in response<br> |
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Length  | number  | number of characters in response  |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Response Body
 Get source relationships for a supplier item

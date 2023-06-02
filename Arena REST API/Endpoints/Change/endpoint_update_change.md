@@ -3,7 +3,7 @@
 
 Updates attribute information for a change with a given GUID. 
 
-For an overview of the Change Lifecyle in Arena, including a summary of Lifecycle Rules, see .
+For an overview of the Change Lifecyle in Arena, including a summary of Lifecycle Rules, see  About the Change Lifecycle.
 
 Changes cannot be edited after they are submitted, with the following exceptions:
 
@@ -12,13 +12,11 @@ Changes cannot be edited after they are submitted, with the following exceptions
 * Implementation Status can be edited in any lifecycle phase.
 
 The fields you can update are dependent on the Change's effectivity type. 
-          
-        
 
 
-| Permanent on Approval<br> | Permanent on Date<br> | Temporary<br> |
+| Permanent on Approval  | Permanent on Date  | Temporary  |
 |  --- |  --- |  --- | 
-| category; title; description; approvalDeadline; effectivityType\*; enforceApprovalDeadline; implementationStatus; Additional Attribute values<br> | category; title; description; approvalDeadline; effectivityType\*; enforceApprovalDeadline; implementationStatus; Additional Attribute values<br> | category; title; description; approvalDeadline; enforceApprovalDeadline; expirationDateTime; implementationStatus; Additional Attribute values<br> |
+| category; title; description; approvalDeadline; effectivityType\*; enforceApprovalDeadline; implementationStatus; Additional Attribute values  | category; title; description; approvalDeadline; effectivityType\*; enforceApprovalDeadline; implementationStatus; Additional Attribute values  | category; title; description; approvalDeadline; enforceApprovalDeadline; expirationDateTime; implementationStatus; Additional Attribute values  |
 
 \*For Changes with Permanent Effectivity, effectivityType can be edited to the other Permanent value, but cannot be changed to Temporary. For Changes with Temporary Effectivity, effectivityType cannot be edited. 
 
@@ -26,34 +24,34 @@ See the Note on Date/Time Handling
 
 ## Request Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | application/json<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | application/json  |   |
 
 ## Set Null
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| setnull<br> |   | Append the URL with setnull=true to set implementationStatus, approvalDeadlineDateTime, title, and description to null. Attributes must be included within the request body and set to null. Insert setnull after the query string, represented by a ?, after the GUID<br> |
+| setnull  |   | Append the URL with setnull=true to set implementationStatus, approvalDeadlineDateTime, title, and description to null. Attributes must be included within the request body and set to null. Insert setnull after the query string, represented by a ?, after the GUID  |
 
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 200<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 200  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Length<br> | number<br> | number of characters in response<br> |
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Length  | number  | number of characters in response  |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Requests and Responses
 Edit a Change with permanent-on-approval effectivity

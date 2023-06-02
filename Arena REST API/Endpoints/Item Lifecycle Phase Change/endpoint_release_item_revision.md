@@ -4,11 +4,6 @@
 Releases a new revision of an item with a given GUID to a target lifecycle phase specified within the request. Returns revision GUIDs for effective, superseded, and working revisions of the item.
 
 The following phase transitions are allowed:
-          
-          
-          
-          
-        
 
 * Release to Design
 (move an unreleased Item to a Design stage lifecycle phase.)
@@ -22,17 +17,16 @@ The following phase transitions are allowed:
 * Make Effective in Production
 (make working modifications effective in a new revision while remaining in the same Production phase.)
 
-
 Of these phase transitions, Release to Design, Make Effective in Design, and Make Effective in Production require the working revision of the item because these endpoints operate on the working revision. Release to Production requires that the item GUID  be the effective revision. The target lifecycle phase can be any defined for the workspace, including custom phases.
 
 This API request can generate  errors, warnings, and notices. The request will fail if there is at least one error or warning.  If the value for “proceedOnNotice” is True, the request will continue if it generates notices.
 
 ## Request Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | application/json<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | application/json  |   |
 
 ## Sample Request Body
 ```
@@ -50,29 +44,29 @@ This API request can generate  errors, warnings, and notices. The request will f
 ```
 ## Optional Fields
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| proceedOnNotice<br> | true or false<br> | This field, when set to true, forces the operation to continue even if there are errors.<br> |
-| notes<br> | string<br> | This field enters a comment in the item record<br> |
-| revisionNumber<br> | string<br> | This field specifies a target revision number for the transition. If this field is not included, and a revision sequence is defined for the target lifecycle stage \(and if the current revision number appears in that sequence\) the next revision in the sequence will be selected.\)<br> |
+| proceedOnNotice  | true or false  | This field, when set to true, forces the operation to continue even if there are errors.  |
+| notes  | string  | This field enters a comment in the item record  |
+| revisionNumber  | string  | This field specifies a target revision number for the transition. If this field is not included, and a revision sequence is defined for the target lifecycle stage \(and if the current revision number appears in that sequence\) the next revision in the sequence will be selected.\)  |
 
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 201<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 201  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Length<br> | number<br> | number of characters in response<br> |
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Length  | number  | number of characters in response  |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Responses
 ```

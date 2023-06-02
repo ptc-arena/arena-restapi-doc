@@ -1,8 +1,8 @@
 # Quality Affected Object
 
-| Field<br> | Data Type<br> | Description<br> |
+| Field  | Data Type  | Description  |
 |  --- |  --- |  --- | 
-| affected<br> | Reference<br> | The details of an affected object included in a quality process step. See the .<br>Affected object<br> |
-| guid<br> | String<br> | The unique identifier for the affected object.<br> |
-| notes<br> | String<br> | Notes entered for the affected object.<br> |
+| affected  | Reference  | The details of an affected object included in a quality process step. See the Affected object.   |
+| guid  | String  | The unique identifier for the affected object.  |
+| notes  | String  | Notes entered for the affected object.  |
 

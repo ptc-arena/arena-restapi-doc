@@ -40,9 +40,6 @@ Success - 200
 
 ```
 An error is returned if:
-          
-          
-        
 
 * the GUID is not valid.
 

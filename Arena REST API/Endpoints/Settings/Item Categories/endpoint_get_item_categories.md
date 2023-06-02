@@ -7,34 +7,34 @@ This returns  Category objects available for Items. Appending a  GUID to the URL
 
 ## Request Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | application/json<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | application/json  |   |
 
 ## Parameters
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| path<br> | string<br> | This is used to filter out categories. The root of path for item is "item". If you want to get all the categories under the root category which start with A, you can send a request as api.arenasolutions.com/items/categories? path=item\A\*<br>, where "\" is the separator between parent category and child category.<br> |
-| includeDeleted<br> | Boolean<br> | This is used to include deleted Categories. If includeDeleted is true, then deleted Categories will be included in the results. If includeDeleted is false, then deleted Categories will not be included in the results. Omitting the includeDeleted parameter altogether in this call will also exclude deleted Categories from the results.<br> |
+| path  | string  | This is used to filter out categories. The root of path for item is "item". If you want to get all the categories under the root category which start with A, you can send a request as api.arenasolutions.com/items/categories? path=item\A*, where "\" is the separator between parent category and child category.   |
+| includeDeleted  | Boolean  | This is used to include deleted Categories. If includeDeleted is true, then deleted Categories will be included in the results. If includeDeleted is false, then deleted Categories will not be included in the results. Omitting the includeDeleted parameter altogether in this call will also exclude deleted Categories from the results.  |
 
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 200<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 200  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Response Body
 Get all non-deleted  item categories

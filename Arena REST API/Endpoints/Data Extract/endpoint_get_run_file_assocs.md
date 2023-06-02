@@ -1,49 +1,48 @@
 # GET Extract Run Files
 /extracts/&lt;GUID&gt;/runs/&lt;GUID&gt;/files
 
-Returns Extract Run File Association objects for a run with a given GUID of an extract with a given GUID. 
-Appending a file association GUID returns the file association with that GUID.
+Returns Extract Run File Association objects for a run with a given GUID of an extract with a given GUID. <br>Appending a file association GUID returns the file association with that GUID.
 
 ## Request Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | application/json<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | application/json  |   |
 
 ## Parameters
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| offset<br> | integer<br> | Specifies the position in the list of all file associations where results should begin. All runs before the offset in the search results are ignored. The default value is 0.<br> |
-| limit<br> | integer<br> | Specifies the number of results that should be returned. By default the maximum number of associations is 20. Can return up 400 associations.<br> |
+| offset  | integer  | Specifies the position in the list of all file associations where results should begin. All runs before the offset in the search results are ignored. The default value is 0.  |
+| limit  | integer  | Specifies the number of results that should be returned. By default the maximum number of associations is 20. Can return up 400 associations.  |
 
 ## Searchable Attributes
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| downloadDateTimeFrom<br> | string<br> | Include runs downloaded after this date and time \(download date and time attributes refer to when the run was first downloaded, either by a user in the application or by the API\)<br> |
-| downloadDateTimeTo<br> | string<br> | Include runs downloaded after this date and time \(download date and time attributes refer to when the run was first downloaded, either by a user in the application or by the API\)<br> |
+| downloadDateTimeFrom  | string  | Include runs downloaded after this date and time \(download date and time attributes refer to when the run was first downloaded, either by a user in the application or by the API\)   |
+| downloadDateTimeTo  | string  | Include runs downloaded after this date and time \(download date and time attributes refer to when the run was first downloaded, either by a user in the application or by the API\)   |
 
 Search behavior in the Arena REST API differs from search behavior in the Arena application. In the API, a trailing asterisk \(wildcard\) is required to return results that start with a string; in the Arena application, a trailing asterisk is always implied.
 
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 200<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 200  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Length<br> | number<br> | number of characters in response<br> |
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Length  | number  | number of characters in response  |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Response Body
 Get all file associations for a Data Extract run
@@ -84,9 +83,6 @@ Get all file associations for a Data Extract run
 }
 ```
 An error is returned if:
-          
-          
-        
 
 * the GUID is not valid.
 

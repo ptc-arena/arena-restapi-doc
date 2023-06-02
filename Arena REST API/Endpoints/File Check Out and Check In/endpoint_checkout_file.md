@@ -3,17 +3,16 @@
 
 Checks out a File Edition. Note that only the latest edition can be checked out and only files of storageMethod "FILE" can be checked out.
 
-Checking Out a File occurs with the expectation to make changes to the File. File Check Out is more of a workflow than the editing of an existing File resoruce. Due to this workflow nature, existing File endpoints cannot be used and a POST with a files/statuschanges endpoint is utilized.
-The File Edition guid is submitted within the request body.
+Checking Out a File occurs with the expectation to make changes to the File. File Check Out is more of a workflow than the editing of an existing File resoruce. Due to this workflow nature, existing File endpoints cannot be used and a POST with a files/statuschanges endpoint is utilized.<br>The File Edition guid is submitted within the request body.
 
 Users must have a Full license to perform a File Check Out. Access Policies users must have access to an Edit File Policy rule.
 
 ## Request Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | application/json<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | application/json  |   |
 
 ## Sample Request Body
 
@@ -29,22 +28,22 @@ Users must have a Full license to perform a File Check Out. Access Policies user
 ```
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 201<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 201  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Length<br> | number<br> | number of characters in response<br> |
-| Content-Type<br> | determined by file type<br> | content type of file<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-FileGuid<br> | GUID string<br> | GUID for new file - only when including content<br> |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Length  | number  | number of characters in response  |
+| Content-Type  | determined by file type  | content type of file  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-FileGuid  | GUID string  | GUID for new file - only when including content  |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Responses
 * Checking Out a File that has not been Checked Out:

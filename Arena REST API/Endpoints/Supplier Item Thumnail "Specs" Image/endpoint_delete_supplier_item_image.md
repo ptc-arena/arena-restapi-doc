@@ -5,38 +5,38 @@ Deletes the Supplier Item Image Thumbnail Image of an Supplier Item with a speci
 
 ## Request Headers
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | application/json<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | application/json  |   |
 
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 204<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 204  | Success  |
+| 400  | Failure  |
 
 ## Response Headers
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Length<br> | number<br> | number of characters in response<br> |
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Length  | number  | number of characters in response  |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Successful Response Body
 no response
 
 ## Unsuccessful Response Body
 
-| Name<br> | Description<br> |
+| Name  | Description  |
 |  --- |  --- | 
-| status<br> | HTTP status<br> |
-| errors<br> | Collection of errors, including an Arena error code and message for each.<br> |
+| status  | HTTP status  |
+| errors  | Collection of errors, including an Arena error code and message for each.  |
 
 ## Sample Responses
 No JSON response if successful.
@@ -44,8 +44,6 @@ No JSON response if successful.
 Failure - 400
 
 An error is returned if:
-          
-        
 
 * The GUID is not valid. 
 

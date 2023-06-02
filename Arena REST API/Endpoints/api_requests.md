@@ -5,12 +5,7 @@ The Arena REST API provides methods for accessing a resource, such as an Item or
 
 which returns all revisions for a given Item resource. Note that the version takes the format e.g. v1 \(no decimal places\). The API version does not necessarily change with Arena releases.
 
-
-The header of all requests must include:
-        
-        
-        
-      
+<br>The header of all requests must include:
 
 * an access token "arena_session_id" for user authentication \(except Log In, which grants a token\)
 

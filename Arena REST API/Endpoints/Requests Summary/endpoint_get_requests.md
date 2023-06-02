@@ -5,33 +5,33 @@ Returns a collection of  Requests objects matching the given search criteria. No
 
 ## Request Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | application/json<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | application/json  |   |
 
 ## Parameters
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| offset<br> | integer<br> | Specifies the position in the list of all changes where results should begin. All changes before the offset in the search results are ignored. The default value is 0.<br> |
-| limit<br> | integer<br> | Specifies the number of results that should be returned. By default the maximum number of items is 20. Can return up 400 changes.<br> |
+| offset  | integer  | Specifies the position in the list of all changes where results should begin. All changes before the offset in the search results are ignored. The default value is 0.  |
+| limit  | integer  | Specifies the number of results that should be returned. By default the maximum number of items is 20. Can return up 400 changes.  |
 
 ## Searchable Attributes
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| \[additional attribute guid value\]<br> | string<br> | This special search permits searching for strings in additional attribute values. For example GET /items?VDXGZ7E0GO5N6P8PR55G=\*100pF where VDXGZ7E0GO5N6P8PR55G is the GUID of a custom attribute and we are searching for all items whose value for this attribute include the string "100pF". The ability to search for more than one value is available for the following attribute field types: DROP_DOWN & FIXED_DROPDOWN \(where multi-select is true\). See note below this table for additional details.<br>Additional attributes, also known as custom attributes, support the date field type. Users can perform searches by additional attributes with a date field type by using the format yyyy-mm-dd. In the following example, the user is using the following to search for a date field type custom attribute with a value of April 1, 2019:<br>GET /requests?4M6PUJNPNM3L4N25ZZ5F=2019-04-01<br> |
-| category.guid<br> | string<br> | category unique ID<br> |
-| creator.guid<br> | string<br> | creator user unique ID<br> |
-| deferralCode<br> | string<br> | Denotes the nature of a deferred Request. Values can be customized within Workspace Settings.<br> |
-| lifecycleStatus.type<br> | string<br> | lifecycle status of the request. Values can be , , , , or<br>UNSUBMITTED<br>SUBMITTED<br>DEFERRED<br>PROMOTED<br>CLOSED<br> |
-| number<br> | string<br> | number of the request<br> |
-| requestCode<br> | string<br> | Denotes the nature of the request. Set at Request creation. Possible values can be customized within Workspace Settings.<br> |
-| resolutionCode<br> | string<br> | Denotes the nature of a Promoted or Closed Request. Values can be customized within Workspace Settings.<br> |
-| submissionDateTimeFrom<br> | Date-Formatted String<br> | the date and time \(in Zulu format\) a request is submitted. Returns all Requests that are submitted after this date.<br> |
-| submissionDateTimeTo<br> | Date-Formatted String<br> | the date and time \(in Zulu format\) a request was submitted. Returns all Requests submitted before this date.<br> |
-| title<br> | string<br> | title of the Request.<br> |
+| \[additional attribute guid value\]  | string  | This special search permits searching for strings in additional attribute values. For example GET /items?VDXGZ7E0GO5N6P8PR55G=\*100pF where VDXGZ7E0GO5N6P8PR55G is the GUID of a custom attribute and we are searching for all items whose value for this attribute include the string "100pF". The ability to search for more than one value is available for the following attribute field types: DROP_DOWN & FIXED_DROPDOWN \(where multi-select is true\). See note below this table for additional details.Additional attributes, also known as custom attributes, support the date field type. Users can perform searches by additional attributes with a date field type by using the format yyyy-mm-dd.<br><br>In the following example, the user is using the following to search for a date field type custom attribute with a value of April 1, 2019: <br> GET /requests?4M6PUJNPNM3L4N25ZZ5F=2019-04-01<br>   |
+| category.guid  | string  | category unique ID  |
+| creator.guid  | string  | creator user unique ID  |
+| deferralCode  | string  | Denotes the nature of a deferred Request. Values can be customized within Workspace Settings.  |
+| lifecycleStatus.type  | string  | lifecycle status of the request. Values can be *UNSUBMITTED* , *SUBMITTED* , *DEFERRED* , *PROMOTED* , or *CLOSED*   |
+| number  | string  | number of the request  |
+| requestCode  | string  | Denotes the nature of the request. Set at Request creation. Possible values can be customized within Workspace Settings.  |
+| resolutionCode  | string  | Denotes the nature of a Promoted or Closed Request. Values can be customized within Workspace Settings.  |
+| submissionDateTimeFrom  | Date-Formatted String  | the date and time \(in Zulu format\) a request is submitted. Returns all Requests that are submitted after this date.  |
+| submissionDateTimeTo  | Date-Formatted String  | the date and time \(in Zulu format\) a request was submitted. Returns all Requests submitted before this date.  |
+| title  | string  | title of the Request.  |
 
 Search behavior in the Arena REST API differs from search behavior in the Arena application. In the API, a trailing asterisk \(wildcard\) is required to return results that start with a string; in the Arena application, a trailing asterisk is always implied.
 
@@ -49,20 +49,20 @@ GET calls that include Object numbers that include a percentage character, %, mu
 
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 200<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 200  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Response Body
 Get all Requests

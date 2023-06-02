@@ -2,8 +2,8 @@
 
 
 
-| Field<br> | Data Type<br> | Description<br> |
+| Field  | Data Type  | Description  |
 |  --- |  --- |  --- | 
-| guid<br> | String<br> | unique identifier for the number prefix<br> |
-| prefix<br> | String<br> | the string of letters and separator used as the first segment of a change number<br> |
+| guid  | String  | unique identifier for the number prefix  |
+| prefix  | String  | the string of letters and separator used as the first segment of a change number  |
 

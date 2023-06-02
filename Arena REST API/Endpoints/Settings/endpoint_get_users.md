@@ -7,46 +7,46 @@ Returns an array of Users matching the given search criteria. Appending a GUID t
 
 ## Request Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | application/json<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | application/json  |   |
 
 ## Parameters
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| offset<br> | integer<br> | Specifies the position in the list of all users where results should begin. All users before the offset in the search results are ignored. The default value is 0.<br> |
-| limit<br> | integer<br> | Specifies the maximum number of returned results. The default value \(no specified limit\) is 20, the maximum is 400.<br> |
+| offset  | integer  | Specifies the position in the list of all users where results should begin. All users before the offset in the search results are ignored. The default value is 0.   |
+| limit  | integer  | Specifies the maximum number of returned results. The default value \(no specified limit\) is 20, the maximum is 400.  |
 
 ## Searchable Attributes
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| firstName<br> | string<br> | The first name of the user<br> |
-| lastName<br> | string<br> | The last name of the user<br> |
-| fullName<br> | string<br> | The full \(first and last\) name of the user<br> |
-| email<br> | valid email string<br> | The email address of the user<br> |
-| type<br> | string<br> | The user type of the user. Values can be EMPLOYEE, PARTNER, BASIC_SUPPLIER, ADVANCED_SUPPLIER, or INTEGRATION.<br> |
-| enabled<br> | boolean<br> | Whether or not a user account is enabled in the workspace. Values are True or False.<br> |
+| firstName  | string  | The first name of the user  |
+| lastName  | string  | The last name of the user  |
+| fullName  | string  | The full \(first and last\) name of the user  |
+| email  | valid email string  | The email address of the user  |
+| type  | string  | The user type of the user. Values can be EMPLOYEE, PARTNER, BASIC_SUPPLIER, ADVANCED_SUPPLIER, or INTEGRATION.  |
+| enabled  | boolean  | Whether or not a user account is enabled in the workspace. Values are True or False.  |
 
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 200<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 200  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Length<br> | number<br> | number of characters in response<br> |
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Length  | number  | number of characters in response  |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Response Body
 Get all users
@@ -89,7 +89,7 @@ GET /settings/users
 }
 
 ```
-Get all users with the string john in the fullName attribute
+Get all users with the string *john*  in the fullName attribute
 
 GET /settings/users?fullName=\*john
 

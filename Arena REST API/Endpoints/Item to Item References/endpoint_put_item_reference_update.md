@@ -5,16 +5,16 @@ Updates the metadata of an Item-To-Item reference with a given GUID
 
 ## Request Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | application/json<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | application/json  |   |
 
 ## Set Null
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| setnull<br> |   | Append the URL with setnull=true to set notes to null. Attributes must be included within the request body and set to null. Insert setnull after the query string, represented by a ?, after the GUID.<br> |
+| setnull  |   | Append the URL with setnull=true to set notes to null. Attributes must be included within the request body and set to null. Insert setnull after the query string, represented by a ?, after the GUID.  |
 
 ## Sample Request Body
 PUT /items/&lt;GUID&gt;/items/&lt;GUID&gt;
@@ -33,21 +33,21 @@ PUT /items/&lt;GUID&gt;/items/&lt;GUID&gt;?setnull=true
 ```
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 200<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 200  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Length<br> | number<br> | number of characters in response<br> |
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Length  | number  | number of characters in response  |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Responses
 Update a given Item-To-Item Reference.
@@ -77,9 +77,6 @@ PUT /items/&lt;GUID&gt;/items/&lt;GUID&gt;?setnull=true
 }
 ```
 Returns an error if:
-          
-          
-        
 
 * the format of the request is incorrect:
 

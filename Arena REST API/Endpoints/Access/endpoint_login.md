@@ -11,9 +11,9 @@ The response to each Log In request includes the value "workspaceRequestLimit" w
 
 ## Request Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| content-type<br> | application/json<br> |   |
+| content-type  | application/json  |   |
 
 ## Sample Request Body
 ```
@@ -24,24 +24,24 @@ The response to each Log In request includes the value "workspaceRequestLimit" w
 }
 ```
 ## Optional Field
-| workspaceId<br> | If a valid workspace ID is provided and the user has access to this workspace, the active workspace after successful login will be the one identified by this ID. Arena recommends using the workspace ID to ensure connection to the expected workspace.<br> |
+| workspaceId  | If a valid workspace ID is provided and the user has access to this workspace, the active workspace after successful login will be the one identified by this ID. Arena recommends using the workspace ID to ensure connection to the expected workspace.  |
 
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 200<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 200  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Response Body
 /login

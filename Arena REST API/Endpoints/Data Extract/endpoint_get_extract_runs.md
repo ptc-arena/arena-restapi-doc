@@ -1,59 +1,58 @@
 # GET Extract Runs Search
 /extracts/&lt;GUID&gt;/runs
 
-Returns Extract Run objects  for an extract with a given GUID. 
-Appending a run GUID returns the run with that GUID.
+Returns Extract Run objects  for an extract with a given GUID. <br>Appending a run GUID returns the run with that GUID.
 
 ## Request Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | application/json<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | application/json  |   |
 
 ## Parameters
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| offset<br> | integer<br> | Specifies the position in the list of all runs where results should begin. All runs before the offset in the search results are ignored. The default value is 0.<br> |
-| limit<br> | integer<br> | Specifies the number of results that should be returned. By default the maximum number of runs is 20. Can return up 400 runs.<br> |
+| offset  | integer  | Specifies the position in the list of all runs where results should begin. All runs before the offset in the search results are ignored. The default value is 0.  |
+| limit  | integer  | Specifies the number of results that should be returned. By default the maximum number of runs is 20. Can return up 400 runs.  |
 
 ## Searchable Attributes
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| status<br> | string<br> | status of the Extract. Values can be InProcess, Completed, Failed, or Aborted.<br> |
-| scheduledDateTimeFrom<br> | string<br> | Include runs scheduled after this date and time<br> |
-| scheduledDateTimeTo<br> | string<br> | Include runs scheduled before this date and time<br> |
-| runDateTimeFrom<br> | string<br> | Include runs executed after this date and time<br> |
-| runDateTimeTo<br> | string<br> | Include runs executed before this date and time<br> |
-| completionDateTimeFrom<br> | string<br> | Include runs completed after this date and time<br> |
-| completionDateTimeTo<br> | string<br> | Include runs completed before this date and time<br> |
-| downloadDateTimeFrom<br> | string<br> | Include runs downloaded after this date and time \(download date and time attributes refer to when the run was first downloaded, either by a user in the application or by the API\)<br> |
-| downloadDateTimeTo<br> | string<br> | Include runs downloaded after this date and time \(download date and time attributes refer to when the run was first downloaded, either by a user in the application or by the API\)<br> |
+| status  | string  | status of the Extract. Values can be InProcess, Completed, Failed, or Aborted.  |
+| scheduledDateTimeFrom  | string  | Include runs scheduled after this date and time  |
+| scheduledDateTimeTo  | string  | Include runs scheduled before this date and time  |
+| runDateTimeFrom  | string  | Include runs executed after this date and time  |
+| runDateTimeTo  | string  | Include runs executed before this date and time  |
+| completionDateTimeFrom  | string  | Include runs completed after this date and time  |
+| completionDateTimeTo  | string  | Include runs completed before this date and time  |
+| downloadDateTimeFrom  | string  | Include runs downloaded after this date and time \(download date and time attributes refer to when the run was first downloaded, either by a user in the application or by the API\)   |
+| downloadDateTimeTo  | string  | Include runs downloaded after this date and time \(download date and time attributes refer to when the run was first downloaded, either by a user in the application or by the API\)   |
 
 Search behavior in the Arena REST API differs from search behavior in the Arena application. In the API, a trailing asterisk \(wildcard\) is required to return results that start with a string; in the Arena application, a trailing asterisk is always implied.
 
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 200<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 200  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Length<br> | number<br> | number of characters in response<br> |
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Length  | number  | number of characters in response  |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Response Body
-Get extracts which ran between April 19, 2015, 11:59pm and 59 seconds and September 30, 2015, 11:59pm and 59 seconds \(inclusive\).
+Get extracts which ran between *April 19, 2015, 11:59pm and 59 seconds*  and *September 30, 2015, 11:59pm and 59 seconds*  \(inclusive\).
 
 GET /extracts/&lt;GUID&gt;/runs?runDateTimeFrom="2015-04-19T23:59:59Z"&runDateTo="2015-09-30T23:59:59Z"
 
@@ -137,9 +136,6 @@ GET /extracts/&lt;GUID&gt;/runs/BTDWA7BDO5OFYH0J2L22
 }
 ```
 An error is returned if:
-          
-          
-        
 
 * the GUID is not valid.
 

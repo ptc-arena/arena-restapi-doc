@@ -181,16 +181,18 @@ Before using our API, we recommend reviewing the following **Export Notes and Re
   - [DELETE Change Implementation Task File](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/Implementation%20Task%20Files/endpoint_delete_change_implementationtask_file.md)
   - [GET Change Implementation Task File](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/Implementation%20Task%20Files/endpoint_get_change_implementationtasks_file.md)
   - [GET Change Implementation Task Files](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/Implementation%20Task%20Files/endpoint_get_change_implementationtasks_files.md)
-  - [POST Change Implementation Task](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/endpoint_post_change_implementationtask.md)
 #### Implementation Task
+  - [POST Change Implementation Task](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/endpoint_post_change_implementationtask.md)
+  - [DELETE Change Implementation Task](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/endpoint_delete_change_implementationtask.md)
+  - [GET Change Implementation Tasks](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/endpoint_get_change_implementationtasks.md)
+  - [GET Change Implementation Task](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/endpoint_get_change_implementationtask.md)
+  - [PUT Change Implementation Task](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/endpoint_put_change_implementationtask.md)
+#### Implementation Notes
   - [POST Change Implementation Task Note](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/Implementation%20Task%20Notes/endpoint_post_change_implementationtask_note.md)
   - [PUT Change Implementation Task Note](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/Implementation%20Task%20Notes/endpoint_put_change_implementationtask_note.md)
   - [GET Change Implementation Task Notes](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/Implementation%20Task%20Notes/endpoint_get_change_implementationtasks_notes.md)
   - [DELETE Change Implementation Task Note](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/Implementation%20Task%20Notes/endpoint_delete_change_implementationtask_note.md)
   - [GET Change Implementation Task Note](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/Implementation%20Task%20Notes/endpoint_get_change_implementationtask_note.md)
-  - [DELETE Change Implementation Task](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/endpoint_delete_change_implementationtask.md)
-  - [GET Change Implementation Task](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/endpoint_get_change_implementationtask.md)
-  - [PUT Change Implementation Task](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/endpoint_put_change_implementationtask.md)
 #### Change Item
   - [DELETE Change Affected Item](Arena%20REST%20API/Endpoints/Change%20Item/endpoint_delete_change_item.md)
   - [PUT Change Affected Item Edit](Arena%20REST%20API/Endpoints/Change%20Item/endpoint_change_update_item.md)
@@ -200,7 +202,6 @@ Before using our API, we recommend reviewing the following **Export Notes and Re
 #### Change Implementation Task Settings
   - [GET Change Implementation Task Template](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/Change%20Implementation%20Task%20Settings/endpoint_get_change_implementationtasks_template.md)
   - [GET Change Implementation Task Templates](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/Change%20Implementation%20Task%20Settings/endpoint_get_change_implementationtasks_templates.md)
-  - [GET Change Implementation Tasks](Arena%20REST%20API/Endpoints/Change%20Implementation%20Tasks/endpoint_get_change_implementationtasks.md)
 ### Suppliers
   - [PUT Supplier Update](Arena%20REST%20API/Endpoints/Supplier/endpoint_update_supplier.md)
   - [POST Supplier Create](Arena%20REST%20API/Endpoints/Supplier/endpoint_create_supplier.md)

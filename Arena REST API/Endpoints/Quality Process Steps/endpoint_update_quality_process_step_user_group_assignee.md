@@ -4,8 +4,6 @@
 Updates an existing Step object with a given GUID  in a Quality Process with a given GUID. 
 
 Editable attributes: Assignee, attribute values,  dueDateTime.
-          
-        
 
 When you specify dueDateTime for a step, only the date portion of the dueDateTime string is honored. Time always appears as 23:59:59 local time.
 
@@ -13,16 +11,16 @@ This endpoint can only be used in workspaces that have Access Policies enabled.
 
 ## Request Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| arena_session_id<br> |   | unique ID for session obtained from login<br> |
-| content-type<br> | application/json<br> |   |
+| arena_session_id  |   | unique ID for session obtained from login  |
+| content-type  | application/json  |   |
 
 ## Set Null
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| setnull<br> |   | Append the URL with setnull=true to set dueDateTime to null. Attribute must be included within the request body and set to null. Insert setnull after the query string, represented by a ?, after the GUID.<br> |
+| setnull  |   | Append the URL with setnull=true to set dueDateTime to null. Attribute must be included within the request body and set to null. Insert setnull after the query string, represented by a ?, after the GUID.  |
 
 ## Sample Request Body
 PUT /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;
@@ -67,21 +65,21 @@ PUT /qualityprocesses/&lt;GUID&gt;/steps/&lt;GUID&gt;?setnull=true
 ```
 ## Response Codes
 
-| Code<br> | Description<br> |
+| Code  | Description  |
 |  --- |  --- | 
-| 201<br> | Success<br> |
-| 400<br> | Failure<br> |
+| 201  | Success  |
+| 400  | Failure  |
 
 ## Response Header
 
-| Name<br> | Value<br> | Description<br> |
+| Name  | Value  | Description  |
 |  --- |  --- |  --- | 
-| Content-Length<br> | number<br> | number of characters in response<br> |
-| Content-Type<br> | application/json<br> | content type of response<br> |
-| Date<br> | date<br> | today's date and time<br> |
-| Server<br> | ArenaSolutions<br> |   |
-| X-Arena-Next-Request-Limit-Reset<br> | date<br> | the scheduled time for resetting of the count<br> |
-| X-Arena-Requests-Remaining<br> | number<br> | how many calls left<br> |
+| Content-Length  | number  | number of characters in response  |
+| Content-Type  | application/json  | content type of response  |
+| Date  | date  | today's date and time  |
+| Server  | ArenaSolutions  |   |
+| X-Arena-Next-Request-Limit-Reset   | date  | the scheduled time for resetting of the count  |
+| X-Arena-Requests-Remaining   | number  | how many calls left  |
 
 ## Sample Response Body
 Update a quality process step

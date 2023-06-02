@@ -4,11 +4,6 @@ Export Criteria determine which Items are included in an API Export. Through cre
 The simplest form of a criteria is a criterion. A criterion consists of an Arena attribute , a value associated with an attribute, and an operator that links the attribute to the value.
 
 NOTES:
-          
-          
-          
-          
-        
 
 * Export Definitions cannot be edited or deleted.
 
@@ -20,16 +15,16 @@ NOTES:
 
 ## Criterion Definitions
 
-| Name<br> | Description<br> |
+| Name  | Description  |
 |  --- |  --- | 
-| Attribute<br> | An Arena attribute<br> |
-| Value<br> | An Arena attribute value associated with an attribute<br> |
-| Operator<br> | A comparison of the attribute to a value<br> |
-| Criterion<br> | An object containing one attribute, one operator, and one value.<br> |
-| Criterion Logic<br> | Boolean logic combining Criterion such as "OR" and "AND"<br> |
-| Criterion Group<br> | A collection of one or more criterions separted by criterion logic<br> |
-| Criterion Group Logic<br> | Boolean logic combining Criterion Groups<br> |
-| Criteria<br> | A collection of one or more criterion groups separated by criterion group logic<br> |
+| Attribute  | An Arena attribute  |
+| Value  | An Arena attribute value associated with an attribute  |
+| Operator  | A comparison of the attribute to a value  |
+| Criterion  | An object containing one attribute, one operator, and one value.   |
+| Criterion Logic  | Boolean logic combining Criterion such as "OR" and "AND"  |
+| Criterion Group  | A collection of one or more criterions separted by criterion logic  |
+| Criterion Group Logic  | Boolean logic combining Criterion Groups  |
+| Criteria  | A collection of one or more criterion groups separated by criterion group logic  |
 
 ## Criteria Examples
 * A Criterion
