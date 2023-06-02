@@ -354,6 +354,11 @@ Before using our API, we recommend reviewing the following **Export Notes and Re
 #### Training Plan Records
   - [GET Training Plan Record](Arena%20REST%20API/Endpoints/Training%20Plan%20Records/endpoint_get_trainingplans_record.md)
   - [GET Training Plan Records](Arena%20REST%20API/Endpoints/Training%20Plan%20Records/endpoint_get_trainingplans_records.md)
+#### Training Plan Items
+  - [GET Training Plan Items](Arena%20REST%20API/Endpoints/Training%20Plan%20Items/endpoint_get_trainingplans_items.md)
+  - [POST Add Training Plan Item](Arena%20REST%20API/Endpoints/Training%20Plan%20Items/endpoint_add_trainingplans_items.md)
+  - [GET Training Plan Item](Arena%20REST%20API/Endpoints/Training%20Plan%20Items/endpoint_get_trainingplans_item.md)
+  - [DELETE Training Plan Item](Arena%20REST%20API/Endpoints/Training%20Plan%20Items/endpoint_delete_trainingplans_item.md)
 ### Tickets
 #### Ticket Change References
   - [GET Ticket Changes](Arena%20REST%20API/Endpoints/Ticket%20References/Ticket%20Change%20References/endpoint_get_tickets_changes.md)
