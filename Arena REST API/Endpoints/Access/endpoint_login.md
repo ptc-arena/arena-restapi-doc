@@ -25,7 +25,7 @@ The response to each Log In request includes the value "workspaceRequestLimit" w
 ```
 ## Optional Field
 | workspaceId  | If a valid workspace ID is provided and the user has access to this workspace, the active workspace after successful login will be the one identified by this ID. Arena recommends using the workspace ID to ensure connection to the expected workspace.  |
-|  --- |  --- | 
+|  :--- |  :--- | 
 
 ## Response Codes
 

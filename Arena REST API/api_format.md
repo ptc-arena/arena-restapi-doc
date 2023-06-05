@@ -26,7 +26,7 @@ The user constructs JSON requests to specific URL endpoints on the Arena API ser
 This document includes details about requests and responses from Arena servers, and instructs developers in how to construct requests. This document assumes some familiarity with APIs in general.
 
 | A Note on JSON inputs: When constructing Requests to the API service, please follow best practices for JSON data types: <br> *  Text values should be in quotes \("text"\)<br>    <br> *  Numeric values should not be in quotes \(42\)<br>    <br> *  Null values should not be in quotes \(null\)<br>    <br> *  Boolean values should be only true or false \(true\)<br>    <br> *  Internal quotes in values  should be escaped with the \ character \(18\"\).<br><br>    <br> *  Dates \(2012-01-12T19:22:27Z\)<br>    <br> *  GUID values should be in quotes \("2K4N1Y24FWFN6LDUC67B"\)<br>       |
-|  --- | 
+|  :--- | 
 
 Each Arena object is represented by a GUID \(Globally Unique IDentifier\). When you perform a GET, you receive object GUIDs in return, and use those GUIDs to specify objects on which you perform actions.
 
