@@ -15,7 +15,7 @@ Returns an Item object with a given GUID. Note that while the standard practice 
 | Name  | Value  | Description  |
 |  --- |  --- |  --- | 
 | includeEmptyAdditionalAttributes  | true or false  | If this is true, the response returns empty additional attributes. The default is false.  |
-| responseview  | string  | Allows users to customize the scope and size of the response data. Possible values and definitions:  |
+| responseview  | string  | Allows users to customize the scope and size of the response data. Possible values and definitions: <br> *  minimum - returns the GUID, item number, and url.<br>    <br> *  compact - returns the commen set of data that includes some core attrinutes in addition to the attributes returned in the minimum response.<br>    <br> *  full - returns the complete set of data including custom attributes.<br>       |
 
 ## Response Codes
 
