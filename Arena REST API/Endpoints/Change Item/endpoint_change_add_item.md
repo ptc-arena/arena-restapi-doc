@@ -3,7 +3,7 @@
 
 Adds an item to a change with a specific GUID. 
 
-For an overview of the Change Lifecyle in Arena, including a summary of Lifecycle Rules for adding Items to Changes, see .
+For an overview of the Change Lifecyle in Arena, including a summary of Lifecycle Rules for adding Items to Changes, see About the Change Lifecycle.
 
 NOTES:
 

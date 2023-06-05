@@ -3,7 +3,7 @@
 
 Updates attribute information for a change with a given GUID. 
 
-For an overview of the Change Lifecyle in Arena, including a summary of Lifecycle Rules, see  About the Change Lifecycle.
+For an overview of the Change Lifecyle in Arena, including a summary of Lifecycle Rules, see About the Change Lifecycle.
 
 Changes cannot be edited after they are submitted, with the following exceptions:
 

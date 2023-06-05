@@ -3,7 +3,7 @@
 | Field  | Data Type  | Description  |
 |  --- |  --- |  --- | 
 | allowOwnerToAddApprovers  | Boolean  | Determines if a step owner can add users to the step as approvers. Available only for steps of type SIGNOFF.   |
-| approvals  | Array of References  | A reference to the approvals entered by approver users. Each value contains the attributes fullName and guid. Available only for steps of type SIGNOFF.   |
+| approvals  | Array of References  | A reference to the approvals entered by approver users. Each value contains the attributes fullName and guid. Available only for steps of type SIGNOFF.  No approvals are shown in responses until all approver users have entered a decision<br>     |
 | assignee\*  | String  | **DEPRECATED - Please use assignees** The user to whom a step is assigned. Contains the attribute fullName. Deprecated as of Winter 2021 release.  |
 | assignees  | Array of References  | A reference to the assignee of a Quality step. Lists users if assignee is a single user. Lists userGroups if assignee is a User Group.  |
 | attributes  | Array of References  | A reference to the attributes on a step. Each value contains the attributes apiName, fieldType, guid, name, and value. Available only for steps of type REGULAR.  |
