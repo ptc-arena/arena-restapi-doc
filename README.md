@@ -599,18 +599,22 @@ Before using our API, we recommend reviewing the following **Export Notes and Re
 - [5000 to 5999 - Arena API Unique Error Codes](Arena%20REST%20API/API%20Error%20Codes/error_code_5000_to_5999.md)
 - [6000 and Beyond - Arena API Unique Error Codes](Arena%20REST%20API/API%20Error%20Codes/error_code_6000_to_Beyond.md)
 ### Onshape Arena Connection Errors
+The Onshape Arena Connection is facilitated by Arena’s REST API. While the majority of the Onshape Arena Connection’s actions take place on Onshape, specifically the Properties dialog or the BOM table, any errors encountered are unique Arena REST API Errors.
 - [Errors When Updating and Creating Items](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/error_post_put_manage_item_onshape.md)
 - [Errors When Creating Items ](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/error_post_reserve_item_onshape.md)
 ### Onshape Arena User Access Errors
+The Authorization and Login endpoints must execute successfully prior to any Onshape Arena connection action. Once actions are completed, the Logout endpoint will be executed to terminate the session.
 - [Errors Encountered When Logging In](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Onshape%20Arena%20User%20Access%20Errors/error_post_login.md)
 - [Errors Encountered When Authorizing an Onshape User](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Onshape%20Arena%20User%20Access%20Errors/error_post_login_authorize.md)
 - [Errors Encountered When Logging Out in the Onshape-Arena Connection](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Onshape%20Arena%20User%20Access%20Errors/error_post_logout.md)
 ### Onshape Arena BOM Management Errors
+BOM Management process errors occur when adding, removing, and updating items on new and existing Arena BOMs after a sync with an Onshape assembly. All parts on an Onshape assembly that don’t already exist in Arena are created and assigned a value of Yes to the BOM attribute OnshapeCreated. The Onshape Arena Connection only updates BOM items with the OnshapeCreated attribute value set to yes. If the part was removed from the Onshape assembly then the item will be removed from the Arena BOM.
 - [Errors When Removing an Item From a BOM](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Onshape%20Arena%20BOM%20Management%20Errors/error_remove_bom_item.md)
 - [Errors When Adding and Updating a BOM](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Onshape%20Arena%20BOM%20Management%20Errors/error_post_bom_items.md)
 - [Errors Encountered When Reserving Item Numbers for Onshape](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/error_post_reserve_item_number_onshape.md)
 - [Unknown Errors and System Errors](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/error_system_unknown_error.md)
 ### Errors When Managing Item-File Associations
+The File Management Process adds GLTF files to newly created items in Arena through the POST /items endpoint and replaces GTLF files in existing Arena items through a PUT /items endpoint. This process starts when an Onshape part is synced with Arena. If the part exists and already has the file assigned then the existing files will be removed prior to having the new one added. Each file requires a Title and a File Category.
 - [Errors When Removing Files from an Item](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Errors%20When%20Managing%20Item-File%20Associations/error_delete_files_items.md)
 - [Errors When Adding Files to an Item](Arena%20REST%20API/API%20Error%20Codes/Onshape%20Arena%20Connection%20Errors/Errors%20When%20Managing%20Item-File%20Associations/error_post_files_items.md)
 
