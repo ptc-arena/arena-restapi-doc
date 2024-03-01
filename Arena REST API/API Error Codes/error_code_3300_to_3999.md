@@ -67,7 +67,7 @@ The list below details unique API error codes from 3300 to 3999.
 | 3521  |   |  ```Invalid status : {0}```    |
 | 3522  |   |  ```No file content.```    |
 | 3523  |   |  ```Cannot load data.```    |
-| 3524  |   |  ```Dataset is empty, please make sure all data put in the first worksheet. The following headers are required: Guid &#124; Item Number, Lifecycle Phase Name &#124; Lifecycle Phase Guid. Revision can optionally be specified.```    |
+| 3524  |   |  ```Dataset is empty, please make sure all data put in the first worksheet. The following headers are required: Guid, Item Number, Lifecycle Phase Name, Lifecycle Phase Guid. Revision can optionally be specified.```    |
 | 3530  | 3501  |  ```Image file is not valid or exceed the file size limit 10MB.```    |
 | 3531  | 3501  |  ```The specified file is not a valid image.```    |
 | 3532  | 3501  |  ```The file must be associated with the item (supplier item).```    |
