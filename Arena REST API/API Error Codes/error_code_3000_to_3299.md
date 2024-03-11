@@ -38,7 +38,6 @@ The list below details unique API error codes from 3000 to 3299.
 | 3031  |   |  ```The attribute "{0}" is not creatable.```    |
 | 3032  |   |  ```The attribute "{0}" is not editable.```    |
 | 3033  |   |  ```The file is missing.```    |
-| 3034  |   |  ```The item is locked.```    |
 | 3035  |   |  ```The revision of the item "{0}" is invalid. Only the effective revision of an item can be added to a BOM.```    |
 | 3036  |   |  ```Quantity can't be empty.```    |
 | 3037  |   |  ```The item "{0}" appears at a higher level in the fully indented BOM and cannot be added at this level.```    |
@@ -170,6 +169,7 @@ The list below details unique API error codes from 3000 to 3299.
 | 3175  |   |  ```Completed quality process steps cannot be added to training.```    |
 | 3176  |   |  ```Quality number formats does not have default number.```    |
 | 3177  |   |  ```Quality default number does not have prefixes.```    |
+| 3178  |   |  ```The item working revision \\"FILE\\" view is locked by one pending change.```    |
 | 3200  |   |  ```This endpoint does not support query parameters.```    |
 | 3201  |   |  ```Only the SIGN_OFF step have decision.```    |
 | 3202  |   |  ```The Signoff step cannot add affected.```    |
